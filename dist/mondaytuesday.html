@@ -9,6 +9,15 @@
   <title>Protests – Stop ICE Cruelties</title>
   <style>
     body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 700px; margin: auto; padding: 24px; background: linear-gradient(120deg, #f8f8f8 60%, #e3e9f7 100%); }
+    /* Ensure menu is always left aligned to browser window */
+    #menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: auto;
+      margin: 0;
+      z-index: 1000;
+    }
     h1 { color: #b30000; text-align: center; margin-bottom: 0.5em; }
     .protest-info { background: #fff8f6; border-left: 5px solid #b30000; padding: 22px; border-radius: 10px; margin: 32px 0 24px 0; font-size: 1.15em; box-shadow: 0 2px 12px rgba(179,0,0,0.06); }
     .action-bar { text-align: center; margin: 18px 0 0 0; }
@@ -48,7 +57,9 @@
 </head>
 
 <body>
-<div id="menu-container"></div>
+<div id="menu">
+  <div id="menu-container"></div>
+</div>
 <script src="menu.js"></script>
 
 
@@ -69,13 +80,12 @@
       </a>
     </div>
   
-  <!-- Removed duplicate Contact bar -->
   <div style="background:#ffe5e5; border-bottom:2px solid #b30000; padding:14px 0; text-align:center; font-size:1.13em; font-weight:600; margin-bottom:18px;">
     Quick action: <a href="https://docs.google.com/document/d/1vgUdGlj4YgRVeJBFa5IGgyXfE51PIPFVL_gSkG7K4Dk/edit?usp=sharing" target="_blank" rel="noopener" style="color:#b30000; text-decoration:underline;">email your representatives</a>
   </div>
 
   
-  <h1>Join Our Protest2s</h1>
+  <h1>Join Our Protests</h1>
 
   <div style="display:flex; justify-content:center; gap:12px; margin-bottom:12px; flex-wrap:wrap;">
     <img src="eagles.jpeg" alt="Protest 2" style="max-width:160px; width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
