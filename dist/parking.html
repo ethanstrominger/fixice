@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Information</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 24px; background: #fff; }
+    h1 { color: #b30000; }
+    .parking-info {
+      background: #f8f8f8;
+      border-left: 5px solid #0066cc;
+      padding: 22px 24px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      font-size: 1.18em;
+    }
+    .map-link { color: #0066cc; text-decoration: underline; font-weight: 600; }
+    .banner-full {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      max-width: 100vw;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      border-radius: 0 !important;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <div id="menu-container"></div>
+  </div>
+  <script src="menu.js"></script>
+  <!-- Add spacing below the fixed menu so the banner is not hidden -->
+  <div style="height:28px;"></div>
+  <div class="banner banner-full">
+    <a href="mlk.html" style="color:#fff; text-decoration:underline; font-weight:900;">
+      Join us for a special MLK Day Protest!<br>
+      <span style="font-size:0.8em; font-weight:normal;">Monday, January 19th, 11am–1pm,1000 District Ave,Burlington, MA</span>
+    </a>
+  </div>
+
+  <div class="banner-full" style="background:linear-gradient(90deg,#b30000 0%,#0066cc 100%); color:#fff; text-align:center; font-size:1.7em; font-weight:900; letter-spacing:0.05em; padding:28px 0 12px 0; margin-bottom:0; border-radius:0; box-shadow:0 4px 16px rgba(0,0,0,0.13); text-shadow: 1px 2px 8px #3333;">
+    Advocate. Legislate. Protest. Boycott. Volunteer. Donate.
+    <div style="font-size:1.08em; font-weight:500; color:#fff; margin-top:6px; letter-spacing:0; text-shadow:none;">
+      Do what calls to you.
+    </div>
+  </div>
+  <div class="banner-full" style="background:linear-gradient(90deg,#0066cc 0%,#28a745 100%); color:#fff; text-align:center; font-size:1.15em; font-weight:700; letter-spacing:0.03em; padding:14px 0 12px 0; margin-bottom:32px; border-radius:0; box-shadow:0 2px 8px rgba(0,0,0,0.09);">
+    Related sites:
+    <a href="https://bearingwitnessNE.org" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">Bearing Witness NE</a>
+    <span style="margin: 0 8px;">/</span>
+    <a href="https://nofearstreettheater.com/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">No Fear Street Theater</a>
+    <span style="margin: 0 8px;">/</span>
+    <a href="https://www.facebook.com/groups/646621978061995/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">Justic4All Thursdays (facebook)</a>
+  </div>
+
+  <h1>Parking for District Ave Protests</h1>
+  <div class="parking-info">
+    There is a free, open public parking garage located <b>behind Feng Shui</b> on District Ave.<br><br>
+    <b>Address:</b> <a class="map-link" href="https://maps.google.com/?q=51+Park+Place+Burlington+MA" target="_blank" rel="noopener">51 Park Place, Burlington, MA</a><br>
+    The garage is accessible from District Ave and is just a short walk to the protest site.
+  </div>
+  <a href="index.html">&larr; Back to Home</a>
+</body>
+</html>
