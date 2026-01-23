@@ -5,25 +5,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-            ul {
-              margin-left: 1.1em;
-              padding-left: 1.1em;
-              list-style: none;
-            }
-            ul li::before {
-              content: '\2794'; /* Unicode heavy arrow ➔ */
-              color: #b30000;
-              font-weight: bold;
-              font-size: 1.35em;
-              display: inline-block;
-              width: 1.2em;
-              margin-left: -1.2em;
-              vertical-align: -0.1em;
-            }
-        ul {
-          margin-left: 1.1em;
-          padding-left: 1.1em;
-        }
+    /* Banner and announcement styles */
+    .announcement {
+      background: #fffae6;
+      color: #333;
+      padding: 16px;
+      text-align: left;
+      font-size: 1.1em;
+      border-bottom: 2px solid #ffd700;
+      font-weight: bold;
+    }
+
+    .info-banner {
+      background: #e6f7ff;
+      color: #005580;
+      padding: 12px;
+      text-align: center;
+      font-size: 1em;
+      border-bottom: 1px solid #b3e0ff;
+    }
+
+    .info-banner a {
+      color: #005580;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .banner-full {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      max-width: 100vw;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      border-radius: 0 !important;
+      box-sizing: border-box;
+    }
+
+    .banner-main {
+      background: linear-gradient(90deg, #b30000 0%, #0066cc 100%);
+      color: #fff;
+      text-align: center;
+      font-size: 1.7em;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      padding: 28px 0 12px 0;
+      margin-bottom: 0;
+      border-radius: 0;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+      text-shadow: 1px 2px 8px #3333;
+    }
+
+    .banner-main .subtitle {
+      font-size: 1.08em;
+      font-weight: 500;
+      color: #fff;
+      margin-top: 6px;
+      letter-spacing: 0;
+      text-shadow: none;
+    }
+
+    .banner-related {
+      background: linear-gradient(90deg, #0066cc 0%, #28a745 100%);
+      color: #fff;
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      padding: 14px 0 12px 0;
+      margin-bottom: 32px;
+      border-radius: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    }
+
+    .banner-related a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .banner-related .divider {
+      margin: 0 8px;
+    }
+
+    .under-construction {
+      background: #ffe5e5;
+      border-left: 6px solid #b30000;
+      padding: 12px;
+      margin-bottom: 18px;
+      font-weight: 700;
+      font-size: 1.13em;
+      border-radius: 6px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    ul {
+      margin-left: 1.1em;
+      padding-left: 1.1em;
+      list-style: none;
+    }
+
+    ul li::before {
+      content: '\2794';
+      /* Unicode heavy arrow ➔ */
+      color: #b30000;
+      font-weight: bold;
+      font-size: 1.35em;
+      display: inline-block;
+      width: 1.2em;
+      margin-left: -1.2em;
+      vertical-align: -0.1em;
+    }
+
+    ul {
+      margin-left: 1.1em;
+      padding-left: 1.1em;
+    }
+
     .banner {
       background: #222;
       color: #fff;
@@ -53,6 +151,7 @@
       margin: auto;
       padding: 20px;
     }
+
     .banner-full {
       position: relative;
       left: 50%;
@@ -135,6 +234,14 @@
 </head>
 
 <body>
+  <div class="announcement">
+    <!-- Website purpose statement -->
+    Updates to this website are planned by Feb 14 or earlier. This website provides guidance and ideas on actions to
+    take to impede or end ICE operations. There are an overwhelming number of websites for anti-ICE and pro-immigrant
+    actions. The website will curate the most relevant ones. Updates are planned by Feb 14. The website will 
+    be organized by type of action: <b>Protest, Advocate, Volunteer, Donate, Boycott</b>
+  </div>
+  <div class="banner banner-full"><a href="protests1000districtave" style="color: #fff; text-decoration: underline; font-weight: bold;">NEW: Fridays 10-1</a></div>
 
   <div id="menu">
     <div id="menu-container"></div>
@@ -143,23 +250,13 @@
 
   <!-- Add spacing below the fixed menu so the banner is not hidden -->
   <div style="height:60px;"></div>
-  <div class="banner banner-full">
-      NEW: on Fridays from 10-1, help distribute food and essentials to immigrants.<br>
-  </div>
-
-  <div class="banner-full" style="background:linear-gradient(90deg,#b30000 0%,#0066cc 100%); color:#fff; text-align:center; font-size:1.7em; font-weight:900; letter-spacing:0.05em; padding:28px 0 12px 0; margin-bottom:0; border-radius:0; box-shadow:0 4px 16px rgba(0,0,0,0.13); text-shadow: 1px 2px 8px #3333;">
-    Protest, Advocate, Volunteer, Donate, Boycott
-    <div style="font-size:1.08em; font-weight:500; color:#fff; margin-top:6px; letter-spacing:0; text-shadow:none;">
-      Do what calls to you.
-    </div>
-  </div>
-  <div class="banner-full" style="background:linear-gradient(90deg,#0066cc 0%,#28a745 100%); color:#fff; text-align:center; font-size:1.15em; font-weight:700; letter-spacing:0.03em; padding:14px 0 12px 0; margin-bottom:32px; border-radius:0; box-shadow:0 2px 8px rgba(0,0,0,0.09);">
-    Related sites2:
-    <a href="https://bearingwitnessNE.org" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">Bearing Witness New England</a>
-    <span style="margin: 0 8px;">/</span>
-    <a href="https://nofearstreettheater.com/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">No Fear Street Theater</a>
-    <span style="margin: 0 8px;">/</span>
-    <a href="https://www.facebook.com/groups/646621978061995/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">Justic4All</a>
+  <div class="banner-full banner-related">
+    Related sites:
+    <a href="https://bearingwitnessNE.org" target="_blank" rel="noopener">Bearing Witness New England</a>
+    <span class="divider">/</span>
+    <a href="https://nofearstreettheater.com/" target="_blank" rel="noopener">No Fear Street Theater</a>
+    <span class="divider">/</span>
+    <a href="https://www.facebook.com/groups/646621978061995/" target="_blank" rel="noopener">Justice4All</a>
   </div>
 
   </div>
@@ -175,7 +272,8 @@
         that works best for you and calls to you.
       </p>
       <ul style="font-size:1.18em; margin-left:1.2em; font-weight:600;">
-        <li><a href="protests" style="color:#b30000; text-decoration:underline; font-weight:700;">Protests in Burlington and beyond</a> </li>
+        <li><a href="protests" style="color:#b30000; text-decoration:underline; font-weight:700;">Protests in Burlington
+            and beyond</a> </li>
         <li><a href="https://lucemass.org" target="_blank" rel="noopener"
             style="color:#b30000; text-decoration:underline; font-weight:700;">Volunteer</a> for I.C.E. watch or hotline
         </li>
@@ -188,7 +286,6 @@
       </ul>
     </div>
   </div>
-  <div
-    style="background:#ffe5e5; border-left:6px solid #b30000; padding:12px; margin-bottom:18px; font-weight:700; font-size:1.13em; border-radius:6px; box-shadow:0 1px 6px rgba(0,0,0,0.04);">
+  <div class="under-construction">
     🚧 Page under construction. Check back often. 🚧
   </div>
