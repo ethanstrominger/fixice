@@ -9,7 +9,7 @@
   </button>
   <div class="menu-links">
     <a href="index.html">Home</a>
-    <a href="protests.html">Protests</a>
+    <a href="protests.html">Protest</a>
     <a href="parking.html">Parking</a>
     <a href="insideice.html">ICE Jail</a>
     <a href="boycott.html">Boycott</a>
@@ -25,23 +25,29 @@
 </nav>
 <style>
 .main-menu {
-  font-family: 'Georgia', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  background: #fff;
+  background: #f5f5f5;
   color: #111;
   border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 0 24px;
   position: relative;
   z-index: 100;
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
 }
 .main-menu .menu-logo {
   font-weight: bold;
   font-size: 22px;
   margin-right: 32px;
-  font-family: 'Georgia', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .main-menu .menu-links {
   display: flex;
@@ -83,13 +89,15 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0 12px;
+    white-space: normal;
+    overflow-x: visible;
   }
   .main-menu .menu-links {
     flex-direction: column;
     gap: 0;
     width: 100%;
     display: none;
-    background: #fff;
+    background: #f5f5f5;
     position: absolute;
     top: 56px;
     left: 0;
