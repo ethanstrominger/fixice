@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Letter to Governor (Mailto Link)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7f7; }
+    .container { background: #fff; padding: 2em; border-radius: 8px; max-width: 600px; margin: auto; box-shadow: 0 2px 8px #0001; }
+    label { display: block; margin-top: 1em; }
+    input { width: 100%; padding: 0.5em; margin-top: 0.2em; border-radius: 4px; border: 1px solid #ccc; }
+    button, a.mailto-link { margin-top: 1.5em; padding: 0.7em 1.5em; border: none; border-radius: 4px; background: #1976d2; color: #fff; font-size: 1em; cursor: pointer; text-decoration: none; display: inline-block; }
+    button:hover, a.mailto-link:hover { background: #125ea2; }
+    textarea { width: 100%; padding: 0.5em; border-radius: 4px; border: 1px solid #ccc; margin-top: 1em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Send a Letter to the Governor</h2>
+    <label>First Name
+      <input type="text" id="firstName" required>
+    </label>
+    <label>Last Name
+      <input type="text" id="lastName" required>
+    </label>
+    <label>Town
+      <input type="text" id="town" required>
+    </label>
+    <label>State
+      <input type="text" id="state" value="MA" readonly style="background:#eee;">
+    </label>
+    <form id="letterForm" onsubmit="event.preventDefault(); sendEmail();">
+      <button type="button" onclick="sendEmail()" style="float:right;">Send Email</button>
+      <h3>Letter to the Governor</h3>
+      <label>First Name
+        <input type="text" id="firstName" required>
+      </label>
+      <label>Last Name
+        <input type="text" id="lastName" required>
+      </label>
+      <label>Town
+        <input type="text" id="town" required>
+      </label>
+      <label>State
+        <input type="text" id="state" value="MA" readonly style="background:#eee;">
+      </label>
+      <label style="margin-top:1.5em;">Letter Text
+        <textarea id="letterText" rows="16" readonly style="background:#f9f9f9;"></textarea>
+        <button type="button" id="editBtn" class="edit-btn" onclick="toggleEdit()">Edit</button>
+      </label>
+      <button type="button" onclick="sendEmail()">Send Email</button>
+    </form>
+  </div>
+  <script>
+    async function fetchTemplate() {
+      const resp = await fetch('letter_template.txt');
+      return await resp.text();
+    }
+    const body = `I implore you to take all actions you can to stop or impede the Immigration and Customs Enforcement from operating. Specifically, can you:\n\n  • ENACT EXECUTIVE ORDERS FOR STATE PROPERTY: Issue immediate executive orders to prevent ICE from using state-owned or managed properties, such as courthouses, for staging arrests or detention.\n\n  • TERMINATE ALL STATE-ICE CONTRACTS: Direct state agencies to terminate existing contracts that provide resources to federal immigration authorities, including 287(g) agreements within the Department of Corrections and the Intergovernmental Service Agreement at the Plymouth County Correctional Facility.\n\n  • RESTRICT AIRPORT ACCESS FURTHER: Move beyond demands and use all legal administrative power to block ICE-chartered deportation flights from state-run airports like Hanscom Field.\n\n  • RESTORE REMOTE COURT PARTICIPATION: Reinstate pandemic-era remote courthouse participation to protect residents from being targeted by ICE during required legal proceedings.\n\n  • CHAMPION CRITICAL LEGISLATION: Publicly and forcefully advocate for the immediate passage of these acts:\n    • Safe Communities Act (H.2580 / S.1681) to end state police involvement in civil immigration matters, \n    • Dignity Not Deportations Act (H.1588 / S.1122) to ban local law enforcement from being deputized as ICE agents.`;
+    let template = null;
+    let isEditable = false;
+    async function updateLetter() {
+      if (!template) template = await fetchTemplate();
+      if (!isEditable) {
+        const firstName = document.getElementById('firstName').value.trim();
+        const lastName = document.getElementById('lastName').value.trim();
+        const town = document.getElementById('town').value.trim();
+        const state = 'MA';
+        let letter = template
+          .replace('[LETTER_BODY]', body)
+          .replace('[NAME]', firstName + ' ' + lastName)
+          .replace('[TOWN]', town)
+          .replace('[STATE]', state);
+        document.getElementById('letterText').value = letter;
+      }
+    }
+    document.getElementById('firstName').addEventListener('input', function() { if (!isEditable) updateLetter(); });
+    document.getElementById('lastName').addEventListener('input', function() { if (!isEditable) updateLetter(); });
+    document.getElementById('town').addEventListener('input', function() { if (!isEditable) updateLetter(); });
+    async function toggleEdit() {
+      const textarea = document.getElementById('letterText');
+      const btn = document.getElementById('editBtn');
+      isEditable = !isEditable;
+      textarea.readOnly = !isEditable;
+      textarea.style.background = isEditable ? '#fff' : '#f9f9f9';
+      btn.textContent = isEditable ? 'Save' : 'Edit';
+      if (!isEditable) await updateLetter();
+    }
+    function sendEmail() {
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const town = document.getElementById('town').value.trim();
+      if (!firstName || !lastName || !town) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      const subject = encodeURIComponent('Urgent Action Needed: Protect Massachusetts Residents from ICE');
+      const bodyText = document.getElementById('letterText').value;
+      const mailto = `mailto:governor.office@state.ma.us?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
+      const win = window.open(mailto, '_blank');
+      if (!win) {
+        window.location.href = mailto;
+      }
+    }
+    window.onload = updateLetter;
+  </script>
+</body>
+</html>
