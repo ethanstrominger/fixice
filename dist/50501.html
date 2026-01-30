@@ -13,6 +13,18 @@
     th { background: #eaf6ff; color: #005580; }
     tr:nth-child(even) { background: #f7f7f7; }
     .spreadsheet-link { margin-top: 2em; display: block; font-size: 1.1em; }
+    .table-responsive { width: 100%; overflow-x: auto; }
+    @media (max-width: 700px) {
+      table { min-width: 900px; }
+      .table-responsive::after {
+        content: '← Scroll right for more →';
+        display: block;
+        text-align: center;
+        color: #888;
+        font-size: 0.95em;
+        margin-top: 4px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -23,21 +35,48 @@
   <a href="#" class="home-link" onclick="history.back(); return false;">Home</a>
   <div class="container">
     <h1>50501 Massachusetts Groups</h1>
+    <div class="table-responsive">
     <table>
       <thead>
         <tr>
           <th>Town/Region</th>
           <th>Group Name</th>
+          <th>Links</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td></td><td>Mass50501</td></tr>
-        <tr><td>Leominster</td><td>The Flamingo Revolutionists</td></tr>
-        <tr><td>North Shore / Beverly</td><td>Hands Off Beverly <span style="color:#1877f2; font-weight:bold;">[Facebook Group]</span></td></tr>
-        <tr><td>West Brookfield</td><td>Brookfields Fight Fear</td></tr>
+        <tr>
+          <td>Massachusetts</td>
+          <td>Mass50501</td>
+          <td>
+            <a href="https://mass50501.org/" target="_blank" rel="noopener">website</a> |
+            <a href="https://instagram.com/mass50501" target="_blank" rel="noopener">instagram</a> |
+            <a href="https://bsky.app/profile/mass50501.bsky.social" target="_blank" rel="noopener">bluesky</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Leominster</td>
+          <td>The Flamingo Revolutionists</td>
+          <td><a href="https://facebook.com/groups/theflamingorevolution" target="_blank" rel="noopener">facebook</a></td>
+        </tr>
+        <tr>
+          <td>North Shore / Beverly</td>
+          <td>Hands Off Beverly</td>
+          <td>
+            <a href="https://instagram.com/handsoffbeverly" target="_blank" rel="noopener">instagram</a> |
+            <a href="https://facebook.com/groups/3875181849412135" target="_blank" rel="noopener">facebook</a>
+          </td>
+        </tr>
+        <tr>
+          <td>West Brookfield</td>
+          <td>Brookfields Fight Fear</td>
+          <td><a href="https://www.facebook.com/groups/1189916931386817/" target="_blank" rel="noopener">facebook</a></td>
+        </tr>
       </tbody>
     </table>
+    </div>
     <a class="spreadsheet-link" href="https://docs.google.com/spreadsheets/d/1azok1bA4NxkPKdIb2xIptmqinovTirIPcA3rc-s2tys/edit?gid=0#gid=0" target="_blank" rel="noopener">See 50501 groups across the US</a>
+
   </div>
 </body>
 </html>
