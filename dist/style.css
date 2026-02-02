@@ -1,0 +1,173 @@
+.inside-ice-info {
+  background: #f8f8f8;
+  border-left: 5px solid #b30000;
+  padding: 22px 24px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  font-size: 1.18em;
+}
+.external-link { color: #0066cc; text-decoration: underline; font-weight: 600; }
+.protest-info { background: #fff8f6; border-left: 5px solid #b30000; padding: 22px; border-radius: 10px; margin: 32px 0 24px 0; font-size: 1.15em; box-shadow: 0 2px 12px rgba(179,0,0,0.06); }
+.action-bar { text-align: center; margin: 18px 0 0 0; }
+.action-btn { display: inline-block; background: linear-gradient(90deg, #007bff 0%, #0056b3 100%); color: #fff; font-weight: 600; padding: 12px 28px; border-radius: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-decoration: none; font-size: 1.1em; margin: 0 10px 10px 10px; transition: background 0.2s, box-shadow 0.2s; }
+.action-btn:hover { background: linear-gradient(90deg, #0056b3 0%, #007bff 100%); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+.map-link { color: #0066cc; text-decoration: underline; font-weight: 600; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 750px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+
+h1, .container h1 {
+  color: #b30000;
+  margin-bottom: 18px;
+}
+
+h2, .container h2 {
+  color: #0066cc;
+  margin-top: 32px;
+}
+
+ul {
+  margin-left: 1.2em;
+}
+
+.action-box {
+  background: #fff;
+  border-left: none;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 28px;
+}
+
+.top-action {
+  background: #ffe5e5;
+  border-left: 6px solid #b30000;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 1.13em;
+}
+
+a {
+  color: #b30000;
+  text-decoration: underline;
+}
+
+a.button {
+  display: inline-block;
+  background: linear-gradient(90deg, #b30000 0%, #0066cc 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 18px 0;
+  font-size: 1.1em;
+}
+
+a.button:hover {
+  background: linear-gradient(90deg, #0066cc 0%, #b30000 100%);
+}
+
+.under-construction {
+  background: #ffe5e5;
+  border-left: 4px solid #b30000;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+# Hero image on home page
+.fixice-hero {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 420px;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  margin-bottom: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+# Navigation bar on home page
+.fixice-nav {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  font-size: 1.08em;
+}
+.fixice-nav-link {
+  color: #b30000;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+# Main content area on home page
+.fixice-main {
+  max-width: 700px;
+  margin: 0px auto 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 32px;
+}
+/* Shared styles for Fix ICE site */
+
+.fixice-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #ffe066;
+  color: #7a5c00;
+  text-align: center;
+  padding: 12px 8px;
+  font-size: 1.25em;
+  font-weight: 600;
+  border-bottom: 2px solid #ffd700;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+
+
+#site-title-container > div {
+  padding-top: 32px;
+  margin-top: 0;
+}
+
+.fixice-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  color: #b30000;
+  font-weight: 900;
+  margin-bottom: 0.1em;
+  margin-top: 0;
+  letter-spacing: 0.01em;
+}
+
+.fixice-subtitle {
+  font-size: 1.35em;
+  color: #005580;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+
+body {
+  background: #fff !important;
+}
