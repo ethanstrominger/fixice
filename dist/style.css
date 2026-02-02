@@ -303,9 +303,9 @@ a.button:hover {
 }
 
 /* Add space below the fixed banner for the site title */
-  #site-title-container {
-    margin-top: 16px;
-  }
+#site-title-container {
+  margin-top: 16px;
+}
 
 #site-title-container > div {
   padding-top: 32px;
