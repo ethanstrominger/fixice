@@ -1,3 +1,27 @@
+/* Social share button group */
+.fixice-share-buttons {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2000;
+  display: flex;
+  gap: 8px;
+}
+.fixice-share-buttons a {
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  transition: box-shadow 0.15s, border 0.15s;
+}
+.fixice-share-buttons a:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.16);
+  border: 1px solid #bbb;
+}
 /* Note box style from protests.html */
 .note {
   background: #eaf6ff;
