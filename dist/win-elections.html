@@ -4,15 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support Competitive US Races – Fix ICE</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body style="background:#f7f7f7;">
   <div id="menu-container"></div>
-  <script src="menu.js"></script>
-  <div class="container">
+  <div class="related-sites-banner" style="background:#eaf6ff;border-bottom:1px solid #b3d8f5;padding:0.7em 1.2em;text-align:center;font-size:1.08em;">
+    <strong>Related Sites:</strong>
+    <a href="https://bearingwitnessne.org" target="_blank" rel="noopener" style="margin:0 0.7em;">Bearing Witness New England</a>
+    <a href="https://nofearstreettheater.org" target="_blank" rel="noopener" style="margin:0 0.7em;">No Fear Street Theater</a>
+    <a href="https://www.facebook.com/groups/646621978061995/" target="_blank" rel="noopener" style="margin:0 0.7em;">Justice4All Thursdays</a>
+  </div>
+  <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
     <h1>Support Competitive US Races</h1>
     <p>One of the most effective ways to protect immigrant rights and defeat anti-immigrant policies is to help elect leaders who will fight for justice. You can make a difference by funding competitive races and joining postcard writing and calling campaigns.</p>
     <h2>How You Can Help</h2>
     <ul>
+      <li><a href="https://state-elections.org/" target="_blank" rel="noopener">State and Local Election Alliance</a> – focuses solely on non-federal offices, driving resources to where they’ll make the most impact and often at a fraction of the cost for more prominent races. These down ballot races can impact the election process, investigation of fraud, and other critical aspects. Republicans have targeted this group more than Democrats.</li>
       <li><a href="https://turnpurple2blue.org/to-do-now-federal/" target="_blank" rel="noopener">Urgent actions and funding opportunities for federal races (Turn Purple 2 Blue)</a></li>
       <li><a href="https://www.mobilize.us/?q=postcard" target="_blank" rel="noopener">Find in-person postcard writing campaigns (Mobilize)</a></li>
       <li><a href="https://www.mobilize.us/?is_virtual=true" target="_blank" rel="noopener">Join virtual campaign actions (Mobilize)</a></li>
@@ -26,6 +33,14 @@
       <li><a href="https://www.cookpolitical.com/ratings/senate-race-ratings" target="_blank" rel="noopener">Competitive Senate races (Cook Political Report)</a></li>
     </ul>
     <p>Your support—whether financial or through volunteering—can help tip the balance in key races and ensure a better future for all.</p>
-  </div>
+  </main>
+  <script>
+    // Load menu.html contents into #menu-container
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      });
+  </script>
 </body>
 </html>

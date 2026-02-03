@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Share Instructions - Fix ICE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Include the menu and banner from menu.html -->
+  <div id="menu-container"></div>
+  <main style="max-width:600px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+    <h2>Manual Sharing Instructions</h2>
+    <p style="font-size:1.1em;">Posts cannot be directly posted to this platform. Please copy and paste the following message into your app:</p>
+    <div style="background:#f7f7f7;border:1px solid #ddd;padding:1em 1.2em;margin:1.5em 0;font-size:1.08em;border-radius:6px;word-break:break-all;">
+      Check out Fix ICE: Burlington, MA and Beyond – Resources, actions, and ways to support immigrant rights. <span id="fixice-url">https://fixice.org/</span> #FixICE
+    </div>
+    <p style="color:#444;">The message above has been copied for you (if supported). Paste it into your post on Instagram, TikTok, or any other platform.</p>
+  </main>
+  <script>
+    // Load menu.html contents into #menu-container
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('menu-container').innerHTML = html;
+      });
+    // Copy message to clipboard
+    document.addEventListener('DOMContentLoaded', function() {
+      var msg = document.querySelector('main div').innerText;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(msg);
+      }
+    });
+  </script>
+</body>
+</html>
