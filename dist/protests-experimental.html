@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fix ICE: Protests</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <main class="container">
+    <h1>Protests and Other Events</h1>
+    <p>This is a curated list of FIXICE-related and local actions. MANY more actions are taking place throughout our area, state, and nationally. Our presence at any of these activities is a critical pushback against the excesses of ICE.</p>
+    <!-- ...rest of protests page content... -->
+  </main>
+  <script>
+    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+    });
+  </script>
+</body>
+</html>

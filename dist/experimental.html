@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experimental Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+    <h2>New Features</h2>
+    <p style="margin-bottom:1.2em;font-size:1.08em;color:#333;background:#f7f7f7;padding:0.7em 1em;border-radius:6px;">Resource link menu options have been consolidated into an <strong>Activity Explorer</strong> to make it easier to view resources by strategy or topic. Use the explorer to filter and find links for advocacy, volunteering, donating, learning, and more.</p>
+    <div class="fixice-share-buttons" style="position:fixed;top:24px;left:24px;z-index:1000;background:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 2px 8px #0002;display:flex;gap:16px;">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener" id="share-facebook" title="Open Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#1877f3"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.406.595 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+      </a>
+      <a href="https://x.com/" target="_blank" rel="noopener" id="share-x" title="Open X (Twitter)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1200 1227" fill="#000"><path d="M1200 0L753 555l447 672H753l-297-447-297 447H0l447-672L0 0h447l297 447L1041 0z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" id="share-instagram" title="Open Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#E4405F"><path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.97.24 2.43.41.59.22 1.01.48 1.45.92.44.44.7.86.92 1.45.17.46.354 1.26.41 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.41 2.43-.22.59-.48 1.01-.92 1.45-.44.44-.86.7-1.45.92-.46.17-1.26.354-2.43.41-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.43-.41-.59-.22-1.01-.48-1.45-.92-.44-.44-.7-.86-.92-1.45-.17-.46-.354-1.26-.41-2.43C2.212 15.634 2.2 15.25 2.2 12s.012-3.584.07-4.85c.056-1.17.24-1.97.41-2.43.22-.59.48-1.01.92-1.45.44-.44.86-.7 1.45-.92.46-.17 1.26-.354 2.43-.41C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.736 0 8.332.013 7.052.072 5.77.13 4.73.31 3.89.6c-.89.32-1.64.77-2.39 1.52C.77 3.36.32 4.11 0 5c-.29.84-.47 1.88-.53 3.16C-.013 8.332 0 8.736 0 12c0 3.264.013 3.668.072 4.948.058 1.282.24 2.322.53 3.162.32.89.77 1.64 1.52 2.39.75.75 1.5 1.2 2.39 1.52.84.29 1.88.47 3.16.53C8.332 23.987 8.736 24 12 24c3.264 0 3.668-.013 4.948-.072 1.282-.058 2.322-.24 3.162-.53.89-.32 1.64-.77 2.39-1.52.75-.75 1.2-1.5 1.52-2.39.29-.84.47-1.88.53-3.16.059-1.28.072-1.684.072-4.948 0-3.264-.013-3.668-.072-4.948-.058-1.282-.24-2.322-.53-3.162-.32-.89-.77-1.64-1.52-2.39C20.64.77 19.89.32 19 .01c-.84-.29-1.88-.47-3.16-.53C15.668.013 15.264 0 12 0zm0 5.838A6.162 6.162 0 0 0 5.838 12 6.162 6.162 0 0 0 12 18.162 6.162 6.162 0 0 0 18.162 12 6.162 6.162 0 0 0 12 5.838zm0 10.162A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.406-10.844a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+      </a>
+      <a href="https://www.google.com/" target="_blank" rel="noopener" id="share-copy" title="Open Google">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#555"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+      </a>
+    </div>
+    <ul style="font-size:1.1em;">
+      <li><a href="link-explorer-experimental.html">Link Explorer</a></li>
+      <li><a href="donate-experimental.html">Donate</a></li>
+      <li><a href="boycott-experimental.html">Boycott</a></li>
+      <li><a href="advocate-experimental.html">Advocate</a></li>
+      <li><a href="immigrants-experimental.html">Volunteer</a></li>
+      <li><a href="win-elections-experimental.html">Elections</a></li>
+      <li><a href="contact-experimental.html">Contact</a></li>
+      <li><a href="parking-experimental.html">Parking</a></li>
+      <li><a href="protests-experimental.html">Protests</a></li>
+      <li><a href="index.html">Standard</a></li>
+    </ul>
+  </main>
+  <script>
+    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+    });
+  </script>
+</body>
+</html>

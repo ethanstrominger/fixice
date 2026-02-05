@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Fix ICE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <main class="container">
+    <h1>Contact Fix ICE</h1>
+    <p>To contact us for information or other purposes, email <a href="mailto:info@fixice.org?subject=Inquiry">info@fixice.org</a>.</p>
+  </main>
+  <script>
+    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+    });
+  </script>
+</body>
+</html>

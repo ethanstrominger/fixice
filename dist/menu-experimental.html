@@ -1,0 +1,55 @@
+<div class="fixice-share-buttons">
+  <!-- ...same social buttons as menu.html... -->
+</div>
+<div class="fixice-banner">
+  Site Under Construction: Some info is incomplete. Check back weekly for updates. A brief history of changes will be posted so you can see what’s new. This banner will be removed when the site is finished.
+</div>
+<div style="text-align:center; background:#fff; margin-bottom: 0.5em;">
+  <h1 class="fixice-title" style="margin-bottom:0.1em; margin-top:0;">FIX ICE</h1>
+  <div class="fixice-subtitle" style="margin-bottom:0.7em;">Burlington, MA and Beyond</div>
+</div>
+<nav class="main-menu">
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span class="menu-bar"></span>
+    <span class="menu-bar"></span>
+    <span class="menu-bar"></span>
+  </button>
+  <div class="menu-links">
+    <a href="link-explorer-experimental.html">Link Explorer</a>
+    <a href="protests1000districtave-experimental.html">1000 District Ave</a>
+    <a href="parking-experimental.html">Parking</a>
+    <a href="contact-experimental.html">Contact</a>
+    <a href="https://www.facebook.com/groups/774935765037658" target="_blank">Join Facebook</a>
+    <a href="index.html">Standard</a>
+  </div>
+</nav>
+<div class="related-sites-banner" style="background:#eaf6ff;border-bottom:1px solid #b3d8f5;padding:0.7em 1.2em;text-align:center;font-size:1.08em;">
+  <strong>Related Sites:</strong>
+  <a href="https://bearingwitnessne.org" target="_blank" rel="noopener" style="margin:0 0.7em;">Bearing Witness New England</a>
+  <a href="https://nofearstreettheater.org" target="_blank" rel="noopener" style="margin:0 0.7em;">No Fear Street Theater</a>
+  <a href="https://www.facebook.com/groups/646621978061995/" target="_blank" rel="noopener" style="margin:0 0.7em;">Justice4All Thursdays</a>
+</div>
+<!-- Move script to end of body for reliable DOM access -->
+</body>
+<script>
+(function() {
+  var menu = document.querySelector('.main-menu');
+  var toggle = document.querySelector('.menu-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('open');
+    });
+  }
+  // Social share buttons (same as menu.html, omitted for brevity)
+  // Switch menu logic
+  var switchBtn = document.getElementById('switch-menu');
+  if (switchBtn) {
+    switchBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      alert('Switching to standard menu!');
+      localStorage.setItem('fixice-menu', 'standard');
+      window.location = 'menu.html';
+    });
+  }
+})();
+</script>

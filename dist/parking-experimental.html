@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <main class="container">
+    <h1>Parking for District Ave Protests</h1>
+    <p>For current towing risks and safe alternatives see the parking info on this <a href="https://bearingwitnessne.org/what-to-expect">Bearing Witness web page</a>. If you are discrete the risk of being towed on District Ave is low, but there is still some risk. The parking garage behind Feng Shui creates a lot of cover. They identify cars to tow by seeing you with a protest sign or seeing you walk directly from your car to the protest. You are not visible from the garage and the towing trucks that they have used would be too big for the garage. You can minimize your risk further by parking next to or between two cars.</p>
+  </main>
+  <script>
+    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+    });
+  </script>
+</body>
+</html>

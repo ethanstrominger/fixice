@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Tag Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+    <h2>Explore Links by Activity or Cause</h2>
+    <div class="tag-filter">
+      <label for="activity">Activity:</label>
+      <select id="activity">
+        <option value="">-- Select Activity --</option>
+        <option value="advocate">Advocate</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="donate">Donate</option>
+        <option value="learn">Learn</option>
+      </select>
+      <label for="cause">Cause:</label>
+      <select id="cause">
+        <option value="">-- Select Cause --</option>
+        <option value="Immigration">Immigration</option>
+        <option value="Anti-ICE">Anti-ICE</option>
+        <option value="Elections">Elections</option>
+      </select>
+    </div>
+    <div class="tag-list" id="tag-list"></div>
+  </main>
+  <script>
+    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+    });
+    // Link data and filtering logic would go here
+  </script>
+</body>
+</html>
