@@ -1,0 +1,11 @@
+{
+  "name": "fixice-static-server",
+  "version": "1.0.0",
+  "description": "Static site with live reload for fixice",
+  "scripts": {
+    "start": "live-server dist --port=8080 --no-browser"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
