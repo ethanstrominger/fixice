@@ -9,24 +9,7 @@
 <body>
   <div id="menu-container"></div>
   <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
-    <h2>Explore Links by Activity or Cause</h2>
-    <div class="tag-filter">
-      <label for="activity">Activity:</label>
-      <select id="activity">
-        <option value="">-- Select Activity --</option>
-        <option value="advocate">Advocate</option>
-        <option value="volunteer">Volunteer</option>
-        <option value="donate">Donate</option>
-        <option value="learn">Learn</option>
-      </select>
-      <label for="cause">Cause:</label>
-      <select id="cause">
-        <option value="">-- Select Cause --</option>
-        <option value="Immigration">Immigration</option>
-        <option value="Anti-ICE">Anti-ICE</option>
-        <option value="Elections">Elections</option>
-      </select>
-    </div>
+    <h2>Resources</h2>
     <div class="tag-list" id="tag-list"></div>
   </main>
   <script>
@@ -43,6 +26,8 @@
       txt.split('\n').forEach(line => {
         if (line.startsWith('Link: ')) {
           rec.link = line.replace('Link: ', '').trim();
+        } else if (line.startsWith('Title: ')) {
+          rec.title = line.replace('Title: ', '').trim();
         } else if (line.startsWith('Description: ')) {
           rec.description = line.replace('Description: ', '').trim();
         } else if (line.startsWith('Activities: ')) {
@@ -50,14 +35,14 @@
         } else if (line.startsWith('Cause: ')) {
           rec.cause = line.replace('Cause: ', '').trim();
         } else if (line.trim() === '') {
-          if (rec.description && rec.activities && rec.cause) {
+          if ((rec.title || rec.description) && rec.activities && rec.cause) {
             records.push(rec);
           }
           rec = {};
         }
       });
       // Handle last record
-      if (rec.description && rec.activities && rec.cause) {
+      if ((rec.title || rec.description) && rec.activities && rec.cause) {
         records.push(rec);
       }
       return records;
@@ -69,47 +54,42 @@
       records.forEach(rec => {
         const div = document.createElement('div');
         div.className = 'tag-record';
-        let descHtml = rec.link ? `<a href="${rec.link}" target="_blank">${rec.description}</a>` : rec.description;
-        div.innerHTML = `${descHtml} <span style="color:#888;font-size:0.95em;">— Activities: ${rec.activities} | Cause: ${rec.cause}</span>`;
+        let titleHtml = rec.link ? `<a href="${rec.link}" target="_blank" class="tag-title" style="color:#2a4d8f;font-size:1.3em;font-weight:700;text-decoration:none;">${rec.title || rec.description}</a>` : `<span class="tag-title" style="color:#2a4d8f;font-size:1.3em;font-weight:700;">${rec.title || rec.description}</span>`;
+        let descHtml = rec.description ? `<div class="tag-desc" style="font-size:1.05em;color:#222;margin:0.3em 0 0.5em 0;">${rec.description}</div>` : '';
+        let actionsHtml = rec.activities ? `<span class="tag-actions" style="font-size:1.15em;color:#388e3c;font-weight:600;">${rec.activities}</span>` : '';
+        let causeHtml = rec.cause ? `<span class="tag-cause" style="background:#e3eafc;color:#2a4d8f;padding:0.15em 0.7em;border-radius:1em;font-size:0.97em;margin-left:0.5em;">${rec.cause}</span>` : '';
+        div.innerHTML = `
+          <div style="background:#f8fafc;border-radius:14px;padding:1.2em 1.5em;margin:1.2em 0;box-shadow:0 2px 12px #0001;transition:box-shadow 0.2s;">
+            ${titleHtml}
+            ${descHtml}
+            <div style="margin-top:0.5em;display:flex;align-items:center;gap:0.7em;">
+              ${actionsHtml} ${causeHtml}
+            </div>
+          </div>
+        `;
         tagList.appendChild(div);
       });
     }
 
     let allRecords = [];
-    let selectedActivity = '';
-    let selectedCause = '';
+    // Determine filter from URL
+    const params = new URLSearchParams(window.location.search);
+    const strategy = params.get('strategy');
+    const cause = params.get('cause');
 
-    function filterLinks() {
-      let filtered = allRecords;
-      if (selectedActivity) {
-        filtered = filtered.filter(rec => rec.activities.toLowerCase().split(',').map(a => a.trim()).includes(selectedActivity.toLowerCase()));
-      } else if (selectedCause) {
-        filtered = filtered.filter(rec => rec.cause.toLowerCase() === selectedCause.toLowerCase());
+    function renderFilteredLinks(records) {
+      let filtered = records;
+      if (strategy) {
+        filtered = records.filter(rec => rec.activities && rec.activities.toLowerCase().includes(strategy.toLowerCase()));
+      } else if (cause) {
+        filtered = records.filter(rec => rec.cause && rec.cause.toLowerCase() === cause.toLowerCase());
       }
       renderLinks(filtered);
     }
 
-    document.getElementById('activity').addEventListener('change', e => {
-      selectedActivity = e.target.value;
-      if (selectedActivity) {
-        selectedCause = '';
-        document.getElementById('cause').value = '';
-      }
-      filterLinks();
-    });
-    document.getElementById('cause').addEventListener('change', e => {
-      selectedCause = e.target.value;
-      if (selectedCause) {
-        selectedActivity = '';
-        document.getElementById('activity').value = '';
-      }
-      filterLinks();
-    });
-
-    // Initial load
     loadLinks().then(records => {
       allRecords = records;
-      renderLinks(allRecords);
+      renderFilteredLinks(allRecords);
     });
   </script>
 </body>

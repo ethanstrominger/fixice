@@ -14,14 +14,27 @@
     <span class="menu-bar"></span>
     <span class="menu-bar"></span>
   </button>
-  <div class="menu-links">
-    <a href="link-explorer-experimental.html">Link Explorer</a>
-    <a href="protests1000districtave-experimental.html">1000 District Ave</a>
-    <a href="parking-experimental.html">Parking</a>
-    <a href="contact-experimental.html">Contact</a>
-    <a href="https://www.facebook.com/groups/774935765037658" target="_blank">Join Facebook</a>
-    <a href="index.html">Standard</a>
-  </div>
+    <div class="menu-links" style="display:flex;align-items:center;gap:1.2em;background:#23408e;padding:0.7em 1.5em;border-radius:0 0 10px 10px;box-shadow:0 2px 8px #0002;">
+      <a href="link-explorer-experimental.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Resources</a>
+      <select id="strategy-menu" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;">
+        <option value="">Resources By Strategy</option>
+        <option value="donate">Donate</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="learn">Learn</option>
+        <option value="advocate">Advocate</option>
+        <option value="protest">Protest</option>
+      </select>
+      <select id="cause-menu" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;">
+        <option value="">Resources By Cause</option>
+        <option value="Elections">Elections</option>
+        <option value="ICE/Immigration">ICE/Immigration</option>
+      </select>
+      <a href="protests1000districtave-experimental.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">1000 District Ave</a>
+      <a href="parking-experimental.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Parking</a>
+      <a href="contact-experimental.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Contact</a>
+      <a href="https://www.facebook.com/groups/774935765037658" target="_blank" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Join Facebook</a>
+      <a href="index.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Standard</a>
+    </div>
 </nav>
 <div class="related-sites-banner" style="background:#eaf6ff;border-bottom:1px solid #b3d8f5;padding:0.7em 1.2em;text-align:center;font-size:1.08em;">
   <strong>Related Sites:</strong>
@@ -40,7 +53,23 @@
       menu.classList.toggle('open');
     });
   }
-  // Social share buttons (same as menu.html, omitted for brevity)
+  // Dropdown navigation for strategy and cause
+  var strategyMenu = document.getElementById('strategy-menu');
+  if (strategyMenu) {
+    strategyMenu.addEventListener('change', function() {
+      if (strategyMenu.value) {
+        window.location = 'link-explorer-experimental.html?strategy=' + encodeURIComponent(strategyMenu.value);
+      }
+    });
+  }
+  var causeMenu = document.getElementById('cause-menu');
+  if (causeMenu) {
+    causeMenu.addEventListener('change', function() {
+      if (causeMenu.value) {
+        window.location = 'link-explorer-experimental.html?cause=' + encodeURIComponent(causeMenu.value);
+      }
+    });
+  }
   // Switch menu logic
   var switchBtn = document.getElementById('switch-menu');
   if (switchBtn) {

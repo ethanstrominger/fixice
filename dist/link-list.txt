@@ -1,104 +1,146 @@
+
 Link: https://www.cookpolitical.com/ratings/house-race-ratings
-Description: See competitive House races (Cook Political Report) – Nonpartisan analysis of the most competitive U.S. House races.
-Activities: donate, learn
+Title: cookpolitical
+Description: Nonpartisan analysis of competitive U.S. House races, useful for donors and advocates.
+Activities: $ donate, 📚 learn
 Cause: Elections
+
 
 Link: https://www.cookpolitical.com/ratings/senate-race-ratings
-Description: See competitive Senate races (Cook Political Report) – Nonpartisan analysis of the most competitive U.S. Senate races.
-Activities: donate, learn
+Title: cookpolitical
+Description: xxxx Nonpartisan analysis of competitive U.S. Senate races, useful for donors and advocates.
+Activities: $ donate, 📚 learn
 Cause: Elections
+
 
 Link: https://state-elections.org/
-Description: State and Local Election Alliance – focuses solely on non-federal offices, driving resources to where they’ll make the most impact and often at a fraction of the cost.
-Activities: donate, volunteer
+Title: state-elections
+Description: Drives resources to impactful non-federal races, maximizing influence for donors and volunteers.
+Activities: $ donate, 🤝 volunteer
 Cause: Elections
 
-Description: Supporting candidates in key elections is one of the most effective ways to influence immigration policy and hold ICE accountable. Your donation can help elect leaders who will fight for immigrant rights and real reform. Research candidates and donate directly to their campaigns for maximum impact.
-Activities: donate
+
+Title: Key Candidates
+Description: Donating to candidates in key elections helps influence immigration policy and hold ICE accountable.
+Activities: $ donate
 Cause: Elections
+
 
 Link: https://www.amazon.com/hz/wishlist/ls/24S8YZCELQWFC
-Description: Wish list for immigrants (Amazon)
-Activities: donate
+Title: amazon
+Description: Purchase items directly for immigrants in need via Amazon.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: volunteer.pdf
-Description: Help immigrants. Training provided. (PDF)
-Activities: volunteer, learn
+Title: volunteer.pdf
+Description: Guide for volunteering to help immigrants, includes training resources.
+Activities: 🤝 volunteer, 📚 learn
 Cause: ICE/Immigration
+
 
 Link: https://miracoalition.org/donate/
-Description: MIRA Coalition (Massachusetts Immigrant & Refugee Advocacy Coalition)
-Activities: donate
+Title: miracoalition
+Description: Massachusetts Immigrant & Refugee Advocacy Coalition, supporting immigrant rights.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://lawyersforcivilrights.org/donate/
-Description: LUCE (Lawyers for Civil Rights)
-Activities: donate
+Title: lawyersforcivilrights
+Description: Legal support and advocacy for civil rights and immigrants.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://LUCEmass.org
-Description: Massachusetts Hotline and Resource Hub
-Activities: learn
+Title: lucemass
+Description: Resource hub and hotline for Massachusetts immigrants.
+Activities: 📚 learn
 Cause: ICE/Immigration
+
 
 Link: https://aclum.org/
-Description: ACLU of Massachusetts
-Activities: donate
+Title: aclum
+Description: Legal advocacy and support for civil liberties and immigrant rights.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://indivisible-ma.org/donate/
-Description: Indivisible MA
-Activities: donate
+Title: indivisible-ma
+Description: Grassroots organization supporting progressive causes and immigrant rights.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://indivisiblelab.org/donate/
-Description: Indivisible LAB
-Activities: donate
+Title: indivisiblelab
+Description: Grassroots advocacy group supporting immigrant rights and progressive causes.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://www.WelcomeImmigrantNetwork.org/donate-index-impact
-Description: Welcome Immigrant Network (WIN) – Mutual Aid & Emergency Support, Salem, MA
-Activities: donate
+Title: welcomeimmigrantnetwork
+Description: Mutual aid and emergency support for immigrants in Salem, MA.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://www.stpeters-sanpedro.org/give
-Description: San Pedro Episcopal Church Discretionary Fund – Coats, diapers, and mutual aid for immigrants
-Activities: donate
+Title: stpeters-sanpedro
+Description: Provides coats, diapers, and mutual aid for immigrants.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://beyondbondboston.org/donate
-Description: BIJAN (Boston Immigrant Justice Accompaniment Network) – Bond Fund
-Activities: donate
+Title: beyondbondboston
+Description: Boston Immigrant Justice Accompaniment Network bond fund for detained immigrants.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://beyondbondboston.org/donate-2
-Description: BIJAN – Commissary Fund
-Activities: donate
+Title: beyondbondboston
+Description: Commissary fund for detained immigrants, managed by BIJAN.
+Activities: $ donate
 Cause: ICE/Immigration
+
 
 Link: https://www.instagram.com/operationmilkweed
-Description: Operation Milkweed – Emergency aid for community members in crisis
-Activities: donate
+Title: instagram
+Description: Emergency aid for community members in crisis.
+Activities: $ (donate)
 Cause: ICE/Immigration
+
 
 Link: https://Venmo.com/Barbara-Roy-21
-Description: Supply Hub (Venmo: Barbara Roy) – Printing, supplies, and materials for coalition
-Activities: donate
+Title: venmo
+Description: Printing, supplies, and materials for immigrant support coalition.
+Activities: $ (donate)
 Cause: ICE/Immigration
+
 
 Link: https://Venmo.com/u/LaurenNoyes716
-Description: Supply Hub (Venmo: Lauren Noyes) – Printing, supplies, and materials for coalition
-Activities: donate
+Title: venmo
+Description: Printing, supplies, and materials for immigrant support coalition.
+Activities: $ (donate)
 Cause: ICE/Immigration
 
-Description: North Shore Sides With Love – Runs the supply hub in Salem
-Activities: volunteer
+
+Title: North Shore Sides With Love
+Description: Operates the supply hub in Salem for immigrant support.
+Activities: 🤝 volunteer
 Cause: ICE/Immigration
+
 
 Link: mailto:PajamaActivism@proton.me
-Description: Contact: PajamaActivism@proton.me (coalition supply hub)
-Activities: volunteer
+Title: PajamaActivism
+Description: Email for coalition supply hub volunteer opportunities.
+Activities: 🤝 volunteer
 Cause: ICE/Immigration
 NLink: https://act.indivisible.org/sign/ice-out-for-good?akid=s132928..WohDZg&fbclid=IwY2xjawPppktleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeuV5R1Q6Q0ppkW7_KnYjb_MwTkhtY8JzPwG1ot2OIiKwmVn8djPGsHG2hdus_aem_IzsTawiXwHL2gTZt7bR_xg
 Description: eMail your congressional representatives to rein in ICE (Concord Indivisible)
