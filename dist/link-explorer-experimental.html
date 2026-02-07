@@ -15,12 +15,17 @@
   <script>
     fetch('menu-experimental.html').then(r => r.text()).then(html => {
       document.getElementById('menu-container').innerHTML = html;
-      if (typeof initMenuExperimental === 'function') {
-        initMenuExperimental();
-      }
+      // Load event-listener.js after menu injection
+      var script = document.createElement('script');
+      script.src = 'event-listener.js';
+      script.onload = function() {
+        if (typeof initMenuExperimental === 'function') {
+          initMenuExperimental();
+        }
+      };
+      document.body.appendChild(script);
     });
   </script>
-  <script src="event-listener.js"></script>
   <script src="link-explorer-experimental.js"></script>
 </body>
 </html>

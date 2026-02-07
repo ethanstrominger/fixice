@@ -45,13 +45,14 @@ function initMenuExperimental() {
   var strategyMenu = document.getElementById('menu-strategy-menu');
   var causeMenu = document.getElementById('menu-cause-menu');
   if (strategyMenu) {
-    console.log('Strategy dropdown found');    var strategyHandler = function() {
+    console.log('Strategy dropdown found');
+    var strategyHandler = function() {
       console.log('Strategy dropdown changed:', strategyMenu.value);
       if (strategyMenu.value) {
         if (causeMenu) causeMenu.value = '';
-        window.location = 'link-explorer-experimental.html?strategy=' + encodeURIComponent(strategyMenu.value);
+        window.location.href = 'link-explorer-experimental.html?strategy=' + encodeURIComponent(strategyMenu.value);
       } else {
-        window.location = 'link-explorer-experimental.html';
+        window.location.href = 'link-explorer-experimental.html';
       }
     };
     strategyMenu.addEventListener('change', strategyHandler);
