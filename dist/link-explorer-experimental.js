@@ -63,36 +63,49 @@ async function loadStrategySymbols() {
 
 const params = new URLSearchParams(window.location.search);
 const cause = params.get('cause');
+const strategy = params.get('strategy');
+
+function filterByStrategy(records, selectedStrategy) {
+	if (!selectedStrategy) return records;
+	return records.filter(rec => {
+		if (!rec.activities) return false;
+		return rec.activities.split(',').map(a => a.trim().toLowerCase()).includes(selectedStrategy.toLowerCase());
+	});
+}
 
 Promise.all([loadLinks(), loadStrategySymbols()]).then(([records, strategyMap]) => {
+	let filtered = records;
 	if (cause) {
-		const filtered = filterByCause(records, cause);
-		const groupMap = groupByAction(filtered);
-		const tagList = document.getElementById('tag-list');
-		tagList.innerHTML = '';
-		Object.keys(groupMap).sort().forEach(action => {
-			// Create and append action heading
-			const groupHeader = document.createElement('h3');
-			groupHeader.textContent = 'Action: ' + action;
-			groupHeader.style.marginTop = '2em';
-			tagList.appendChild(groupHeader);
-			groupMap[action].forEach(rec => {
-				// Render record
-				const recDiv = document.createElement('div');
-				recDiv.style.marginBottom = '1em';
-				// Map activities to symbols
-				let activityDisplay = '';
-				if (rec.activities) {
-					const acts = rec.activities.split(',').map(a => a.trim());
-					activityDisplay = acts.map(a => strategyMap[a] || a).join(' ');
-				}
-				recDiv.innerHTML = `
-					<strong>${rec.link ? `<a href="${rec.link}" target="_blank">${rec.title || ''}</a>` : rec.title || ''}</strong><br>
-					<span>${rec.description || ''}</span><br>
-					<div>${activityDisplay}</div>
-				`;
-				tagList.appendChild(recDiv);
-			});
-		});
+		filtered = filterByCause(filtered, cause);
 	}
+	if (strategy) {
+		filtered = filterByStrategy(filtered, strategy);
+	}
+	const groupMap = groupByAction(filtered);
+	const tagList = document.getElementById('tag-list');
+	tagList.innerHTML = '';
+	Object.keys(groupMap).sort().forEach(action => {
+		// Create and append action heading
+		const groupHeader = document.createElement('h3');
+		groupHeader.textContent = 'Action: ' + action;
+		groupHeader.style.marginTop = '2em';
+		tagList.appendChild(groupHeader);
+		groupMap[action].forEach(rec => {
+			// Render record
+			const recDiv = document.createElement('div');
+			recDiv.style.marginBottom = '1em';
+			// Map activities to symbols
+			let activityDisplay = '';
+			if (rec.activities) {
+				const acts = rec.activities.split(',').map(a => a.trim());
+				activityDisplay = acts.map(a => strategyMap[a] || a).join(' ');
+			}
+			recDiv.innerHTML = `
+				<strong>${rec.link ? `<a href="${rec.link}" target="_blank">${rec.title || ''}</a>` : rec.title || ''}</strong><br>
+				<span>${rec.description || ''}</span><br>
+				<div>${activityDisplay}</div>
+			`;
+			tagList.appendChild(recDiv);
+		});
+	});
 });
