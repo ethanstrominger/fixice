@@ -2,262 +2,287 @@
 Link: https://www.cookpolitical.com/ratings/house-race-ratings
 Title: cookpolitical
 Description: Nonpartisan analysis of competitive U.S. House races, useful for donors and advocates.
-Activities: $ donate, 📚 learn
+Activities: donate, learn
 Cause: Elections
 
 
 Link: https://www.cookpolitical.com/ratings/senate-race-ratings
 Title: cookpolitical
 Description: Nonpartisan analysis of competitive U.S. Senate races, useful for donors and advocates.
-Activities: $ donate, 📚 learn
+Activities: donate, learn
 Cause: Elections
 
 
 Link: https://state-elections.org/
-Title: state-elections
+Title: State and Local Election Alliance
 Description: Drives resources to impactful non-federal races, maximizing influence for donors and volunteers.
-Activities: $ donate, 🤝 volunteer
+Activities: donate, volunteer
 Cause: Elections
 
 
 Title: Key Candidates
 Description: Donating to candidates in key elections helps influence immigration policy and hold ICE accountable.
-Activities: $ donate
+Activities: donate
 Cause: Elections
 
 
 Link: https://www.amazon.com/hz/wishlist/ls/24S8YZCELQWFC
-Title: amazon
+Title: Amazon Immigrant Aid Wishlist
 Description: Purchase items directly for immigrants in need via Amazon.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: volunteer.pdf
-Title: volunteer.pdf
+Title: Volunteer Guide PDF
 Description: Guide for volunteering to help immigrants, includes training resources.
-Activities: 🤝 volunteer, 📚 learn
+Activities: volunteer, learn
 Cause: ICE/Immigration
 
 
 Link: https://miracoalition.org/donate/
-Title: miracoalition
+Title: Massachusetts Immigrant & Refugee Advocacy Coalition
 Description: Massachusetts Immigrant & Refugee Advocacy Coalition, supporting immigrant rights.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://lawyersforcivilrights.org/donate/
-Title: lawyersforcivilrights
+Title: Lawyers for Civil Rights
 Description: Legal support and advocacy for civil rights and immigrants.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://LUCEmass.org
-Title: lucemass
+Title: LUCE Immigrant Justice Network
 Description: Resource hub and hotline for Massachusetts immigrants.
-Activities: 📚 learn
+Activities: learn
 Cause: ICE/Immigration
 
 
 Link: https://aclum.org/
-Title: aclum
+Title: ACLU Massachusetts
 Description: Legal advocacy and support for civil liberties and immigrant rights.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://indivisible-ma.org/donate/
-Title: indivisible-ma
+Title: Indivisible MA
 Description: Grassroots organization supporting progressive causes and immigrant rights.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://indivisiblelab.org/donate/
-Title: indivisiblelab
+Title: Indivisible LAB
 Description: Grassroots advocacy group supporting immigrant rights and progressive causes.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://www.WelcomeImmigrantNetwork.org/donate-index-impact
-Title: welcomeimmigrantnetwork
+Title: Welcome Immigrant Network
 Description: Mutual aid and emergency support for immigrants in Salem, MA.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://www.stpeters-sanpedro.org/give
-Title: stpeters-sanpedro
+Title: St. Peter's San Pedro Mutual Aid
 Description: Provides coats, diapers, and mutual aid for immigrants.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://beyondbondboston.org/donate
-Title: beyondbondboston
+Title: BIJAN Bond Fund
 Description: Boston Immigrant Justice Accompaniment Network bond fund for detained immigrants.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://beyondbondboston.org/donate-2
-Title: beyondbondboston
+Title: BIJAN Commissary Fund
 Description: Commissary fund for detained immigrants, managed by BIJAN.
-Activities: $ donate
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://www.instagram.com/operationmilkweed
-Title: instagram
+Title: Operation Milkweed
 Description: Emergency aid for community members in crisis.
-Activities: $ (donate)
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://Venmo.com/Barbara-Roy-21
-Title: venmo
+Title: Venmo - Barbara Roy
 Description: Printing, supplies, and materials for immigrant support coalition.
-Activities: $ (donate)
+Activities: donate
 Cause: ICE/Immigration
 
 
 Link: https://Venmo.com/u/LaurenNoyes716
-Title: venmo
+Title: Venmo - Lauren Noyes
 Description: Printing, supplies, and materials for immigrant support coalition.
-Activities: $ (donate)
+Activities: donate
 Cause: ICE/Immigration
 
 
 Title: North Shore Sides With Love
 Description: Operates the supply hub in Salem for immigrant support.
-Activities: 🤝 volunteer
+Activities: volunteer
 Cause: ICE/Immigration
 
 
 Link: mailto:PajamaActivism@proton.me
-Title: PajamaActivism
+Title: Pajama Activism
 Description: Email for coalition supply hub volunteer opportunities.
-Activities: 🤝 volunteer
+Activities: volunteer
 Cause: ICE/Immigration
 NLink: https://act.indivisible.org/sign/ice-out-for-good?akid=s132928..WohDZg&fbclid=IwY2xjawPppktleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeuV5R1Q6Q0ppkW7_KnYjb_MwTkhtY8JzPwG1ot2OIiKwmVn8djPGsHG2hdus_aem_IzsTawiXwHL2gTZt7bR_xg
+Title: ICE Out for Good Petition
 Description: eMail your congressional representatives to rein in ICE (Concord Indivisible)
 Activities: advocate
 Cause: ICE/Immigration
 
 Link: https://actionnetwork.org/letters/poic-cosponsor/
+Title: POIC Cosponsor Letter Campaign
 Description: Letter campaign for POIC cosponsor
 Activities: advocate
 Cause: ICE/Immigration
 
 Link: https://turnoutpac.org/postcards/
+Title: Postcards to Swing States
 Description: Send postcards to swing states (TurnoutPAC)
 Activities: advocate, volunteer
 Cause: Elections
 
 Link: FREE Red Cards 250 per week.pdf
+Title: Free Red Cards PDF
 Description: Order red cards for free (PDF)
 Activities: volunteer, learn
 Cause: ICE/Immigration
 
 Link: mailto:PajamaActivism@proton.me
+Title: Pajama Activism
 Description: Email PajamaActivism for volunteer opportunities
 Activities: volunteer
 Cause: ICE/Immigration
 
 Link: https://state-elections.org/
+Title: State and Local Election Alliance
 Description: State and Local Election Alliance
 Activities: donate, volunteer
 Cause: Elections
 
 Link: https://turnpurple2blue.org/to-do-now-federal/
+Title: Turn Purple 2 Blue Federal Actions
 Description: Urgent actions and funding opportunities for federal races (Turn Purple 2 Blue)
 Activities: donate, volunteer
 Cause: Elections
 
 Link: https://www.mobilize.us/?q=postcard
+Title: Mobilize Postcard Campaigns
 Description: Find in-person postcard writing campaigns (Mobilize)
 Activities: volunteer
 Cause: Elections
 
 Link: https://www.mobilize.us/?is_virtual=true
+Title: Mobilize Virtual Campaigns
 Description: Join virtual campaign actions (Mobilize)
 Activities: volunteer
 Cause: Elections
 
 Link: https://www.mobilize.us/events/phone-bank-volunteer-opportunities/
+Title: Mobilize Phone Bank Opportunities
 Description: Volunteer for phone banking (Mobilize)
 Activities: volunteer
 Cause: Elections
 
 Link: https://www.mobilize.us/?tag_ids=34
+Title: Mobilize Get Out the Vote
 Description: Get Out the Vote campaigns (Mobilize)
 Activities: volunteer
 Cause: Elections
 
 Link: https://scorecard.progressivemass.com/
+Title: Progressive Massachusetts Legislator Scorecard
+Title: Progressive Massachusetts Legislator Scorecard
 Description: How Massachusetts legislators have voted (Progressive Mass Scorecard)
 Activities: learn
 Cause: Elections
 
 Link: https://www.cookpolitical.com/ratings/house-race-ratings
+Title: Cook Political House Ratings
 Description: Competitive House races (Cook Political Report)
 Activities: learn
 Cause: Elections
 
 Link: https://www.cookpolitical.com/ratings/senate-race-ratings
+Title: Cook Political Senate Ratings
 Description: Competitive Senate races (Cook Political Report)
 Activities: learn
 Cause: Elections
 
 Link: https://protests1000districtave.html
+Title: Burlington ICE Detention Center Standouts
 Description: Burlington ICE Detention Center Standouts
 Activities: protest, volunteer
 Cause: ICE/Immigration
 
 Link: https://www.nofearstreettheater.com/related-actions
+Title: No Fear Street Theater Actions
 Description: No Fear Street Theater list
 Activities: protest, learn
 Cause: ICE/Immigration
 
 Link: https://concordindivisible.org/action-springboard/
+Title: Concord Indivisible Action Springboard
 Description: Concord Indivisible Action Springboard
 Activities: protest, advocate
 Cause: ICE/Immigration
 
 Link: https://mobilize.us
+Title: Mobilize National Events
 Description: Find protests and events nationwide on mobilize.us
 Activities: protest, volunteer
 Cause: Elections
 
 Link: https://indivisible-ma.org/find-a-group/
+Title: Indivisible Group Finder
 Description: Find Your Indivisible Group
 Activities: protest, volunteer
 Cause: ICE/Immigration
 
 Link: https://indivisible-ma.org/act_now/
+Title: Indivisible MA Act Now
 Description: Indivisible Mass. Act Now page
 Activities: protest, advocate
 Cause: ICE/Immigration
 
 Link: https://turnpurple2blue.org/
+Title: Turn Purple 2 Blue
 Description: Turn Purple to Blue
 Activities: protest, volunteer
 Cause: Elections
 
 Link: https://swingbluealliance.org/calendar/
+Title: Swing Blue Alliance Calendar
 Description: Swing Blue Alliance calendar
 Activities: protest, volunteer
 Cause: Elections
 
 Link: https://www.facebook.com/413StayingConnectedForAction/
+Title: 413 Staying Connected for Action
 Description: 413 Staying Connected for Action
 Activities: protest, learn
 Cause: ICE/Immigration
 
 Link: https://indivisible-ma.org/calendar/
+Title: Indivisible MA Calendar
 Description: IMC Calendar
 Activities: protest, learn
 Cause: ICE/Immigration
