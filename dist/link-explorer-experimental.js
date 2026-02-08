@@ -110,22 +110,23 @@ Promise.all([loadLinks(), loadStrategySymbols()]).then(([records, strategyMap]) 
 		groupHeader.textContent = headingType + ': ' + group;
 		groupHeader.style.marginTop = '2em';
 		tagList.appendChild(groupHeader);
+		const ul = document.createElement('ul');
+		ul.style.listStyle = 'disc outside';
+		ul.style.paddingLeft = '0.4em';
+		ul.style.margin = '0';
 		groupMap[group].forEach(rec => {
-			// Render record
-			const recDiv = document.createElement('div');
-			recDiv.style.marginBottom = '1em';
-			// Map activities to symbols
 			let activityDisplay = '';
 			if (rec.activities) {
 				const acts = rec.activities.split(',').map(a => a.trim());
 				activityDisplay = acts.map(a => strategyMap[a] || a).join(' ');
 			}
-			recDiv.innerHTML = `
-				<strong>${rec.link ? `<a href="${rec.link}" target="_blank">${rec.title || ''}</a>` : rec.title || ''}</strong><br>
-				<span>${rec.description || ''}</span><br>
-				<div>${activityDisplay}</div>
-			`;
-			tagList.appendChild(recDiv);
+			const li = document.createElement('li');
+			li.style.marginBottom = '0.7em';
+			li.style.textIndent = '-0.4em';
+			li.style.paddingLeft = '0.4em';
+				li.innerHTML = `${rec.link ? `<a href=\"${rec.link}\" target=\"_blank\">${rec.title || ''}</a>` : rec.title || ''} ${rec.description ? rec.description : ''}${activityDisplay ? '<br><span style=\"color:#23408e;font-size:0.98em;\">' + activityDisplay + '</span>' : ''}`;
+			ul.appendChild(li);
 		});
+		tagList.appendChild(ul);
 	});
 });
