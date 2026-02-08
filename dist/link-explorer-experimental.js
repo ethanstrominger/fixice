@@ -45,7 +45,20 @@ function groupByAction(records) {
 			groupMap[action].push(rec);
 		});
 	});
-  console.log('Grouped records by action:', groupMap);
+	return groupMap;
+}
+
+function groupByCause(records) {
+	// Group records by each cause
+	const groupMap = {};
+	records.forEach(rec => {
+		let causes = rec.cause ? rec.cause.split(',').map(c => c.trim()) : ['Other'];
+		if (causes.length === 0) causes = ['Other'];
+		causes.forEach(cause => {
+			if (!groupMap[cause]) groupMap[cause] = [];
+			groupMap[cause].push(rec);
+		});
+	});
 	return groupMap;
 }
 
@@ -75,22 +88,29 @@ function filterByStrategy(records, selectedStrategy) {
 
 Promise.all([loadLinks(), loadStrategySymbols()]).then(([records, strategyMap]) => {
 	let filtered = records;
-	if (cause) {
-		filtered = filterByCause(filtered, cause);
-	}
+	let groupMap;
+	let headingType;
 	if (strategy) {
 		filtered = filterByStrategy(filtered, strategy);
+		groupMap = groupByCause(filtered);
+		headingType = 'Cause';
+	} else if (cause) {
+		filtered = filterByCause(filtered, cause);
+		groupMap = groupByAction(filtered);
+		headingType = 'Action';
+	} else {
+		groupMap = groupByAction(filtered);
+		headingType = 'Action';
 	}
-	const groupMap = groupByAction(filtered);
 	const tagList = document.getElementById('tag-list');
 	tagList.innerHTML = '';
-	Object.keys(groupMap).sort().forEach(action => {
-		// Create and append action heading
+	Object.keys(groupMap).sort().forEach(group => {
+		// Create and append heading
 		const groupHeader = document.createElement('h3');
-		groupHeader.textContent = 'Action: ' + action;
+		groupHeader.textContent = headingType + ': ' + group;
 		groupHeader.style.marginTop = '2em';
 		tagList.appendChild(groupHeader);
-		groupMap[action].forEach(rec => {
+		groupMap[group].forEach(rec => {
 			// Render record
 			const recDiv = document.createElement('div');
 			recDiv.style.marginBottom = '1em';
