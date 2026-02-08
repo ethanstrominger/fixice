@@ -39,8 +39,8 @@ function initMenuExperimental() {
   var menu = document.querySelector('.main-menu');
   var toggle = document.querySelector('.menu-toggle');
   var menuLinks = menu ? menu.querySelector('.menu-links') : null;
-  // Start menu collapsed on contact-experimental.html
-  if (window.location.pathname.endsWith('contact-experimental.html')) {
+  // Start menu collapsed on contact.html
+  if (window.location.pathname.endsWith('contact.html')) {
     if (menuLinks) menuLinks.style.display = 'none';
   }
   if (toggle) {
@@ -95,9 +95,9 @@ function initMenuExperimental() {
       console.log('Strategy dropdown changed:', strategyMenu.value);
       if (strategyMenu.value) {
         if (causeMenu) causeMenu.value = '';
-        window.location.href = 'link-explorer-experimental.html?strategy=' + encodeURIComponent(strategyMenu.value);
+        window.location.href = 'link-explorer.html?strategy=' + encodeURIComponent(strategyMenu.value);
       } else {
-        window.location.href = 'link-explorer-experimental.html';
+        window.location.href = 'link-explorer.html';
       }
     };
     strategyMenu.addEventListener('change', strategyHandler);
@@ -111,9 +111,9 @@ function initMenuExperimental() {
       console.log('Cause dropdown changed:', causeMenu.value);
       if (causeMenu.value) {
         if (strategyMenu) strategyMenu.value = '';
-        window.location = 'link-explorer-experimental.html?cause=' + encodeURIComponent(causeMenu.value);
+        window.location = 'link-explorer.html?cause=' + encodeURIComponent(causeMenu.value);
       } else {
-        window.location = 'link-explorer-experimental.html';
+        window.location = 'link-explorer.html';
       }
     };
     causeMenu.addEventListener('change', causeHandler);

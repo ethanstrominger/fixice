@@ -4,7 +4,7 @@
     <!-- ...same social buttons as menu.html... -->
   <div id="menu-container"></div>
   <script>
-    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+    fetch('menu.html').then(r => r.text()).then(html => {
       document.getElementById('menu-container').innerHTML = html;
       if (typeof initMenuExperimental === 'function') {
         initMenuExperimental();
@@ -16,9 +16,9 @@
         console.log('Strategy dropdown changed:', strategyMenu.value);
         if (strategyMenu.value) {
           if (causeMenu) causeMenu.value = '';
-          window.location = 'link-explorer-experimental.html?strategy=' + encodeURIComponent(strategyMenu.value);
+          window.location = 'link-explorer.html?strategy=' + encodeURIComponent(strategyMenu.value);
         } else {
-          window.location = 'link-explorer-experimental.html';
+          window.location = 'link-explorer.html';
         }
       };
       strategyMenu.addEventListener('change', strategyHandler);
@@ -32,9 +32,9 @@
         console.log('Cause dropdown changed:', causeMenu.value);
         if (causeMenu.value) {
           if (strategyMenu) strategyMenu.value = '';
-          window.location = 'link-explorer-experimental.html?cause=' + encodeURIComponent(causeMenu.value);
+          window.location = 'link-explorer.html?cause=' + encodeURIComponent(causeMenu.value);
         } else {
-          window.location = 'link-explorer-experimental.html';
+          window.location = 'link-explorer.html';
         }
       };
       causeMenu.addEventListener('change', causeHandler);
@@ -62,9 +62,9 @@
     initMenuExperimental();
   }
         </select>
-        <a href="protests1000districtave-experimental.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">1000 District Ave</a>
-        <a href="parking-experimental.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Parking</a>
-        <a href="contact-experimental.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Contact</a>
+        <a href="protests1000districtave.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">1000 District Ave</a>
+        <a href="parking.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Parking</a>
+        <a href="contact.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Contact</a>
         <a href="https://www.facebook.com/groups/774935765037658" target="_blank" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Join Facebook</a>
         <a href="index.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Standard</a>
       </div>
@@ -75,7 +75,7 @@
     <a href="https://nofearstreettheater.org" target="_blank" rel="noopener" style="margin:0 0.7em;">No Fear Street Theater</a>
     <a href="https://www.facebook.com/groups/646621978061995/" target="_blank" rel="noopener" style="margin:0 0.7em;">Justice4All Thursdays</a>
   </div>
-  <!-- END MENU-EXPERIMENTAL INCLUDE -->
+  <!-- END MENU INCLUDE -->
   <h2>Event Listener Test Page</h2>
 
   <div id="debug-status"></div>

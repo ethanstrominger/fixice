@@ -13,7 +13,7 @@
     <div class="tag-list" id="tag-list"></div>
   </main>
   <script>
-    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+    fetch('menu.html').then(r => r.text()).then(html => {
       document.getElementById('menu-container').innerHTML = html;
       // Load event-listener.js after menu injection
       var script = document.createElement('script');
@@ -26,6 +26,6 @@
       document.body.appendChild(script);
     });
   </script>
-  <script src="link-explorer-experimental.js"></script>
+  <script src="link-explorer.js"></script>
 </body>
 </html>

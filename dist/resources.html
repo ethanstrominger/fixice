@@ -13,7 +13,7 @@
     <div id="resources-list"></div>
   </main>
   <script>
-    fetch('menu-experimental.html').then(r => r.text()).then(html => {
+    fetch('menu.html').then(r => r.text()).then(html => {
       document.getElementById('menu-container').innerHTML = html;
       var script = document.createElement('script');
       script.src = 'event-listener.js';

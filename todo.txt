@@ -1,5 +1,5 @@
 When medium size, menu options go off screen.
-Move contents of protests1000districtave to protests1000districtave-experimental
+Move contents of protests1000districtave to protests1000districtave
 Add menu into monthly fundraiser. 
 Make menu smaller.
 Save info on amount sent.
