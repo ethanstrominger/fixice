@@ -38,10 +38,21 @@ function initMenuExperimental() {
   }
   var menu = document.querySelector('.main-menu');
   var toggle = document.querySelector('.menu-toggle');
+  var menuLinks = menu ? menu.querySelector('.menu-links') : null;
+  // Start menu collapsed on contact-experimental.html
+  if (window.location.pathname.endsWith('contact-experimental.html')) {
+    if (menuLinks) menuLinks.style.display = 'none';
+  }
   if (toggle) {
     console.log('Toggle found');
     toggle.addEventListener('click', function () {
-      menu.classList.toggle('open');
+      if (menuLinks) {
+        if (menuLinks.style.display === 'none') {
+          menuLinks.style.display = 'flex';
+        } else {
+          menuLinks.style.display = 'none';
+        }
+      }
     });
   } else {
     showDebugMenu('Menu toggle not found');
