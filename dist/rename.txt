@@ -4,6 +4,7 @@ icewrong.org
 saltice.org
 blockice.org
 zeroice.org
+exposeice.org
 
 Taken:
 icemelt.org
