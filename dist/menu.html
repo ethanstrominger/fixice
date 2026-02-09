@@ -14,33 +14,111 @@
     <span class="menu-bar"></span>
     <span class="menu-bar"></span>
   </button>
-    <div class="menu-links" style="align-items:center;gap:1.2em;background:#23408e;padding:0.7em 1.5em;border-radius:0 0 10px 10px;box-shadow:0 2px 8px #0002;">
-      <a href="resources.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">All Resources</a>
-      <select id="menu-strategy-menu" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;">
-        <option value="">Resources By Strategy</option>
-        <option value="donate">Donate</option>
-        <option value="volunteer">Volunteer</option>
-        <option value="learn">Learn</option>
-        <option value="advocate">Advocate</option>
-        <option value="protest">Protest</option>
-      </select>
-      <select id="menu-cause-menu" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;">
-        <option value="">Resources By Cause</option>
-        <!-- Cause options will be populated dynamically -->
-      </select>
-      <a href="protests1000districtave.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">1000 District Ave</a>
-      <a href="parking.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Parking</a>
-      <a href="contact.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Contact</a>
-      <a href="https://www.facebook.com/groups/774935765037658" target="_blank" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Join Facebook</a>
-      <a href="index.html" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;">Standard</a>
+  <div class="menu-links" id="menuLinks" style="align-items:center;gap:1.2em;background:#23408e;padding:0.7em 1.5em;border-radius:0 0 10px 10px;box-shadow:0 2px 8px #0002;overflow:hidden;display:flex;flex-wrap:nowrap;">
+    <a href="resources.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">All Resources</a>
+    <select id="menu-strategy-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
+      <option value="">Resources By Strategy</option>
+      <option value="donate">Donate</option>
+      <option value="volunteer">Volunteer</option>
+      <option value="learn">Learn</option>
+      <option value="advocate">Advocate</option>
+      <option value="protest">Protest</option>
+    </select>
+    <select id="menu-cause-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
+      <option value="">Resources By Cause</option>
+      <!-- Cause options will be populated dynamically -->
+    </select>
+    <a href="protests1000districtave.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">1000 District Ave</a>
+    <a href="parking.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Parking</a>
+    <a href="contact.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Contact</a>
+    <a href="https://www.facebook.com/groups/774935765037658" target="_blank" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Join Facebook</a>
+    <div class="more-menu" id="moreMenu" style="display:none;position:relative;">
+      <button class="more-menu-btn" style="background:none;border:none;color:#fff;font-weight:600;cursor:pointer;padding:0.4em 1em;">More ▾</button>
+      <div class="more-dropdown" style="display:none;position:absolute;top:100%;left:0;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.15);min-width:120px;z-index:100;"></div>
     </div>
+  </div>
 </nav>
 <!-- Move script to end of body for reliable DOM access -->
+<style>
+  @media (max-width: 700px) {
+    .menu-links {
+      display: none !important;
+    }
+    .menu-toggle {
+      display: block !important;
+    }
+  }
+  @media (min-width: 701px) {
+    .menu-toggle {
+      display: none !important;
+    }
+    .menu-links {
+      display: flex !important;
+    }
+  }
+</style>
 <script>
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initMenuExperimental);
-} else {
-  initMenuExperimental();
+function updateMenuOverflow() {
+  const menuLinks = document.getElementById('menuLinks');
+  const moreMenu = document.getElementById('moreMenu');
+  const moreDropdown = moreMenu.querySelector('.more-dropdown');
+  const items = Array.from(menuLinks.querySelectorAll('.menu-item'));
+  // Reset
+  moreMenu.style.display = 'none';
+  moreDropdown.innerHTML = '';
+  items.forEach(item => item.style.display = '');
+  // Only run on desktop (not hamburger)
+  if (window.innerWidth <= 700) return;
+  let menuWidth = menuLinks.offsetWidth;
+  let usedWidth = 0;
+  let lastFittingIdx = -1;
+  // Calculate how many items fit
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    item.style.display = '';
+    usedWidth += item.offsetWidth;
+    if (usedWidth + moreMenu.offsetWidth > menuWidth) {
+      break;
+    }
+    lastFittingIdx = i;
+  }
+  // If not all fit, move extras to More
+  if (lastFittingIdx < items.length - 1) {
+    moreMenu.style.display = '';
+    for (let i = lastFittingIdx + 1; i < items.length; i++) {
+      const item = items[i];
+      const clone = item.cloneNode(true);
+      clone.style.display = 'block';
+      clone.style.color = '#23408e';
+      clone.style.background = 'none';
+      clone.style.padding = '0.4em 1em';
+      clone.style.borderRadius = '5px';
+      clone.style.textDecoration = 'none';
+      clone.style.fontWeight = '600';
+      clone.style.whiteSpace = 'nowrap';
+      moreDropdown.appendChild(clone);
+      item.style.display = 'none';
+    }
+  }
 }
+window.addEventListener('resize', updateMenuOverflow);
+window.addEventListener('DOMContentLoaded', () => {
+  updateMenuOverflow();
+  // Toggle More dropdown
+  const moreMenu = document.getElementById('moreMenu');
+  moreMenu.querySelector('.more-menu-btn').addEventListener('click', function(e) {
+    e.stopPropagation();
+    const dropdown = moreMenu.querySelector('.more-dropdown');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    moreMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', function() {
+    const moreMenu = document.getElementById('moreMenu');
+    if (moreMenu) {
+      moreMenu.querySelector('.more-dropdown').style.display = 'none';
+      moreMenu.classList.remove('open');
+    }
+  });
+});
 </script>
 </html>
