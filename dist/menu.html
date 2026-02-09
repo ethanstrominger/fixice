@@ -40,15 +40,50 @@
 </nav>
 <!-- Move script to end of body for reliable DOM access -->
 <style>
-  @media (max-width: 700px) {
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 0.5em 0 0;
+    z-index: 1100;
+  }
+  .menu-bar {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 4px 0;
+    background: #23408e;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  @media (max-width: 1200px) {
     .menu-links {
       display: none !important;
+    }
+    .menu-links.menu-links-open {
+      display: flex !important;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vw;
+      background: #23408e;
+      z-index: 1000;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 2px 8px #0002;
     }
     .menu-toggle {
       display: block !important;
     }
   }
-  @media (min-width: 701px) {
+  @media (min-width: 1201px) {
     .menu-toggle {
       display: none !important;
     }
@@ -68,7 +103,7 @@ function updateMenuOverflow() {
   moreDropdown.innerHTML = '';
   items.forEach(item => item.style.display = '');
   // Only run on desktop (not hamburger)
-  if (window.innerWidth <= 700) return;
+  if (window.innerWidth <= 1200) return;
   let menuWidth = menuLinks.offsetWidth;
   let usedWidth = 0;
   let lastFittingIdx = -1;
@@ -104,6 +139,27 @@ function updateMenuOverflow() {
 window.addEventListener('resize', updateMenuOverflow);
 window.addEventListener('DOMContentLoaded', () => {
   updateMenuOverflow();
+  // Hamburger menu toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuLinks = document.getElementById('menuLinks');
+  menuToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    menuLinks.classList.toggle('menu-links-open');
+  });
+  // Hide menu when clicking outside (mobile)
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 1200 && menuLinks.classList.contains('menu-links-open')) {
+      if (!menuLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuLinks.classList.remove('menu-links-open');
+      }
+    }
+    // More dropdown hide
+    const moreMenu = document.getElementById('moreMenu');
+    if (moreMenu) {
+      moreMenu.querySelector('.more-dropdown').style.display = 'none';
+      moreMenu.classList.remove('open');
+    }
+  });
   // Toggle More dropdown
   const moreMenu = document.getElementById('moreMenu');
   moreMenu.querySelector('.more-menu-btn').addEventListener('click', function(e) {
@@ -111,13 +167,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const dropdown = moreMenu.querySelector('.more-dropdown');
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     moreMenu.classList.toggle('open');
-  });
-  document.addEventListener('click', function() {
-    const moreMenu = document.getElementById('moreMenu');
-    if (moreMenu) {
-      moreMenu.querySelector('.more-dropdown').style.display = 'none';
-      moreMenu.classList.remove('open');
-    }
   });
 });
 </script>
