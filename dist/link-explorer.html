@@ -22,10 +22,13 @@
         if (typeof initMenuExperimental === 'function') {
           initMenuExperimental();
         }
+        // Load link-explorer.js only after menu and event-listener are ready
+        var explorerScript = document.createElement('script');
+        explorerScript.src = 'link-explorer.js';
+        document.body.appendChild(explorerScript);
       };
       document.body.appendChild(script);
     });
   </script>
-  <script src="link-explorer.js"></script>
 </body>
 </html>

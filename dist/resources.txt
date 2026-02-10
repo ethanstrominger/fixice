@@ -8,19 +8,18 @@ ACLU of Massachusetts | Defending equality, liberty, and justice. Protects civil
 Boston Immigration Justice Accompaniment Network (BIJAN) & Beyond Bond and Legal Defense Fund | Community network supporting immigrants through accompaniment, legal referrals, and bond fundraising in Massachusetts and Rhode Island. | https://www.beyondbondboston.org
 Cook Political House Ratings | Independent, non-partisan newsletter analyzing U.S. elections, campaigns, and political trends. | https://www.cookpolitical.com
 Indivisible Massachusetts Coalition | Connects people to action-oriented groups to defend rights, freedoms, and democracy in Massachusetts. | https://indivisible-ma.org
-Indivisible LAB | Locally-led grassroots organization in Lexington, Arlington, Bedford, and beyond, building progressive power and defending democracy through direct action and community engagement. | https://www.indivisiblelab.org
 Lawyers for Civil Rights | Works with people of color, immigrants, and low-income communities to fight discrimination and pursue justice through legal advocacy, education, and empowerment. | https://lawyersforcivilrights.org
 LUCE Immigrant Justice Network of MA | Coalition of immigrant-led, grassroots organizations building people power for immigrant justice in Massachusetts, operating a multilingual ICE defense hotline. | https://www.lucemass.org
 Massachusetts Immigrant & Refugee Advocacy Coalition | Advocates for the rights and integration of immigrants and refugees in Massachusetts through policy, education, and support services. | https://miracoalition.org
 Mobilize | Platform to find and join events, petitions, and volunteer opportunities for progressive causes and organizations. | https://www.mobilize.us
-Mobilize National Events | Find protests and events nationwide on mobilize.us | https://mobilize.us
-No Fear Street Theater | Weekly creative protest on Burlington Mall Road using performance and community to resist ICE and support immigrants. | https://www.nofearstreettheater.com
 Action Network | Powerful, flexible tools to mobilize communities, raise money, and engage supporters for progressive causes. | https://actionnetwork.org
 Progressive Massachusetts Legislator Scorecard | Tracks legislation and provides report cards for Massachusetts legislators to help citizens enact positive local change. | https://scorecard.progressivemass.com
-Protests 1000 District Ave | Burlington ICE Detention Center Standouts | /protests1000districtave
-St. Peter's San Pedro Mutual Aid | Provides coats, diapers, and mutual aid for immigrants. | https://www.stpeters-sanpedro.org
 State + Local Election Alliance (SLEA) | Organization focused on winning state and local elections to secure, maintain, and advance democracy by investing in non-federal races and election administration. | https://www.state-elections.org
 Swing Blue Alliance | Community organizing and volunteer opportunities to support democracy and progressive candidates. | https://swingbluealliance.org
-Turn Purple 2 Blue | Grassroots organization focused on promoting progressive candidates and defending democracy in Massachusetts. | https://turnpurple2blue.org
 Welcome Immigrant Network | Empowering immigrant communities through orientation, advocacy, and support to foster civic, cultural, and economic engagement. | https://www.welcomeimmigrantnetwork.org
-Welcome Immigrant Network | Mutual aid and emergency support for immigrants in Salem, MA. | https://www.welcomeimmigrantnetwork.org
+Turn Purple 2 Blue | Grassroots organization focused on promoting progressive candidates and defending democracy in Massachusetts. | https://turnpurple2blue.org
+Concord Indivisible | Locally-led grassroots organization in Concord, and beyond, building progressive power and defending democracy
+Indivisible LAB | Locally-led grassroots organization in Lexington, Arlington, Bedford, and beyond, building progressive power and defending democracy through direct action and community engagement. | https://www.indivisiblelab.org
+No Fear Street Theater | Weekly creative protest on Burlington Mall Road using performance and community to resist ICE and support immigrants. | https://www.nofearstreettheater.com
+Protests 1000 District Ave | Burlington ICE Detention Center Standouts | /protests1000districtave
+Bearing Witness New England | Wednesday Burlington standouts | https://bearingwitnessne.org

@@ -61,10 +61,16 @@ function initMenuExperimental() {
   var causeMenu = document.getElementById('menu-cause-menu');
   // Dynamically populate causes from cause-symbols.txt
   if (causeMenu) {
+    console.log('Found causeMenu element:', causeMenu);
     fetch('cause-symbols.txt')
-      .then(response => response.text())
+      .then(response => {
+        console.log('Fetched cause-symbols.txt:', response);
+        return response.text();
+      })
       .then(text => {
+        console.log('Cause file text:', text);
         const lines = text.split('\n').map(line => line.trim()).filter(line => line);
+        console.log('Parsed cause lines:', lines);
         // Remove all options except the first (placeholder)
         while (causeMenu.options.length > 1) {
           causeMenu.remove(1);
@@ -74,6 +80,7 @@ function initMenuExperimental() {
           opt.value = cause;
           opt.textContent = cause;
           causeMenu.appendChild(opt);
+          console.log('Added cause option:', cause);
         });
         // Set cause dropdown to match URL param
         const params = new URLSearchParams(window.location.search);

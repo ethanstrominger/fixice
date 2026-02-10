@@ -88,14 +88,6 @@ Description: Mutual aid and emergency support for immigrants in Salem, MA.
 Activities: donate
 Cause: Immigration
 
-
-Link: https://www.stpeters-sanpedro.org/give
-Title: St. Peter's San Pedro Mutual Aid
-Description: Provides coats, diapers, and mutual aid for immigrants.
-Activities: donate
-Cause: Immigration
-
-
 Link: https://beyondbondboston.org/donate
 Title: BIJAN Bond Fund
 Description: Boston Immigrant Justice Accompaniment Network bond fund for detained immigrants.
