@@ -219,17 +219,17 @@ Description: Competitive Senate races (Cook Political Report)
 Activities: learn
 Cause: Elections
 
-Link: https://protests1000districtave.html
+Link: /protests1000districtave.html
 Title: Burlington ICE Detention Center Standouts
 Description: Burlington ICE Detention Center Standouts
 Activities: protest, volunteer
 Cause: ICE, Immigration
 
-Link: https://www.nofearstreettheater.com/related-actions
-Title: No Fear Street Theater Actions
-Description: No Fear Street Theater list
-Activities: protest, learn
-Cause: ICE
+Link: https://actionnetwork.org/forms/sign-up-for-the-de-ice-hanscom-email-list
+Title: De-ICE Hanscom Protest (Friday)
+Description: Join the De-ICE protest at Hanscom on Friday to stand against ICE detention and support immigrant rights.
+Activities: protest, volunteer
+Cause: ICE, Immigration
 
 Link: https://concordindivisible.org/action-springboard/
 Title: Concord Indivisible Action Springboard
