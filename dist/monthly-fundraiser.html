@@ -35,49 +35,29 @@
       <a href="https://givebutter.com/NSLUCE" target="_blank" style="color:#0066cc; font-weight:bold; font-size:1.1em; text-decoration:underline; margin-top:1em; display:block;">Information about North Shore LUCE</a>
       <a href="https://lucemass.org" target="_blank" style="color:#0066cc; font-weight:bold; font-size:1.1em; text-decoration:underline; margin-top:1em; display:block;">Information about LUCE Mass</a>
     <div style="margin-top:1em;"></div>
-    <form id="donation-form" style="margin-top:0.5em;">
-      <label for="amount">How much will you donate?</label>
-      <input type="number" id="amount" name="amount" min="1" step="any" required>
-      <button type="submit">Save Donation Amount</button>
-      <div class="success" id="success-message" style="display:none;">Thank you! Your donation has been recorded.</div>
-      <div id="total-donated" style="margin-top:2em;"></div>
-    </form>
+    <div style="margin-bottom:2em;">
+      <label for="amount" style="font-weight:bold;">How much will you donate?</label>
+      <input type="number" id="amount" name="amount" min="1" step="any" style="width:100%;padding:0.5em;font-size:1.1em;margin-top:0.5em;">
+      <a id="email-link" href="#" style="display:inline-block;margin-top:1em;background:#0066cc;color:#fff;border:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;cursor:pointer;text-decoration:none;">Email Donation Info</a> (to be able to total the contributions)
+    </div>
     <a href="https://FixICE.org" target="_blank" style="font-size:0.85em; color:#0066cc; text-decoration:underline; display:block; margin-top:0.7em;">FixICE.org</a>
         </div>
 
   </div>
   <script>
-    document.getElementById('donation-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const amount = document.getElementById('amount').value;
-      const successMsg = document.getElementById('success-message');
-      successMsg.style.display = 'none';
+    // Update mailto link with amount and subject
+    const amountInput = document.getElementById('amount');
+    const emailLink = document.getElementById('email-link');
+    function updateMailto() {
+      const amount = amountInput.value;
+      let href = 'mailto:info@fixice.org?subject=Northeast%20LUCE%20donation';
       if (amount && !isNaN(amount) && Number(amount) > 0) {
-        fetch('http://localhost:3001/api/donate', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ amount: amount })
-        })
-        .then(r => r.json())
-        .then(data => {
-          if (data.success) {
-            successMsg.textContent = 'Thank you! Your donation has been recorded.';
-            successMsg.style.display = 'block';
-            successMsg.style.color = 'green';
-            document.getElementById('amount').value = '';
-          } else {
-            successMsg.textContent = 'Error saving.';
-            successMsg.style.display = 'block';
-            successMsg.style.color = 'red';
-          }
-        })
-        .catch(() => {
-          successMsg.textContent = 'Error connecting to server.';
-          successMsg.style.display = 'block';
-          successMsg.style.color = 'red';
-        });
+        href += `&body=I contributed $${amount} to Northeast LUCE.`;
       }
-    });
+      emailLink.href = href;
+    }
+    amountInput.addEventListener('input', updateMailto);
+    updateMailto();
   </script>
 </body>
 </html>
