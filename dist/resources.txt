@@ -4,29 +4,38 @@ s# resources.txt
 # Extracted unique root URLs from link-list.txt
 # (Only the protocol and domain, nothing after the first /)
 
-Mobilize | Platform to find and join events, petitions, and volunteer opportunities for progressive causes and organizations. | https://www.mobilize.us
+Heading: National and Local Events
+Mobilize | Excellent site to find and join events, petitions, and volunteer opportunities for progressive causes and organizations. | https://mobilize.us
 
 Heading: Immigrant Support
-ACLU of Massachusetts | Defending equality, liberty, and justice. Protects civil liberties and advances equity for all in Massachusetts through advocacy, litigation, and public education. | https://www.aclum.org
-Boston Immigration Justice Accompaniment Network (BIJAN) & Beyond Bond and Legal Defense Fund | Community network supporting immigrants through accompaniment, legal referrals, and bond fundraising in Massachusetts and Rhode Island. | https://www.beyondbondboston.org
+ACLU of Massachusetts | Defending equality, liberty, and justice. Protects civil liberties and advances equity for all in Massachusetts through advocacy, litigation, and public education. | https://aclum.org
+Boston Immigration Justice Accompaniment Network (BIJAN) & Beyond Bond and Legal Defense Fund | Community network supporting immigrants through accompaniment, legal referrals, and bond fundraising in Massachusetts and Rhode Island. | https://beyondbondboston.org
 Lawyers for Civil Rights | Works with people of color, immigrants, and low-income communities to fight discrimination and pursue justice through legal advocacy, education, and empowerment. | https://lawyersforcivilrights.org
-LUCE Immigrant Justice Network of MA | Coalition of immigrant-led, grassroots organizations building people power for immigrant justice in Massachusetts, operating a multilingual ICE defense hotline. | https://www.lucemass.org
+LUCE Immigrant Justice Network of MA | Coalition of immigrant-led, grassroots organizations building people power for immigrant justice in Massachusetts, operating a multilingual ICE defense hotline. | https://lucemass.org
 Massachusetts Immigrant & Refugee Advocacy Coalition | Advocates for the rights and integration of immigrants and refugees in Massachusetts through policy, education, and support services. | https://miracoalition.org
-Welcome Immigrant Network | Empowering immigrant communities through orientation, advocacy, and support to foster civic, cultural, and economic engagement. | https://www.welcomeimmigrantnetwork.org
+Welcome Immigrant Network | Empowering immigrant communities through orientation, advocacy, and support to foster civic, cultural, and economic engagement. | https://welcomeimmigrantnetwork.org
 
 Heading: Elections
-State + Local Election Alliance (SLEA) | Organization focused on winning state and local elections to secure, maintain, and advance democracy by investing in non-federal races and election administration. | https://www.state-elections.org
+State + Local Election Alliance (SLEA) | Organization focused on winning state and local elections to secure, maintain, and advance democracy by investing in non-federal races and election administration. | https://state-elections.org
 Swing Blue Alliance | Community organizing and volunteer opportunities to support democracy and progressive candidates. | https://swingbluealliance.org
-Cook Political House Ratings | Independent, non-partisan newsletter analyzing U.S. elections, campaigns, and political trends. | https://www.cookpolitical.com
+Cook Political House Ratings | Independent, non-partisan newsletter analyzing U.S. elections, campaigns, and political trends. | https://cookpolitical.com
 Progressive Massachusetts Legislator Scorecard | Tracks legislation and provides report cards for Massachusetts legislators to help citizens enact positive local change. | https://scorecard.progressivemass.com
 
-Heading: Indivisible MA Coalition - A Grassroots organizations united for democracy and social justice in Massachusetts.
- 
+Heading: Indivisible MA Coalition 
+p: Connects people to action-oriented groups to defend rights, freedoms, and democracy in Massachusetts. All groups have newsletters.
+FIND YOUR GROUP || https://indivisible-ma.org/find-a-group/
+Turn Purple 2 Blue (Acton) | Extensive curation of events | https://turnpurple2blue.org
+Concord Indivisible | Hosts local events and an action springboard that highlights a few critical activities | https://concordindivisible.org
+Indivisible LAB (Lexington, Arlington, Bedford)| Organizes local events | https://indivisiblelab.org
 Indivisible Massachusetts Coalition | Connects people to action-oriented groups to defend rights, freedoms, and democracy in Massachusetts. | https://indivisible-ma.org
-Turn Purple 2 Blue | Grassroots organization focused on promoting progressive candidates and defending democracy in Massachusetts. | https://turnpurple2blue.org
-Concord Indivisible | Locally-led grassroots organization in Concord, and beyond, building progressive power and defending democracy
-Indivisible LAB | Locally-led grassroots organization in Lexington, Arlington, Bedford, and beyond, building progressive power and defending democracy through direct action and community engagement. | https://www.indivisiblelab.org
-Indivisible Massachusetts Coalition | Connects people to action-oriented groups to defend rights, freedoms, and democracy in Massachusetts. | https://indivisible-ma.org
+
+MassGAIN | Organizes local events. Active on Facebook, Bluesky, and YouTube. | https://www.massgain.org/
+
+Heading: Other MA Grassroot organizations
+Mass50501 || https://mass50501.org
+Lexington Alarm | Organizes local events and lists other local events, news, and blogs | https://lexingtonalarm.org
+
+Progressive Massachusetts | Provides thoughtful positions, strategies, toolkits for lobbying, and organizes weekly phone banks. | https://www.progressivemass.com/
 
 Heading: Protests at 1000 District Ave and Hanscom
 Display list

@@ -1,12 +1,12 @@
 
-Link: https://www.cookpolitical.com/ratings/house-race-ratings
+Link: https://cookpolitical.com/ratings/house-race-ratings
 Title: cookpolitical
 Description: Nonpartisan analysis of competitive U.S. House races, useful for donors and advocates.
 Activities: donate, learn
 Cause: Elections
 
 
-Link: https://www.cookpolitical.com/ratings/senate-race-ratings
+Link: https://cookpolitical.com/ratings/senate-race-ratings
 Title: cookpolitical
 Description: Nonpartisan analysis of competitive U.S. Senate races, useful for donors and advocates.
 Activities: donate, learn
@@ -26,7 +26,7 @@ Activities: donate
 Cause: Elections
 
 
-Link: https://www.amazon.com/hz/wishlist/ls/24S8YZCELQWFC
+Link: https://amazon.com/hz/wishlist/ls/24S8YZCELQWFC
 Title: Amazon Immigrant Aid Wishlist
 Description: Purchase items directly for immigrants in need via Amazon.
 Activities: donate
@@ -82,7 +82,7 @@ Activities: donate
 Cause: ICE, Immigration, Elections
 
 
-Link: https://www.WelcomeImmigrantNetwork.org/donate-index-impact
+Link: https://WelcomeImmigrantNetwork.org/donate-index-impact
 Title: Welcome Immigrant Network
 Description: Mutual aid and emergency support for immigrants in Salem, MA.
 Activities: donate
@@ -102,7 +102,7 @@ Activities: donate
 Cause: Immigration
 
 
-Link: https://www.instagram.com/operationmilkweed
+Link: https://instagram.com/operationmilkweed
 Title: Operation Milkweed
 Description: Emergency aid for community members in crisis.
 Activities: donate
@@ -170,25 +170,25 @@ Description: Urgent actions and funding opportunities for federal races (Turn Pu
 Activities: donate, volunteer
 Cause: Elections
 
-Link: https://www.mobilize.us/?q=postcard
+Link: https://mobilize.us/?q=postcard
 Title: Mobilize Postcard Campaigns
 Description: Find in-person postcard writing campaigns (Mobilize)
 Activities: volunteer
 Cause: Elections
 
-Link: https://www.mobilize.us/?is_virtual=true
+Link: https://mobilize.us/?is_virtual=true
 Title: Mobilize Virtual Campaigns
 Description: Join virtual campaign actions (Mobilize)
 Activities: volunteer
 Cause: Elections
 
-Link: https://www.mobilize.us/events/phone-bank-volunteer-opportunities/
+Link: https://mobilize.us/events/phone-bank-volunteer-opportunities/
 Title: Mobilize Phone Bank Opportunities
 Description: Volunteer for phone banking (Mobilize)
 Activities: volunteer
 Cause: Elections
 
-Link: https://www.mobilize.us/?tag_ids=34
+Link: https://mobilize.us/?tag_ids=34
 Title: Mobilize Get Out the Vote
 Description: Get Out the Vote campaigns (Mobilize)
 Activities: volunteer
@@ -201,13 +201,13 @@ Description: How Massachusetts legislators have voted (Progressive Mass Scorecar
 Activities: learn
 Cause: Elections
 
-Link: https://www.cookpolitical.com/ratings/house-race-ratings
+Link: https://cookpolitical.com/ratings/house-race-ratings
 Title: Cook Political House Ratings
 Description: Competitive House races (Cook Political Report)
 Activities: learn
 Cause: Elections
 
-Link: https://www.cookpolitical.com/ratings/senate-race-ratings
+Link: https://cookpolitical.com/ratings/senate-race-ratings
 Title: Cook Political Senate Ratings
 Description: Competitive Senate races (Cook Political Report)
 Activities: learn
@@ -261,7 +261,7 @@ Description: Swing Blue Alliance calendar
 Activities: protest, volunteer
 Cause: Elections
 
-Link: https://www.facebook.com/413StayingConnectedForAction/
+Link: https://facebook.com/413StayingConnectedForAction/
 Title: 413 Staying Connected for Action
 Description: 413 Staying Connected for Action
 Activities: protest, learn

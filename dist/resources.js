@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
               sectionContent += `<li>${name}: ${description}</li>`;
             }
             next();
+          } else if (line.startsWith('p:')) {
+            // Display as paragraph only if line starts with 'p:'
+            sectionContent += `<p>${line.slice(2).trim()}</p>`;
+            next();
           } else {
             next();
           }

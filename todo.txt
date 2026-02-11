@@ -5,10 +5,10 @@ Group resources page into categories: Indivisible, Immigrant Support, others
 Facebook - another admin and other recommendations
 
 Figure Out
-https://www.amazon.com
-https://www.instagram.com
+https://amazon.com
+https://instagram.com
 https://venmo.com
-https://www.facebook.com
+https://facebook.com
 
 Add www
 https://beyondbondboston.org

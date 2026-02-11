@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recent Changes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+    <h2>Recent Changes</h2>
+    <ul>
+      <li><b>Feb 11, 2026:</b> Added Greater Assabet Individual Network, Mass50501, .</li>
+    </ul>
+  </main>
+  <script>
+    fetch('menu.html').then(r => r.text()).then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+      var script = document.createElement('script');
+      script.src = 'event-listener.js';
+      script.onload = function() {
+        if (typeof initMenuExperimental === 'function') {
+          initMenuExperimental();
+        }
+      };
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>
