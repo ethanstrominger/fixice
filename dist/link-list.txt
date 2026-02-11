@@ -140,12 +140,6 @@ Description: eMail your congressional representatives to rein in ICE (Concord In
 Activities: advocate
 Cause: Immigration
 
-Link: https://actionnetwork.org/letters/poic-cosponsor/
-Title: POIC Cosponsor Letter Campaign
-Description: Letter campaign for POIC cosponsor
-Activities: advocate
-Cause: ICE, Immigration
-
 Link: https://turnoutpac.org/postcards/
 Title: Postcards to Swing States
 Description: Send postcards to swing states (TurnoutPAC)

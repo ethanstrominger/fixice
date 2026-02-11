@@ -22,9 +22,9 @@
         if (typeof initMenuExperimental === 'function') {
           initMenuExperimental();
         }
-        // Load link-explorer.js only after menu and event-listener are ready
+        // Load explore.js only after menu and event-listener are ready
         var explorerScript = document.createElement('script');
-        explorerScript.src = 'link-explorer.js';
+        explorerScript.src = 'explore.js';
         document.body.appendChild(explorerScript);
       };
       document.body.appendChild(script);

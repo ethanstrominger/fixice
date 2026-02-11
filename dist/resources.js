@@ -1,4 +1,4 @@
-// resources.js: Dynamically generate a bulleted list from resources.txt
+
 
 document.addEventListener('DOMContentLoaded', function() {
   fetch('resources.txt')
@@ -6,23 +6,24 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(text => {
       const container = document.getElementById('resources-list');
       container.innerHTML = '';
-      const lines = text.split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#'));
-      const ul = document.createElement('ul');
-      ul.style.listStyle = 'disc outside';
-      ul.style.paddingLeft = '0.4em';
-      ul.style.margin = '0';
+      const lines = text.split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#') && !line.startsWith('s#'));
+      let html = '';
+      let inList = false;
       lines.forEach(line => {
-        const parts = line.split('|').map(s => s.trim());
-        if (parts.length === 3) {
-          const [name, desc, link] = parts;
-          const li = document.createElement('li');
-          li.style.marginBottom = '0.7em';
-          li.style.textIndent = '-0.4em';
-          li.style.paddingLeft = '0.4em';
-          li.innerHTML = `<a href="${link}" target="_blank">${name}</a> ${desc}`;
-          ul.appendChild(li);
+        if (line.startsWith('Heading:')) {
+          if (inList) { html += '</ul>'; inList = false; }
+          html += `<h2>${line.replace('Heading:', '').trim()}</h2>`;
+        } else if (line.includes('|')) {
+          if (!inList) { html += '<ul>'; inList = true; }
+          const [name, description, link] = line.split('|').map(s => s.trim());
+          if (name && link) {
+            html += `<li><a href="${link}" target="_blank">${name}</a>: ${description}</li>`;
+          } else {
+            html += `<li>${name}: ${description}</li>`;
+          }
         }
       });
-      container.appendChild(ul);
+      if (inList) html += '</ul>';
+      container.innerHTML = html;
     });
 });
