@@ -6,6 +6,8 @@
     "start": "live-server dist --port=8080 --no-browser"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "@playwright/test": "^1.58.2",
+    "live-server": "^1.2.2",
+    "playwright": "^1.58.2"
   }
 }

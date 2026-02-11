@@ -132,10 +132,23 @@ function initMenuExperimental() {
     console.log('Toggle found');
     toggle.addEventListener('click', function () {
       if (menuLinks) {
-        if (menuLinks.style.display === 'none') {
-          menuLinks.style.display = 'flex';
+        if (window.innerWidth <= 1200) {
+          // Mobile/tablet: use class toggle
+          const nowOpen = menuLinks.classList.toggle('menu-links-open');
+          if (nowOpen) {
+            console.log('Menu options displayed (menu-links-open class present, mobile)');
+          } else {
+            console.log('Menu options hidden (menu-links-open class not present, mobile)');
+          }
         } else {
-          menuLinks.style.display = 'none';
+          // Desktop: use style.display
+          if (menuLinks.style.display === 'none' || menuLinks.style.display === '') {
+            menuLinks.style.display = 'flex';
+            console.log('Menu options displayed (flex, desktop)');
+          } else {
+            menuLinks.style.display = 'none';
+            console.log('Menu options hidden (none, desktop)');
+          }
         }
       }
     });
