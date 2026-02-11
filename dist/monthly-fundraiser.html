@@ -17,10 +17,8 @@
   </style>
 </head>
 <body>
-<div style="text-align:center; background:#fff; margin-bottom: 0.5em;">
-    <h1 class="fixice-title" style="margin-bottom:0.1em; margin-top:0;">FIX ICE</h1>
-    <div class="fixice-subtitle" style="margin-bottom:0.7em;">Burlington, MA and Beyond</div>
-</div>  <div class="container">
+<div id="menu-container"></div>
+<div class="container">
     <a href="https://FixICE.org" target="_blank" style="font-size:0.85em; color:#0066cc; text-decoration:underline; display:block; margin-bottom:0.7em;">FixICE.org</a>
     <h1>Monthly Fundraiser</h1>
     <p style="font-size:1.1em; color:#444; margin-bottom:0.3em;">Every Wednesday Fix ICE will announce a new anti-ice/pro-immigrant fundraiser. Fund raiser for the week starting 2/11 is North Shore Luce.</p>
@@ -45,6 +43,21 @@
 
   </div>
   <script>
+    // Inject menu.html, then load event-listener.js and call initMenuExperimental
+    fetch('menu.html').then(r => r.text()).then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+      var script = document.createElement('script');
+      script.src = 'event-listener.js';
+      script.onload = function() {
+        if (typeof initMenuExperimental === 'function') {
+          initMenuExperimental();
+        }
+        if (typeof initHamburgerMenuAndOverflow === 'function') {
+          initHamburgerMenuAndOverflow();
+        }
+      };
+      document.body.appendChild(script);
+    });
     // Update mailto link with amount and subject
     const amountInput = document.getElementById('amount');
     const emailLink = document.getElementById('email-link');

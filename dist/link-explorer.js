@@ -1,3 +1,4 @@
+console.log('link-explorer.js loaded');
 // Parse link-list.txt and filter/group records by cause
 async function loadLinks() {
 	const response = await fetch('link-list.txt');
@@ -75,9 +76,29 @@ async function loadStrategySymbols() {
 }
 
 
+
 const params = new URLSearchParams(window.location.search);
 const cause = params.get('cause');
 const strategy = params.get('strategy');
+
+// Show filter label below Resources heading, even if DOMContentLoaded already fired
+function setFilterLabel() {
+	const labelDiv = document.getElementById('filter-label');
+	if (labelDiv) {
+		if (strategy) {
+			labelDiv.textContent = `Strategy: ${strategy}`;
+		} else if (cause) {
+			labelDiv.textContent = `Cause: ${cause}`;
+		} else {
+			labelDiv.textContent = '';
+		}
+	}
+}
+if (document.readyState === 'loading') {
+	window.addEventListener('DOMContentLoaded', setFilterLabel);
+} else {
+	setFilterLabel();
+}
 
 
 function filterByStrategy(records, selectedStrategy) {

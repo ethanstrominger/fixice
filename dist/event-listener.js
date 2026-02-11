@@ -1,3 +1,88 @@
+// Hamburger menu toggle and overflow logic (moved from menu.html)
+function initHamburgerMenuAndOverflow() {
+  function updateMenuOverflow() {
+    const menuLinks = document.getElementById('menuLinks');
+    const moreMenu = document.getElementById('moreMenu');
+    if (!menuLinks || !moreMenu) return;
+    const moreDropdown = moreMenu.querySelector('.more-dropdown');
+    const items = Array.from(menuLinks.querySelectorAll('.menu-item'));
+    // Reset
+    moreMenu.style.display = 'none';
+    moreDropdown.innerHTML = '';
+    items.forEach(item => item.style.display = '');
+    // Only run on desktop (not hamburger)
+    if (window.innerWidth <= 1200) return;
+    let menuWidth = menuLinks.offsetWidth;
+    let usedWidth = 0;
+    let lastFittingIdx = -1;
+    // Calculate how many items fit
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      item.style.display = '';
+      usedWidth += item.offsetWidth;
+      if (usedWidth + moreMenu.offsetWidth > menuWidth) {
+        break;
+      }
+      lastFittingIdx = i;
+    }
+    // If not all fit, move extras to More
+    if (lastFittingIdx < items.length - 1) {
+      moreMenu.style.display = '';
+      for (let i = lastFittingIdx + 1; i < items.length; i++) {
+        const item = items[i];
+        const clone = item.cloneNode(true);
+        clone.style.display = 'block';
+        clone.style.color = '#23408e';
+        clone.style.background = 'none';
+        clone.style.padding = '0.4em 1em';
+        clone.style.borderRadius = '5px';
+        clone.style.textDecoration = 'none';
+        clone.style.fontWeight = '600';
+        clone.style.whiteSpace = 'nowrap';
+        moreDropdown.appendChild(clone);
+        item.style.display = 'none';
+      }
+    }
+  }
+  window.addEventListener('resize', updateMenuOverflow);
+  updateMenuOverflow();
+  // Hamburger menu toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuLinks = document.getElementById('menuLinks');
+  if (menuToggle && menuLinks) {
+    menuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      menuLinks.classList.toggle('menu-links-open');
+    });
+  }
+  // Hide menu when clicking outside (mobile)
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 1200 && menuLinks && menuLinks.classList.contains('menu-links-open')) {
+      if (!menuLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuLinks.classList.remove('menu-links-open');
+      }
+    }
+    // More dropdown hide
+    const moreMenu = document.getElementById('moreMenu');
+    if (moreMenu) {
+      moreMenu.querySelector('.more-dropdown').style.display = 'none';
+      moreMenu.classList.remove('open');
+    }
+  });
+  // Toggle More dropdown
+  const moreMenu = document.getElementById('moreMenu');
+  if (moreMenu) {
+    const moreBtn = moreMenu.querySelector('.more-menu-btn');
+    if (moreBtn) {
+      moreBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const dropdown = moreMenu.querySelector('.more-dropdown');
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        moreMenu.classList.toggle('open');
+      });
+    }
+  }
+}
 function showDebug(msg) {
   var debugDiv = document.getElementById('debug-status');
   if (debugDiv) {
@@ -160,8 +245,4 @@ function initMenuExperimental() {
     showDebugMenu('Switch menu button NOT found');
   }
 }
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initMenuExperimental);
-} else {
-  initMenuExperimental();
-}
+
