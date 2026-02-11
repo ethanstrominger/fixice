@@ -18,6 +18,17 @@
   <div id="eagle-graphic-container"></div>
 
   <script src="menu.js"></script>
+  <script>
+    // After menu is injected, load event-listener.js
+    function loadEventListenerScript() {
+      var script = document.createElement('script');
+      script.src = 'event-listener.js';
+      document.body.appendChild(script);
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(loadEventListenerScript, 200);
+    });
+  </script>
   <img src="eagles.jpeg" alt="Protesters with signs" class="fixice-hero">
 
 
