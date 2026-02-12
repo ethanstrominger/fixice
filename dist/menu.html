@@ -1,127 +1,135 @@
-<div class="fixice-share-buttons">
-  <!-- ...same social buttons as menu.html... -->
-</div>
-<div style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff; margin-bottom: 0.5em;min-height:3.2em;">
-  <div style="width:100%;display:flex;align-items:center;justify-content:center;position:relative;">
-    <h1 class="fixice-title" style="margin-bottom:0.1em; margin-top:0; width:100%; text-align:center;">FIX ICE</h1>
-    <a href="contact.html" class="contact-link-next-title" style="position:absolute;right:2em;top:50%;transform:translateY(-50%);color:#23408e;font-weight:700;text-decoration:underline;padding:0.3em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Contact</a>
-  </div>
-  <div class="fixice-subtitle" style="margin-bottom:0.2em;">Burlington, MA and Beyond</div>
-  <div style="font-size:0.95em;font-style:italic;color:#23408e;margin-bottom:0.7em;">Humanity first – abolish or transform ICE</div>
-</div>
-<nav class="main-menu" style="width:100vw;margin:0;padding:0;">
-  <button class="menu-toggle" aria-label="Toggle menu" style="margin-left:12px;">
-    <span class="menu-bar"></span>
-    <span class="menu-bar"></span>
-    <span class="menu-bar"></span>
-  </button>
-  <div class="menu-links" id="menuLinks">
-      <a href="index.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Home</a>
-    <a href="resources.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">All Resources</a>
-    <select id="menu-strategy-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
-      <option value="">By Strategy</option>
-      <option value="donate">Donate</option>
-      <option value="volunteer">Volunteer</option>
-      <option value="learn">Learn</option>
-      <option value="advocate">Advocate</option>
-      <option value="protest">Protest</option>
-    </select>
-    <select id="menu-cause-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
-      <option value="">By Cause</option>
-      <!-- Cause options will be populated dynamically -->
-    </select>
-    <a href="protests1000districtave.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">1000 District Ave</a>
-    <a href="parking.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Parking</a>
-    <a href="https://facebook.com/groups/774935765037658" target="_blank" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Join Facebook</a>
-    <a href="changes.html" class="menu-item" style="color:#fff;font-weight:600;text-decoration:none;padding:0.4em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Latest Updates</a>
-    <div class="more-menu" id="moreMenu" style="display:none;position:relative;">
-      <button class="more-menu-btn" style="background:none;border:none;color:#fff;font-weight:600;cursor:pointer;padding:0.4em 1em;">More ▾</button>
-      <div class="more-dropdown" style="display:none;position:absolute;top:100%;left:0;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.15);min-width:120px;z-index:100;"></div>
-    </div>
-  </div>
-  <!-- Contact link moved next to title above -->
-  </div>
-</nav>
-<!-- Move script to end of body for reliable DOM access -->
-<style>
-  .menu-toggle {
-    width: 40px;
-    height: 40px;
-    background: none;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 0;
-    margin: 0 0.5em 0 0;
-    z-index: 1100;
-    position: relative;
-    left: 0;
-  }
-  .menu-bar {
-    display: block;
-    width: 28px;
-    height: 4px;
-    margin: 4px 0;
-    background: #23408e;
-    border-radius: 2px;
-    transition: 0.3s;
-  }
-  .menu-links {
-    align-items: center;
-    gap: 1.2em;
-    background: #23408e;
-    padding: 0.7em 0 0.7em 0;
-    box-shadow: 0 2px 8px #0002;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    width: 100%;
-    border-radius: 0;
-  }
-  @media (max-width: 1200px) {
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIX ICE Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    .fixice-title {
+      text-align: center;
+      margin: 0.5em 0 0.2em 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
     .main-menu {
-      display: block !important;
-    }
-    .menu-links {
-      display: none !important;
-    }
-    .menu-links.menu-links-open {
-      display: flex !important;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      max-width: 340px;
-      width: 90vw;
-      background: #23408e;
-      z-index: 3000;
-      border-radius: 0 8px 8px 0;
-      box-shadow: 2px 0 8px #0002;
-      overflow-y: auto;
-      margin-left: 0;
-      align-items: flex-start;
-    }
-    .menu-toggle {
-      display: block !important;
-      z-index: 3100;
-    }
-  }
-  @media (min-width: 1201px) {
-    .main-menu {
+      width: 100vw;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
       position: relative;
     }
-    .menu-toggle {
-      display: none !important;
-    }
     .menu-links {
-      display: flex !important;
+      width: 75vw;
+      background: #ffb6c1;
+      border-bottom: 3px solid #23408e;
+      border-right: 3px solid #23408e;
+      box-shadow: 0 2px 8px #0002;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0.7em 0.5em 0.7em 0.5em;
+      margin: 0 auto 0.5em auto;
+      border-radius: 0 0 12px 0;
+      gap: 1em;
     }
-  }
-</style>
-<!-- Script removed: menu logic is now handled by event-listener.js via initMenuExperimental() -->
+    .menu-item {
+      color: #000;
+      background: #ffb6c1;
+      border: 2px solid #23408e;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.4em 1em;
+      border-radius: 5px;
+      transition: background 0.2s;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .menu-item:hover {
+      background: #ffe4ee;
+    }
+    .menu-toggle {
+      display: none;
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      padding: 0;
+      margin: 0.5em 0 0 0;
+      z-index: 1100;
+      position: relative;
+    }
+    .menu-bar {
+      display: block;
+      width: 28px;
+      height: 4px;
+      margin: 4px 0;
+      background: #23408e;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    @media (max-width: 1200px) {
+      .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 90vw;
+        max-width: 340px;
+        background: #ffb6c1;
+        z-index: 3000;
+        border-radius: 0 8px 8px 0;
+        box-shadow: 2px 0 8px #0002;
+        overflow-y: auto;
+        margin-left: 0;
+        align-items: flex-start;
+      }
+      .menu-links.menu-links-open {
+        display: flex !important;
+      }
+      .menu-toggle {
+        display: flex !important;
+      }
+    }
+    @media (min-width: 1201px) {
+      .menu-links {
+        display: flex !important;
+      }
+      .menu-toggle {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fixice-title">FIX ICE</div>
+  <nav class="main-menu">
+    <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <div class="menu-links" id="menuLinks">
+      <a href="index.html" class="menu-item">Home</a>
+      <a href="resources.html" class="menu-item">All Resources</a>
+      <a href="protests1000districtave.html" class="menu-item">1000 District Ave</a>
+      <a href="parking.html" class="menu-item">Parking</a>
+      <a href="https://facebook.com/groups/774935765037658" target="_blank" class="menu-item">Join Facebook</a>
+      <a href="changes.html" class="menu-item">Latest Updates</a>
+    </div>
+  </nav>
+  <script src="menu.js"></script>
+</body>
 </html>
