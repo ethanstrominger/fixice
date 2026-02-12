@@ -59,6 +59,25 @@ async function populateStrategies() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Dropdown redirect logic
+    const strategyDropdown = document.getElementById('menu-strategy-menu');
+    if (strategyDropdown) {
+      strategyDropdown.addEventListener('change', function () {
+        const value = strategyDropdown.value;
+        if (value) {
+          window.location.href = `/explore?strategy=${encodeURIComponent(value)}`;
+        }
+      });
+    }
+    const causeDropdown = document.getElementById('menu-cause-menu');
+    if (causeDropdown) {
+      causeDropdown.addEventListener('change', function () {
+        const value = causeDropdown.value;
+        if (value) {
+          window.location.href = `/explore?cause=${encodeURIComponent(value)}`;
+        }
+      });
+    }
   console.log('DOMContentLoaded event fired');
   // Hamburger menu logic
   const menuToggle = document.getElementById('menuToggle');
