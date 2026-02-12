@@ -9,55 +9,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FixICE.org</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fixice.css">
   </head>
 
 <body>
-
-  <div id="menu-container"></div>
-  <div id="eagle-graphic-container"></div>
-
-  <script src="menu.js"></script>
-  <script src="menu-toggle.js"></script>
-  <script>
-    // After menu is injected, load event-listener.js
-    function loadEventListenerScript() {
-      var script = document.createElement('script');
-      script.src = 'event-listener.js';
-      document.body.appendChild(script);
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-      setTimeout(loadEventListenerScript, 200);
-    });
-  </script>
-  <img src="eagles.jpeg" alt="Protesters with signs" class="fixice-hero">
-
-
-  <main class="fixice-main">
-
-
-    <p>
-      FixICE.org centralizes useful resources related to opposing ICE, winning elections, and protests at 1000 District Ave in Burlington, MA.
-    </p>
-
-    <div style="border:2px solid #23408e; background:#f7faff; border-radius:7px; padding:1em 1.2em; margin:1.2em 0; font-size:1.08em;">
-      <b>Note:</b> This site will be updated regularly with new resources and information. You don't have to keep checking every page—just visit <a href="changes.html"><b>Latest Updates</b></a> for a log of all recent changes and additions.
+  <div style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff; margin-bottom: 0.5em;min-height:3.2em;">
+    <div style="width:100%;display:flex;align-items:center;justify-content:center;position:relative;">
+      <h1 class="fixice-title" style="margin-bottom:0.1em; margin-top:0; width:100%; text-align:center;">FIX ICE</h1>
+      <a href="contact.html" class="contact-link-next-title" style="position:absolute;right:2em;top:50%;transform:translateY(-50%);color:#23408e;font-weight:700;text-decoration:underline;padding:0.3em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Contact</a>
     </div>
-
-    <p>
-      Protests occur Monday through Saturday at the ICE detention center in Burlington, MA. Fix ICE organizes the
-      <a href="mondaytuesday">Monday and Tuesday protests</a> from 11–1. Other groups organize
-      <a href="protests">Wednesday–Saturday protests</a>. Each group brings a different perspective, which strengthens
-      the
-      movement.
-    </p>
-
-    <p>
-      If you’re looking for step-by-step guidance on how to get involved or start something new, the
-      <a href="https://choosedemocracy.us/what-can-i-do/" target="_blank" rel="noopener">Choose Democracy website</a>
-      is a promising resource.
-    </p>
-
+    <div class="fixice-subtitle" style="margin-bottom:0.2em;">Burlington, MA and Beyond</div>
+    <div style="font-size:0.95em;font-style:italic;color:#23408e;margin-bottom:0.7em;">Humanity first – abolish or transform ICE</div>
+  </div>
+  <nav class="main-menu">
+    <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <div class="menu-links" id="menuLinks">
+      <a href="index.html" class="menu-item">Home</a>
+      <a href="resources.html" class="menu-item">All Resources</a>
+      <select id="menu-strategy-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
+        <option value="">By Strategy</option>
+        <option value="donate">Donate</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="learn">Learn</option>
+        <option value="advocate">Advocate</option>
+        <option value="protest">Protest</option>
+      </select>
+      <select id="menu-cause-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
+        <option value="">By Cause</option>
+        <!-- Cause options will be populated dynamically -->
+      </select>
+      <a href="protests1000districtave.html" class="menu-item">1000 District Ave</a>
+      <a href="parking.html" class="menu-item">Parking</a>
+      <a href="https://facebook.com/groups/774935765037658" target="_blank" class="menu-item">Join Facebook</a>
+      <a href="changes.html" class="menu-item">Latest Updates</a>
+    </div>
+  </nav>
+  <div class="content">
+    <img src="eagles.jpeg" alt="Protesters with signs" class="fixice-hero">
+    <main class="fixice-main">
+      <p>
+        FixICE.org centralizes useful resources related to opposing ICE, winning elections, and protests at 1000 District Ave in Burlington, MA.
+      </p>
+      <div style="border:2px solid #23408e; background:#f7faff; border-radius:7px; padding:1em 1.2em; margin:1.2em 0; font-size:1.08em;">
+        <b>Note:</b> This site will be updated regularly with new resources and information. You don't have to keep checking every page—just visit <a href="changes.html"><b>Latest Updates</b></a> for a log of all recent changes and additions.
+      </div>
+      <p>
+        Protests occur Monday through Saturday at the ICE detention center in Burlington, MA. Fix ICE organizes the
+        <a href="mondaytuesday">Monday and Tuesday protests</a> from 11–1. Other groups organize
+        <a href="protests">Wednesday–Saturday protests</a>. Each group brings a different perspective, which strengthens
+        the
+        movement.
+      </p>
+      <p>
+        If you’re looking for step-by-step guidance on how to get involved or start something new, the
+        <a href="https://choosedemocracy.us/what-can-i-do/" target="_blank" rel="noopener">Choose Democracy website</a>
+        is a promising resource.
+      </p>
+    </main>
+  </div>
+  <script src="fixice2.js"></script>
     <p>You don’t need to do everything.</p>
     <p>You just need a place to start.</p>
 

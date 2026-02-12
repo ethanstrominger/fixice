@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Protests – Stop ICE Cruelties</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fixice.css">
   <style>
     body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 700px; margin: auto; padding: 24px; background: linear-gradient(120deg, #f8f8f8 60%, #e3e9f7 100%); }
     /* Ensure menu is always left aligned to browser window */
@@ -21,43 +21,50 @@
 </head>
 
   <body style="background:#fff; padding-top:130px;">
-
-    <div id="menu">
-      <div id="menu-container"></div>
+  <div style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff; margin-bottom: 0.5em;min-height:3.2em;">
+    <div style="width:100%;display:flex;align-items:center;justify-content:center;position:relative;">
+      <h1 class="fixice-title" style="margin-bottom:0.1em; margin-top:0; width:100%; text-align:center;">FIX ICE</h1>
+      <a href="contact.html" class="contact-link-next-title" style="position:absolute;right:2em;top:50%;transform:translateY(-50%);color:#23408e;font-weight:700;text-decoration:underline;padding:0.3em 1em;border-radius:5px;transition:background 0.2s;white-space:nowrap;">Contact</a>
     </div>
+    <div class="fixice-subtitle" style="margin-bottom:0.2em;">Burlington, MA and Beyond</div>
+    <div style="font-size:0.95em;font-style:italic;color:#23408e;margin-bottom:0.7em;">Humanity first – abolish or transform ICE</div>
+  </div>
+  <nav class="main-menu">
+    <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <div class="menu-links" id="menuLinks">
+      <a href="index.html" class="menu-item">Home</a>
+      <a href="resources.html" class="menu-item">All Resources</a>
+      <select id="menu-strategy-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
+        <option value="">By Strategy</option>
+        <option value="donate">Donate</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="learn">Learn</option>
+        <option value="advocate">Advocate</option>
+        <option value="protest">Protest</option>
+      </select>
+      <select id="menu-cause-menu" class="menu-item" style="background:#fff;color:#23408e;font-weight:600;border:none;padding:0.4em 1em;border-radius:5px;cursor:pointer;min-width:170px;white-space:nowrap;">
+        <option value="">By Cause</option>
+        <!-- Cause options will be populated dynamically -->
+      </select>
+      <a href="protests1000districtave.html" class="menu-item">1000 District Ave</a>
+      <a href="parking.html" class="menu-item">Parking</a>
+      <a href="https://facebook.com/groups/774935765037658" target="_blank" class="menu-item">Join Facebook</a>
+      <a href="changes.html" class="menu-item">Latest Updates</a>
+    </div>
+  </nav>
+  <div class="content">
     <div style="display:flex; justify-content:center; gap:12px; margin-bottom:12px; flex-wrap:wrap; margin-top:70px;">
       <img src="eagles.jpeg" alt="Protest 2" style="max-width:160px; width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
     </div>
-
-    <script src="menu.js"></script>
-    <script src="menu-toggle.js"></script>
-    <script>
-      // After menu is injected, load event-listener.js
-      function loadEventListenerScript() {
-        var script = document.createElement('script');
-        script.src = 'event-listener.js';
-        document.body.appendChild(script);
-      }
-      // Wait for menu.js to finish injecting menu.html
-      document.addEventListener('DOMContentLoaded', function() {
-        // Wait a tick to ensure menu is injected
-        setTimeout(loadEventListenerScript, 200);
-      });
-    </script>
-
-
-    <style>
-      .banner {
-        background: #222;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-        font-size: 1.5em;
-      }
-    </style>
-  
-  <div style="background:#ffe5e5; border-bottom:2px solid #b30000; padding:14px 0; text-align:center; font-size:1.13em; font-weight:600; margin-bottom:18px;">
-    Quick action: <a href="https://docs.google.com/document/d/1vgUdGlj4YgRVeJBFa5IGgyXfE51PIPFVL_gSkG7K4Dk/edit?usp=sharing" target="_blank" rel="noopener" style="color:#b30000; text-decoration:underline;">email your representatives</a>
+    <div style="background:#ffe5e5; border-bottom:2px solid #b30000; padding:14px 0; text-align:center; font-size:1.13em; font-weight:600; margin-bottom:18px;">
+      Quick action: <a href="https://docs.google.com/document/d/1vgUdGlj4YgRVeJBFa5IGgyXfE51PIPFVL_gSkG7K4Dk/edit?usp=sharing" target="_blank" rel="noopener" style="color:#b30000; text-decoration:underline;">email your representatives</a>
+    </div>
+  </div>
+  <script src="fixice2.js"></script>
   </div>
 
   
