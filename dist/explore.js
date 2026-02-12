@@ -1,4 +1,4 @@
-console.log('link-explorer.js loaded');
+console.log('explore.js loaded');
 // Parse link-list.txt and filter/group records by cause
 async function loadLinks() {
 	const response = await fetch('link-list.txt');
