@@ -19,7 +19,7 @@ body {
   position: relative;
 }
 .menu-links {
-  width: 75vw;
+  width: 100vw;
   background: #fff;
   box-shadow: 0 2px 8px #0002;
   display: flex;
