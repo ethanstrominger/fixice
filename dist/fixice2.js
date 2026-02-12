@@ -1,7 +1,7 @@
-// fixice2.js
+// menu.js
 // Handles hamburger menu toggle and populates dropdowns
 
-// fixice2.js
+// menu.js
 // Handles hamburger menu toggle and populates dropdowns
 
 function populateDropdown(dropdownId, items) {
