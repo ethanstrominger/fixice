@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Information</title>
+  <link rel="stylesheet" href="fixice.css?v=2">
+</head>
+
+<body>
+  <div id="menu-container"></div>
+  <div class="content">
+    <p>
+    The MBTA bus <a href="https://www.mbta.com/schedules/350/line">route 350</a> starts at Alewife Station and has stops near to District Ave. 
+    The LRTA bus <a href="https://lrta.com/routes/route-14/">route 14</a> starts at the Kennedy Center in Lowell and uses the same stops 
+    close to District Ave.  Some people have reported parking at Wegman's and taking the LRTA
+    route 14 bus to the protest.
+    </p>
+        </div>
+
+    <script src="menu.js"></script>
+    <script>
+      // Initialize menu (injects menu if needed and sets up all logic)
+      if (typeof initMenu === 'function') {
+        initMenu();
+      } else {
+        // If menu.js is not loaded yet, wait for it
+        window.addEventListener('DOMContentLoaded', function () {
+          if (typeof initMenu === 'function') initMenu();
+        });
+      }
+    </script>
+</body>
+
+</html>
