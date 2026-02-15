@@ -5,7 +5,7 @@
   - generic [ref=e2]:
     - generic [ref=e3]:
       - generic [ref=e4]:
-        - heading "FIX ICE" [level=1] [ref=e5]
+        - heading "FixICE.org" [level=1] [ref=e5]
         - link "Contact" [ref=e6] [cursor=pointer]:
           - /url: contact.html
       - generic [ref=e7]: Burlington, MA and Beyond
