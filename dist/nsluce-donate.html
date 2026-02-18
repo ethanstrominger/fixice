@@ -20,43 +20,31 @@
   <div class="container">
     <h1>Monthly Fundraiser</h1>
     <p style="font-size:1.1em; color:#444; margin-bottom:1.5em;">Every Wednesday there will be a new fundraiser.</p>
-    <div style="text-align:center; margin-bottom:1.5em;">
-      <a href="https://lucemass.org" target="_blank">
-        <img src="https://lucemass.org/wp-content/uploads/2022/10/LUCE-logo-1.png" alt="LUCE Mass Logo" style="max-width:180px; height:auto; display:block; margin:0 auto 0.5em auto;">
-        <div style="color:#0066cc; font-weight:bold;">Visit lucemass.org</div>
-      </a>
-    </div>
+    <form id="donation-form">
+      <label for="amount">eMail how much you plan to donate</label>
+      <input type="number" id="amount" name="amount" min="1" step="any" required>
+      <button type="submit">Send Donation Amount</button>
+      <div class="success" id="success-message" style="display:none;">Thank you! Your donation email has been prepared.</div>
+    </form>
+    <!-- LUCE Mass logo and visit text removed as requested -->
     <div class="links">
       <a href="https://givebutter.com/NSLUCE" target="_blank">Information about North Shore LUCE</a>
       <a href="https://givebutter.com/NSLUCE/donate" target="_blank">Donate to North Shore LUCE</a>
       <a href="https://lucemass.org" target="_blank">lucemass.org</a>
     </div>
-    <form id="donation-form">
-      <label for="amount">How much did you donate?</label>
-      <input type="number" id="amount" name="amount" min="1" step="any" required>
-      <button type="submit">Save Donation Amount</button>
-      <div class="success" id="success-message" style="display:none;">Thank you! Your donation has been recorded.</div>
-    </form>
-    <div id="total-donated" style="margin-top:2em;"></div>
+    <!-- total recorded removed as requested -->
   </div>
   <script>
-    // Save donation to localStorage and show total
-    function updateTotal() {
-      let total = 0;
-      const donations = JSON.parse(localStorage.getItem('nsluce_donations') || '[]');
-      donations.forEach(val => { total += Number(val) || 0; });
-      document.getElementById('total-donated').textContent = donations.length ? `Total recorded: $${total.toFixed(2)}` : '';
-    }
+    // total recorded logic removed
     document.getElementById('donation-form').addEventListener('submit', function(e) {
       e.preventDefault();
       const amount = document.getElementById('amount').value;
       if (amount && !isNaN(amount) && Number(amount) > 0) {
-        let donations = JSON.parse(localStorage.getItem('nsluce_donations') || '[]');
-        donations.push(Number(amount));
-        localStorage.setItem('nsluce_donations', JSON.stringify(donations));
+        const subject = encodeURIComponent('NSLUCE Donation');
+        const body = encodeURIComponent(`I donated $${amount} to NSLUCE.`);
+        window.location.href = `mailto:info@fixice.org?subject=${subject}&body=${body}`;
         document.getElementById('success-message').style.display = 'block';
         document.getElementById('amount').value = '';
-        updateTotal();
       }
     });
     updateTotal();
