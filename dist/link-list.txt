@@ -238,3 +238,15 @@ Title: Donate Food & Winter Clothes
 Description: Bring shelf-stable food, winter clothing, and hygiene products to Mon–Fri protests for direct distribution or local food banks. See weekly updates and special needs on the Justice 4 All page. You can also donate to Toni Matloff via Venmo (https://venmo.com/u/Toni-Matloff) or with cash.
 Activities: donate
 Cause: Immigrant Aid, Featured
+
+Link: /boycott
+Title: Boycott Citizens Bank
+Description: Information and resources for taking action against Citizens Bank's involvement with ICE.
+Activities: boycott
+Cause: ICE Abuses
+
+Link: https://indivisible.org/events/citizens-bank-stop-financing-ice-prisons-5/
+Title: Citizens Bank: Stop Financing ICE Prisons, March 7
+Description: Protest event urging Citizens Bank to stop financing ICE prisons. Join activists in demanding an end to financial support for immigrant detention.
+Activities: protest, boycott
+Cause: ICE Abuses, Featured
