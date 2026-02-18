@@ -4,8 +4,11 @@ s# resources.txt
 # Extracted unique root URLs from link-list.txt
 # (Only the protocol and domain, nothing after the first /)
 
+1000 District Ave Protests|List of protests at 1000 District Ave and links to sponsoring group | /protests1000districtave
+
 Heading: National and Local Events
 Mobilize | Excellent site to find and join events, petitions, and volunteer opportunities for progressive causes and organizations. | https://mobilize.us
+No Kings | National organization for rallies and actions to end ICE abuses. | https://www.nokings.org
 
 Heading: Immigrant Support
 ACLU of Massachusetts | Defending equality, liberty, and justice. Protects civil liberties and advances equity for all in Massachusetts through advocacy, litigation, and public education. | https://aclum.org
@@ -35,8 +38,6 @@ MassGAIN | Organizes local events. Active on Facebook, Bluesky, and YouTube. | h
 Heading: Other MA Grassroot organizations
 Mass50501 || https://mass50501.org
 Lexington Alarm | Organizes local events and lists other local events, news, and blogs | https://lexingtonalarm.org
-
 Progressive Massachusetts | Provides thoughtful positions, strategies, toolkits for lobbying, and organizes weekly phone banks. | https://www.progressivemass.com/
 
-Heading: Protests at 1000 District Ave and Hanscom
-Display list
+

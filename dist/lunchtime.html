@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch Time Activism</title>
+  <link rel="stylesheet" href="fixice.css?v=2">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <div class="content">
+    <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+      <h2>Lunch Time Activism</h2>
+      <p>After the Monday, Tuesday, and Wednesday protests, join us for lunch and community activism! This is a great opportunity to connect, recharge, and continue making a difference together.</p>
+      <ul>
+        <li>Postcard writing to elected officials and community members</li>
+        <li>Collating materials and resources for immigrants</li>
+        <li>Planning future actions and sharing ideas</li>
+        <li>Building community and supporting each other</li>
+      </ul>
+      <p>We will gather at a restaurant to be announced.  Ordering food is not necessary.  Bring your passion for justice. Let’s keep the momentum going!</p>
+    </main>
+  </div>
+  <script src="fixice2.js"></script>
+</body>
+  <script src="menu.js"></script>
+  <script>
+    if (typeof initMenu === 'function') {
+      initMenu();
+    } else {
+      window.addEventListener('DOMContentLoaded', function() {
+        if (typeof initMenu === 'function') initMenu();
+      });
+    }
+  </script>
+</html>

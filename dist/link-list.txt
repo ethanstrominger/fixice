@@ -1,34 +1,39 @@
-
 Link: https://aclum.org/
 Title: ACLU Massachusetts
 Description: Legal advocacy and support for civil liberties and immigrant rights.
 Activities: donate
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: https://www.mobilize.us/swingbluealliance/event/896221/
 Title: De-ICE Hanscom Protest (Friday)
 Description: Join the De-ICE protest at Hanscom on Friday to stand against ICE detention and support immigrant rights.
 Activities: protest
-Cause: ICE, Immigration
+Cause: ICE Abuses, Immigrant Aid
+
+Link: https://www.mobilize.us/swingbluealliance/event/896221/
+Title: De-ICE Hanscom Protest – Feb 27
+Description: The Feb 27th De-ICE Hanscom standout will be a special one. Our special guests will be a contingent of veterans from Northampton.
+Activities: protest
+Cause: ICE Abuses
 
 Link: https://amazon.com/hz/wishlist/ls/24S8YZCELQWFC
 Title: Amazon Immigrant Aid Wishlist (supplys for Supply Hub)
 Description: Purchase items for Supply Hub that supports immigrants 
 through distribution of applicable educational material.
 Activities: donate
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: https://beyondbondboston.org/donate
 Title: BIJAN Bond Fund
 Description: Boston Immigrant Justice Accompaniment Network bond fund for detained immigrants.
 Activities: donate
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: https://beyondbondboston.org/donate-2
 Title: BIJAN Commissary Fund
 Description: Commissary fund for detained immigrants, managed by BIJAN.
 Activities: donate
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: https://burnresilience.network/ICEcadrille/
 Title: Black Tie Protest Event
@@ -40,7 +45,7 @@ Link: https://concordindivisible.org/action-springboard/
 Title: Concord Indivisible Action Springboard
 Description: Concord Indivisible Action Springboard
 Activities: protest, advocate
-Cause: ICE
+Cause: ICE Abuses
 
 Link: https://cookpolitical.com/ratings/house-race-ratings
 Title: Cook Political House Ratings
@@ -70,73 +75,73 @@ Link: https://facebook.com/413StayingConnectedForAction/
 Title: 413 Staying Connected for Action
 Description: 413 Staying Connected for Action
 Activities: protest, learn
-Cause: ICE
+Cause: ICE Abuses
 
 Link: https://indivisible-ma.org/act_now/
 Title: Indivisible MA Act Now
 Description: Indivisible Mass. Act Now page
 Activities: protest, advocate
-Cause: ICE
+Cause: ICE Abuses
 
 Link: https://indivisible-ma.org/calendar/
 Title: Indivisible MA Calendar
 Description: Calendar of events
 Activities: protest
-Cause: ICE
+Cause: ICE Abuses
 
 Link: https://indivisible-ma.org/donate/
 Title: Indivisible MA
 Description: Grassroots organization supporting progressive causes and immigrant rights.
 Activities: donate
-Cause: ICE, Immigration, Elections
+Cause: ICE Abuses, Immigrant Aid, Elections
 
 Link: https://indivisible-ma.org/find-a-group/
 Title: Indivisible Group Finder
 Description: Find Your Indivisible Group
 Activities: protest, volunteer
-Cause: ICE
+Cause: ICE Abuses
 
 Link: https://indivisiblelab.org/donate/
 Title: Indivisible LAB
 Description: Grassroots advocacy group supporting immigrant rights and progressive causes.
 Activities: donate
-Cause: ICE, Immigration, Elections
+Cause: ICE Abuses, Immigrant Aid, Elections
 
 Link: https://lawyersforcivilrights.org/donate/
 Title: Lawyers for Civil Rights
 Description: Legal support and advocacy for civil rights and immigrants.
 Activities: donate
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: https://LUCEmass.org
 Title: LUCE Immigrant Justice Network
 Description: Resource hub and hotline for Massachusetts immigrants.
 Activities: learn, volunteer
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: mailto:PajamaActivism@proton.me
 Title: Pajama Activism
 Description: Email for coalition supply hub volunteer opportunities.
 Activities: volunteer
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: mailto:PajamaActivism@proton.me
 Title: Pajama Activism
 Description: Email PajamaActivism for volunteer opportunities
 Activities: volunteer
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: https://miracoalition.org/donate/
 Title: Massachusetts Immigrant & Refugee Advocacy Coalition
 Description: Massachusetts Immigrant & Refugee Advocacy Coalition, supporting immigrant rights.
 Activities: donate
-Cause: Immigration
+Cause: Immigrant Aid
 
 Link: https://mobilize.us
 Title: Mobilize National Events
 Description: Find protests and events nationwide on mobilize.us
 Activities: protest, volunteer
-Cause: Elections, ICE
+Cause: Elections, ICE Abuses
 
 Link: https://mobilize.us/?is_virtual=true
 Title: Mobilize Virtual Campaigns
@@ -172,7 +177,7 @@ Link: https://state-elections.org/
 Title: State and Local Elections Alliance
 Description: Drives resources to impactful non-federal races, maximizing influence for donors and volunteers.
 Activities: donate
-Cause: Elections
+Cause: Elections, Featured
 
 Link: https://swingbluealliance.org/calendar/
 Title: Swing Blue Alliance Calendar
@@ -198,41 +203,38 @@ Description: Urgent actions and funding opportunities for federal races (Turn Pu
 Activities: advocate
 Cause: Elections
 
-Link: /protests1000districtave.html
+Link: /protests1000districtave
 Title: Burlington ICE Detention Center Standouts
 Description: Burlington ICE Detention Center Standouts
 Activities: protest
-Cause: ICE, Immigration
-
-
-Link: https://Venmo.com/u/LaurenNoyes716
-Title: Venmo - Lauren Noyes, trusted Bearing Witness members
-Description: Printing, supplies, and materials for immigrant support coalition.
-Activities: donate
-Cause: Immigration
-
-Link: https://WelcomeImmigrantNetwork.org/donate-index-impact
-Title: Welcome Immigrant Network (Salem)
-Description: Mutual aid and emergency support for immigrants in Salem, MA.
-Activities: donate, volunteer
-Cause: Immigration
-
-Link: volunteer.pdf
-Title: Volunteer Guide PDF
-Description: Guide for volunteering to help immigrants, includes training resources.
-Activities: volunteer, learn
-Cause: Immigration
-
-Link: FREE Red Cards 250 per week.pdf
-Title: Free Red Cards PDF
-Description: Order red cards for free (PDF)
-Activities: volunteer, learn
-Cause: Immigration
-
-
+Cause: ICE Abuses, Immigrant Aid
 
 Link: https://act.indivisible.org/sign/ice-out-for-good?akid=s132928..WohDZg&fbclid=IwY2xjawPppktleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeuV5R1Q6Q0ppkW7_KnYjb_MwTkhtY8JzPwG1ot2OIiKwmVn8djPGsHG2hdus_aem_IzsTawiXwHL2gTZt7bR_xg
 Title: ICE Out for Good Petition
 Description: eMail your congressional representatives to rein in ICE (Concord Indivisible)
 Activities: advocate
-Cause: Immigration
+Cause: ICE Abuses
+
+Link: https://actionnetwork.org/letters/rep-clark-please-defend-your-rights-in-court-and-sue-ice
+Title: Quick Action: Urge Rep. Clark to Sue ICE
+Description: Write to Rep. Clark asking her to defend her rights in court and sue ICE for blocking her visit to the detention center.
+Activities: advocate
+Cause: ICE Abuses, Featured
+
+Link: https://www.noicenh.com/current-status
+Title: ICE Out of Merrimack, Sat Feb 21 12-2 Merrimack Town Hall
+Description: Learn about and support the ICE Out of NH campaign and upcoming events to end ICE contracts in New Hampshire.
+Activities: advocate
+Cause: ICE Abuses, Featured
+
+Link: /lunchtime
+Title: Lunch Time Activism
+Description: Join us for lunch after Mon, Tue, and Wed protests to write postcards, collate materials for immigrants, and plan future actions.
+Activities: advocate
+Cause: Immigrant Aid, Featured
+
+Link: /donatehere
+Title: Donate Food & Winter Clothes
+Description: Bring shelf-stable food, winter clothing, and hygiene products to Mon–Fri protests for direct distribution or local food banks. See weekly updates and special needs on the Justice 4 All page. You can also donate to Toni Matloff via Venmo (https://venmo.com/u/Toni-Matloff) or with cash.
+Activities: donate
+Cause: Immigrant Aid, Featured

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Food & Winter Clothes</title>
+  <link rel="stylesheet" href="fixice.css?v=2">
+</head>
+<body>
+  <div id="menu-container"></div>
+  <div class="content">
+    <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+      <h2>Donate Food & Winter Clothes</h2>
+      <p>You can help by donating food, winter clothing, and personal hygiene products at the ICE facility during protests, Monday through Friday.</p>
+      <ul>
+        <li><b>Distribution:</b> Food and clothing are distributed directly to people entering or exiting the ICE facility, including those just released, or given to a local food bank.</li>
+        <li><b>Best Days:</b> Wednesday through Friday are ideal, but donations are welcome on Monday and Tuesday as well.</li>
+        <li><b>What to Bring:</b> Shelf-stable food (canned items, pasta sauces, oils, spices, gravies), winter clothing, and personal hygiene products. Please bring items in their original packaging. <b>The greatest current needs are tea, coffee, and cooking oil.</b></li>
+        <li><b>Updates:</b> Weekly updates about donations are posted on the Justice 4 All page each Thursday and Friday afternoon. Special needs for items are also posted there.</li>
+        <li><b>Donate Directly:</b> You can also donate to Toni Matloff via <a href="https://venmo.com/u/Toni-Matloff" target="_blank">Venmo</a> or with cash.</li>
+      </ul>
+      <p>Anyone is welcome to bring shelf-stable donations on Monday or Tuesday. Your support makes a real difference for people in need!</p>
+    </main>
+  </div>
+  <script src="fixice2.js"></script>
+</body>
+  <script src="menu.js"></script>
+  <script>
+    if (typeof initMenu === 'function') {
+      initMenu();
+    } else {
+      window.addEventListener('DOMContentLoaded', function() {
+        if (typeof initMenu === 'function') initMenu();
+      });
+    }
+  </script>
+</html>
