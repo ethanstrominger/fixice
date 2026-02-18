@@ -224,7 +224,7 @@ Cause: ICE Abuses, Featured
 Link: https://www.noicenh.com/current-status
 Title: ICE Out of Merrimack, Sat Feb 21 12-2 Merrimack Town Hall
 Description: Learn about and support the ICE Out of NH campaign and upcoming events to end ICE contracts in New Hampshire.
-Activities: advocate
+Activities: protest
 Cause: ICE Abuses, Featured
 
 Link: /lunchtime
