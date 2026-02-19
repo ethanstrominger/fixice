@@ -10,18 +10,16 @@
 
 <body>
   <div id="menu-container"></div>
-  <div class="content">
-
+  <div class="content" style="max-width:700px;margin:0 auto;padding:2em;">
     <h1>Parking Information</h1>
     <p>Click <a href="/mondaytuesday#parking">here</a> for parking information.</p>
+  </div>
     <script src="menu.js"></script>
     <script>
-      // Initialize menu (injects menu if needed and sets up all logic)
       if (typeof initMenu === 'function') {
         initMenu();
       } else {
-        // If menu.js is not loaded yet, wait for it
-        window.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('DOMContentLoaded', function() {
           if (typeof initMenu === 'function') initMenu();
         });
       }
