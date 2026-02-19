@@ -11,7 +11,7 @@ Parking policies and enforcement can change. Please use your own judgment and ch
 - 🚫 Do not park at AMC.
 - ✅ Temple Shalom Emeth and United Church of Christ have granted permission to park.
 - 🚗 Public parking is available at TRW Playground (Stony Brook Rd).
-- ⚠️ Commercial lots may carry some risk of monitoring or towing.
+- ⚠️ Commercial lots carry a risk of towing.  Discretion advised.
 - 📢 If towed, notify the group organizer and review tow dispute guidance on the Bearing Witness website.
 
 ---
@@ -46,9 +46,17 @@ Check Facebook for shuttle coordination.
 
 ---
 
-### ⚠️ Commercial Lots (Use Discretion)
+### ⚠️ Commercial Lots
+<span style="color:#b22222;font-weight:bold;">YOU PARK AT YOUR OWN RISK</span>
+<span style="color:#b22222;font-weight:bold;">If you decide to park in a commerical lot use discretion.</span>
 
 <details>
+<summary><strong>Sign Drop Off </strong></summary>
+Organizers have a lot of signs, so you do not need to bring your own sign.  If bringing your own sign, you can drop it off before parking:  
+	- **Wed, Thu, Fri:** 1000 District Ave  
+	- **Mon, Tue, Sat:** Corner of District Ave & Burlington Mall Road  
+	- Do not leave signs unattended if no one is present.  
+**YOU PARK AT YOUR OWN RISK**
 <summary><strong>Kohl’s</strong></summary>
 
 Many participants have parked here without issue.  
@@ -81,19 +89,3 @@ Security vehicles may be present.
 
 ---
 
-### 🚗 Tips for Using Commercial Parking
-
-<details>
-<summary><strong>Click to view parking tips</strong></summary>
-
-- Avoid displaying protest signs or materials when exiting your vehicle.  
-- Consider using signs provided by organizers.  
-- If bringing your own sign, conceal it or drop it off first:  
-	- **Wed, Thu, Fri:** 1000 District Ave  
-	- **Mon, Tue, Sat:** Corner of District Ave & Burlington Mall Road  
-	- Do not leave signs unattended if no one is present.  
-- Walk into a business after parking.  
-- Be aware of your surroundings.  
-- If your vehicle is towed, notify the group organizer and review tow dispute guidance on the Bearing Witness website.
-
-</details>

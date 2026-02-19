@@ -59,9 +59,11 @@ Replace `postgres` with your desired password if needed.
 1. Push your code to GitHub.
 2. On Render.com:
    - Create a new **Web Service** from your repo.
-   - Add a **PostgreSQL** database (from Render dashboard).
-   - Set the `DATABASE_URL` environment variable in your service to the value provided by Render.
+   - Use <a href="https://aiven.io/">Aiven</a> to provision a **PostgreSQL** database (instead of Render's managed database).
+   - In Aiven, create a PostgreSQL service and note the connection details (host, port, database, user, password).
+   - Set the `DATABASE_URL` environment variable in your Render service to the value provided by Aiven (format: `postgres://user:password@host:port/database`).
    - Deploy. The donations table will be created automatically.
+   - For security, ensure your Aiven PostgreSQL allows connections from Render's IP addresses.
 
 ## API
 ### POST /api/log-donation
