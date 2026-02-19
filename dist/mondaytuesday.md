@@ -76,7 +76,7 @@
 <details>
 <summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Parking</summary>
 
-<a href="parking.md" style="font-size:1.3em; color:#23408e; font-weight:bold; text-decoration:underline;">Click here for parking info</a>
+<a href="parking.html" style="font-size:1.3em; color:#23408e; font-weight:bold; text-decoration:underline;">Click here for parking info</a>
 </details>
 
 <details>
