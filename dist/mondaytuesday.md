@@ -60,36 +60,107 @@ The MBTA bus [route 350](https://www.mbta.com/schedules/350/line) starts at Alew
 
 The LRTA bus [route 14](https://lrta.com/routes/route-14/) starts at the Kennedy Center in Lowell and uses the same stops close to District Ave. Some people have reported parking at Wegman's and taking the LRTA route 14 bus to the protest.
 
-## Parking
+# Parking Information
 
-This section discusses risks of parking at different locations.  The section discusses risks with the perspective of the author (Ethan Strominger).
+> 🚫 **DO NOT PARK AT AMC MOVIE THEATER. AMC DOES NOT ALLOW PROTEST PARKING.**
 
-Tips for reducing risk if you park in a commerciallot:
-- do not bring a sign unless you can hide it. Use signs provided by the organizers.  The 
-organizers usually have extra, excellent signs.
-- if you are bringing your own sign, either hide it or drop it off first. **Wed, Thu, Fri:** You can drop off protest signs at 1000 District Ave on Wed, Thu, and Fri. **Mon, Tue, Sat:** You can drop off  signs near the corner of District Ave and Burlington Mall Road.  Do not drop off signs if no one is around.
-- do not get out of the car with visible protest signs
-- walk into a business.  Doing this makes it difficult for anyone who is monitoring to 
-track you.  It may not make a difference if you buy something - they may not notice and they
-mot care
-- look around to check for people who may be monitoring.  
-- if you are towed, please report it to the organizer of the group.  On the Bearing Witness 
-website there are tips for disputing the tow.
+Parking policies and enforcement can change. Please use your own judgment and choose the option that best matches your comfort level.
 
-I may be a little more adventurous than most on this. If you follow these tips it would be very difficult for someone to track you, so I think you would be safe.  That said, everyone needs to assess their own comfort level.  
+---
 
-Locations to park, with and without permission
-- Kohl's - many people do this and have not had issues.  Cars have never been towed from Kohl's.
-- Strip mall with Just Salad - I have parked there many times.  Cars have not yet been towed from there, but they did put up new No Parking signs, and someone said there was someone who was trying to monitor cars.  There are many stores which would make it more difficult to track.  You can see the lot from Burlington Mall Road.  Since Monday, Tuesday, and Saturday groups start at Burlington Mall Road, you will be able to see when the tow truck is coming,
-and should be able to get to your car before the two truck.  
-- Burlington Mall - Several people have been reported being interrogated even when no where 
-near there caar.  Many people have parked there.  No towing has yet to occur.
-- District Ave - Cars have been towed from this area, even on the street, and it has cost $180 to retrieve your car.  There are one or two security cars, so be extra cautious if there is a security car nearby.  
-- TRW Playground: there is a public parking lot for TRW Playground on Stony Brook Road (over 30 spots, 0.8 miles from District Ave). Set navigation to [28 Stony Brook Rd, Burlington, MA](https://maps.app.goo.gl/HdcKmmQQfaEiMY6d6). TRW Playground is at the end of the road.  If you set your map
-to TRW playground you may be directed to make an illegal turn.
-	- [Temple Shalom Emeth, 16 Lexington St, Burlington, MA](https://www.google.com/maps/search/?api=1&query=Temple+Shalom+Emeth+16+Lexington+St+Burlington+MA): The temple has given us permission to park there. If you park there, you may want to use Facebook to see if there is shuttling.
-	- [United Church of Christ Congregational, 6 Lexington St, Burlington, MA](https://www.google.com/maps/search/?api=1&query=6+Lexington+St+Burlington+MA): The church has given us permission to park there. It is very close to Temple Shalom Emeth. If there is
+## Quick Summary
 
+- 🚫 Do not park at AMC.  
+- ✅ Temple Shalom Emeth and United Church of Christ have granted permission to park.  
+- 🚗 Public parking is available at TRW Playground (Stony Brook Rd).  
+- ⚠️ Commercial lots may carry some risk of monitoring or towing.  
+- 📢 If towed, notify the group organizer and review tow dispute guidance on the Bearing Witness website.
+
+---
+
+## 📍 Public & Approved Parking
+
+<details>
+<summary><strong>TRW Playground (Public Lot)</strong></summary>
+
+**Address:** 28 Stony Brook Rd, Burlington, MA  
+Approximately 0.8 miles from District Ave (30+ spaces available).
+
+*Note:* If you enter “TRW Playground” into navigation, some map apps may suggest an illegal turn. It is best to navigate directly to **28 Stony Brook Rd**.
+</details>
+
+<details>
+<summary><strong>Temple Shalom Emeth</strong></summary>
+
+**Address:** 16 Lexington St, Burlington, MA  
+
+Permission has been granted to park here.  
+Check Facebook for possible shuttle coordination.
+</details>
+
+<details>
+<summary><strong>United Church of Christ Congregational</strong></summary>
+
+**Address:** 6 Lexington St, Burlington, MA  
+
+Permission has also been granted here.  
+This location is very close to Temple Shalom Emeth.  
+Check Facebook for shuttle coordination.
+</details>
+
+---
+
+## ⚠️ Commercial Lots (Use Discretion)
+
+<details>
+<summary><strong>Kohl’s</strong></summary>
+
+Many participants have parked here without issue.  
+No towing has been reported from this location.
+</details>
+
+<details>
+<summary><strong>Strip Mall (Just Salad Plaza)</strong></summary>
+
+New “No Parking” signs have been posted, and there have been reports of monitoring.
+
+The lot is visible from Burlington Mall Road.  
+On Mon, Tue, and Sat (when groups gather there), activity in the lot can generally be seen from the gathering area, which may allow you to return promptly if enforcement activity appears.
+</details>
+
+<details>
+<summary><strong>Burlington Mall</strong></summary>
+
+Some participants have reported being questioned even when not near their vehicles.  
+No towing has been reported to date.
+</details>
+
+<details>
+<summary><strong>District Ave (Including Street Parking)</strong></summary>
+
+Towing has occurred in this area, including from street parking.  
+Retrieval costs have been approximately $180.  
+Security vehicles may be present.
+</details>
+
+---
+
+## 🚗 Tips for Using Commercial Parking
+
+<details>
+<summary><strong>Click to view parking tips</strong></summary>
+
+- Avoid displaying protest signs or materials when exiting your vehicle.  
+- Consider using signs provided by organizers.  
+- If bringing your own sign, conceal it or drop it off first:  
+  - **Wed, Thu, Fri:** 1000 District Ave  
+  - **Mon, Tue, Sat:** Corner of District Ave & Burlington Mall Road  
+  - Do not leave signs unattended if no one is present.  
+- Walk into a business after parking.  
+- Be aware of your surroundings.  
+- If your vehicle is towed, notify the group organizer and review tow dispute guidance on the Bearing Witness website.
+
+</details>
 
 ## Our Goals: What We’re Demanding
 
