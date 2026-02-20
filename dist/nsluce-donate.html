@@ -41,37 +41,37 @@
   </div>
   <script>
 
-        async function handleDonate(frequency) {
-          const amount = document.getElementById('amount').value;
-          if (!amount || isNaN(amount) || Number(amount) <= 0) {
-            alert('Please enter a valid donation amount.');
-            return;
-          }
-          let saveOk = false;
-          try {
-            const resp = await fetch('/api/log-donation', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ amount, frequency })
-            });
-            if (resp.ok) saveOk = true;
-          } catch (err) {
-            saveOk = false;
-          }
-          if (saveOk) {
-            // Redirect to Givebutter with prefilled amount and frequency
-            window.location.href = `https://givebutter.com/NSLUCE/donate?amount=${encodeURIComponent(amount)}&frequency=${encodeURIComponent(frequency)}`;
-          } else {
-            alert('Unable to save to fixice.org. Please use North Shore LUCE web page.');
-            window.location.href = 'https://givebutter.com/NSLUCE/donate';
-          }
-        }
-        document.getElementById('donate-once').addEventListener('click', function() {
-          handleDonate('once');
+
+    function openGivebutter(amount, frequency) {
+      const url = `https://givebutter.com/NSLUCE/donate?amount=${encodeURIComponent(amount)}&frequency=${encodeURIComponent(frequency)}`;
+      window.open(url, '_blank');
+    }
+
+    async function handleDonate(frequency) {
+      const amount = document.getElementById('amount').value;
+      if (!amount || isNaN(amount) || Number(amount) <= 0) {
+        alert('Please enter a valid donation amount.');
+        return;
+      }
+      // Open Givebutter immediately in a new tab
+      openGivebutter(amount, frequency);
+      // Save to backend (PostgreSQL)
+      try {
+        await fetch('/api/log-donation', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ amount, frequency })
         });
-        document.getElementById('donate-monthly').addEventListener('click', function() {
-          handleDonate('monthly');
-        });
+      } catch (err) {
+        // Optionally log error or ignore
+      }
+    }
+    document.getElementById('donate-once').addEventListener('click', function() {
+      handleDonate('once');
+    });
+    document.getElementById('donate-monthly').addEventListener('click', function() {
+      handleDonate('monthly');
+    });
 
     // List all donations button logic
     document.getElementById('list-donations-btn').addEventListener('click', async function() {
