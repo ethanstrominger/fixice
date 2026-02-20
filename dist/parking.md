@@ -31,17 +31,16 @@ Approximately 0.8 miles from District Ave (30+ spaces available).
 <summary><strong>Temple Shalom Emeth</strong></summary>
 
 **Address:** 16 Lexington St, Burlington, MA  
-Permission has been granted to park here.  
-Check Facebook for possible shuttle coordination.
+You can park there on Wednesday.  
+Check the Bearing Witness Facebook for possible shuttle coordination.
 </details>
 
 <details>
 <summary><strong>United Church of Christ Congregational</strong></summary>
 
 **Address:** 6 Lexington St, Burlington, MA  
-Permission has also been granted here.  
-This location is very close to Temple Shalom Emeth.  
-Check Facebook for shuttle coordination.
+You can there on Wednesday.  The location is very close to Temple Shalom Emeth.  
+Check the Bearing Witness Facebook for shuttle coordination.
 </details>
 
 ---
