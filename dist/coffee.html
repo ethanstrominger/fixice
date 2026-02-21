@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- File replaced by weekly-fundraiser.html -->
+  <link rel="stylesheet" href="fixice.css?v=2">
   <style>
     body { font-family: sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
     .container { max-width: 500px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2em; }
@@ -17,11 +18,12 @@
   </style>
 </head>
 <body>
+  <div id="menu-container"></div>
   <div class="container">
-    <h1>Monthly Fundraiser</h1>
+    <h1>Featured Fundraiser</h1>
     <p style="font-size:1.1em; color:#444; margin-bottom:1.5em;">Every Wednesday there will be a new fundraiser.</p>
     <form id="donation-form">
-      <label for="amount">Donation Amount</label>
+      <ldabel for="amount">Donation Amount</label>
       <input type="number" id="amount" name="amount" min="1" step="any" placeholder="Enter amount (USD)" required>
       <div style="margin-top:1.5em; display:flex; gap:1em;">
         <button type="button" id="donate-once" style="flex:1; background:#0066cc;">Donate Once</button>
@@ -102,6 +104,16 @@
         listDiv.innerHTML = '<span style="color:red;">Error loading donations.</span>';
       }
     });
+  </script>
+  <script src="menu.js"></script>
+  <script>
+    if (typeof initMenu === 'function') {
+      initMenu();
+    } else {
+      window.addEventListener('DOMContentLoaded', function() {
+        if (typeof initMenu === 'function') initMenu();
+      });
+    }
   </script>
 </body>
 </html>
