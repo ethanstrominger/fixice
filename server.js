@@ -4,12 +4,18 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const { Pool } = require("pg");
 // Load environment variables from .env in development
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 const app = express();
+
+// Allow cross-origin requests from the frontend
+app.use(cors({
+  origin: ["https://fixice.org", "http://localhost:8080"],
+}));
 const port = process.env.PORT || 3000;
 
 // PostgreSQL connection config (set these in your Render environment)
@@ -48,7 +54,13 @@ pool.query(`CREATE TABLE IF NOT EXISTS donations (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )`).catch(err => console.error('Error creating donations table:', err.message));
 
-app.post("/api/log-donation", async (req, res) => {
+// Log incoming requests for debugging
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
+async function logDonation(req, res) {
   const { amount, frequency } = req.body;
   if (!amount || !frequency)
     return res.status(400).json({ error: "Missing amount or frequency" });
@@ -63,22 +75,26 @@ app.post("/api/log-donation", async (req, res) => {
     console.error("Error inserting donation:", err.message);
     res.status(500).json({ error: "DB error" });
   }
-});
+}
 
-// Endpoint to list all donations
-app.get("/api/list-donations", async (req, res) => {
+async function listDonations(req, res) {
   try {
     const result = await pool.query(
       "SELECT amount, frequency, created_at FROM donations ORDER BY id DESC",
     );
-    // Calculate total
     const total = result.rows.reduce((sum, d) => sum + Number(d.amount), 0);
     res.json({ donations: result.rows, total });
   } catch (err) {
     console.error('Error listing donations:', err.message);
     res.status(500).json({ error: "DB error" });
   }
-});
+}
+
+// Support both /api/* and /* paths (Render may strip /api prefix)
+app.post("/api/log-donation", logDonation);
+app.post("/log-donation", logDonation);
+app.get("/api/list-donations", listDonations);
+app.get("/list-donations", listDonations);
 
 // Serve static files (adjust path as needed)
 app.use(express.static("dist"));

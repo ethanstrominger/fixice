@@ -43,6 +43,10 @@
   </div>
   <script>
 
+    // Use correct backend URL based on environment
+    const API_BASE = window.location.hostname === 'localhost'
+      ? ''
+      : 'https://api.fixice.org';
 
     function openGivebutter(amount, frequency) {
       const url = `https://givebutter.com/NSLUCE/donate?amount=${encodeURIComponent(amount)}&frequency=${encodeURIComponent(frequency)}`;
@@ -59,7 +63,7 @@
       openGivebutter(amount, frequency);
       // Save to backend (PostgreSQL)
       try {
-        await fetch('/api/log-donation', {
+        await fetch(API_BASE + '/api/log-donation', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ amount, frequency })
@@ -81,7 +85,7 @@
       listDiv.style.display = 'block';
       listDiv.innerHTML = 'Loading...';
       try {
-        const resp = await fetch('/api/list-donations');
+        const resp = await fetch(API_BASE + '/api/list-donations');
         if (!resp.ok) throw new Error('Failed to fetch');
         const data = await resp.json();
         if (!Array.isArray(data.donations) || data.donations.length === 0) {
