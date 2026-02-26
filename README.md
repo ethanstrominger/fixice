@@ -45,10 +45,20 @@ Replace `postgres` with your desired password if needed.
    ```sh
    npm install
    ```
-3. Start PostgreSQL and create a database:
+3. Create a PostgreSQL user and database:
+   
+   If you do not already have a `postgres` user (the default superuser), create one:
+   ```sh
+   createuser -s postgres
+   ```
+   
+   Then create the database:
    ```sh
    createdb fixice
    ```
+   
+   If you want to use a different username or password, update the `DATABASE_URL` in your `.env` file accordingly.
+
 4. Start the server:
    ```sh
    node server.js

@@ -46,7 +46,7 @@ pool.query(`CREATE TABLE IF NOT EXISTS donations (
   amount NUMERIC NOT NULL,
   frequency TEXT NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)`);
+)`).catch(err => console.error('Error creating donations table:', err.message));
 
 app.post("/api/log-donation", async (req, res) => {
   const { amount, frequency } = req.body;
@@ -75,6 +75,7 @@ app.get("/api/list-donations", async (req, res) => {
     const total = result.rows.reduce((sum, d) => sum + Number(d.amount), 0);
     res.json({ donations: result.rows, total });
   } catch (err) {
+    console.error('Error listing donations:', err.message);
     res.status(500).json({ error: "DB error" });
   }
 });
