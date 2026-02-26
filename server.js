@@ -14,7 +14,14 @@ const app = express();
 
 // Allow cross-origin requests from the frontend
 app.use(cors({
-  origin: ["https://fixice.org", "http://localhost:8080"],
+  origin: [
+    "https://fixice.org",
+    "https://www.fixice.org",
+    "http://localhost:8080",
+    "http://localhost:3000",
+  ],
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
 }));
 const port = process.env.PORT || 3000;
 
