@@ -14,7 +14,7 @@ Link: https://www.mobilize.us/swingbluealliance/event/896221/
 Title: De-ICE Hanscom Protest – Feb 27
 Description: The Feb 27th De-ICE Hanscom standout will be a special one. Our special guests will be a contingent of veterans from Northampton.
 Activities: protest
-Cause: ICE Abuses
+Cause: ICE Abuses, Featured
 
 Link: https://amazon.com/hz/wishlist/ls/24S8YZCELQWFC
 Title: Amazon Immigrant Aid Wishlist (supplys for Supply Hub)
@@ -221,12 +221,6 @@ Description: Write to Rep. Clark asking her to defend her rights in court and su
 Activities: advocate
 Cause: ICE Abuses, Featured
 
-Link: https://www.noicenh.com/current-status
-Title: ICE Out of Merrimack, Sat Feb 21 12-2 Merrimack Town Hall
-Description: Learn about and support the ICE Out of NH campaign and upcoming events to end ICE contracts in New Hampshire.
-Activities: protest
-Cause: ICE Abuses, Featured
-
 Link: /lunchtime
 Title: Lunch Time Activism
 Description: Join us for lunch after Mon, Tue, and Wed protests to write postcards, collate materials for immigrants, and plan future actions.
@@ -250,3 +244,5 @@ Title: Citizens Bank: Stop Financing ICE Prisons, March 7
 Description: Protest event urging Citizens Bank to stop financing ICE prisons. Join activists in demanding an end to financial support for immigrant detention.
 Activities: protest, boycott
 Cause: ICE Abuses, Featured
+
+Link: 

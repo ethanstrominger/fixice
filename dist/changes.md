@@ -14,4 +14,3 @@
     - [ICE Out of Merrimack, Sat Feb 21](https://www.noicenh.com/current-status): Learn about and support the ICE Out of NH campaign and upcoming events.
     - [North Carolina and Texas Text Bank w/ VoteRiders (virtual)](https://www.mobilize.us/voteriders/event/893364/): Help TX and NC voters get the ID info they need for the primaries.
     - [No Kings Rally – March 28](https://www.nokings.org/): 1000 District Ave protest. Details TBD.
-    - Many new actions, events, and donation opportunities in [the full action list](link-list.txt).
