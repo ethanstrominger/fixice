@@ -31,10 +31,9 @@
 <body>
   <div id="menu-container"></div>
   <div class="container" style="padding-top:1em;">
-    <h1 style="margin-bottom:0; text-align:center;">Coffee Connection — Mar 4, 2026</h1>
+    <h1 style="margin-bottom:0; text-align:center;">Coffee Connection — Feb 18, 2026</h1>
     <p style="font-style:italic; color:#555; margin-top:0.3em; margin-bottom:1.5em; text-align:center;">Caffeinate, Connect, and Contribute</p>
     <div class="tab-bar">
-      <button class="tab-btn" data-tab="about">About</button>
       <button class="tab-btn active" data-tab="fundraiser">Featured Fundraiser</button>
       <button class="tab-btn" data-tab="actions">Featured Actions</button>
     </div>
@@ -111,15 +110,9 @@
         </div>
       </details>
     </div>
-
-    <!-- Tab 3: About -->
-    <div class="tab-content" id="tab-about">
-      <h1>About Coffee Connection</h1>
-      <p style="font-size:1.1em; color:#444; line-height:1.6;">The Coffee Connection is part of the weekly Wednesday <strong>Bearing Witness</strong> events. We offer folks some warm coffee and cocoa, provide an opportunity to <strong>connect</strong> with us and other organizations, and give everyone a chance to <strong>contribute</strong> to a good cause.</p>
-      <p style="font-size:1.1em; color:#444; line-height:1.6;">Each week we feature a different fundraiser and highlight ways to support immigrants — from helping individuals navigate their interactions with ICE, to reining in ICE abuses, to electing leaders who will stand against these cruelties. Look for us at the upcoming Wednesday Bearing Witness events!</p>
-      <p style="font-size:1.1em; color:#444; line-height:1.6; font-style:italic;">Caffeinate, Connect, and Contribute.</p>
-    </div>
   </div>
+
+  <!-- Archive section -->
   <div class="container" id="archive-section" style="display:none;">
     <h2 style="color:#0066cc;">Past Featured Coffees</h2>
     <div id="archive-list"></div>
@@ -148,14 +141,13 @@
     });
 
     // Set tab from URL hash on load (default to fundraiser)
-    var validTabs = ['about', 'fundraiser', 'actions'];
     var hash = window.location.hash.replace('#', '');
-    switchTab(validTabs.indexOf(hash) !== -1 ? hash : 'fundraiser');
+    switchTab(hash === 'actions' ? 'actions' : 'fundraiser');
 
     // Handle back/forward navigation
     window.addEventListener('hashchange', function() {
       var h = window.location.hash.replace('#', '');
-      switchTab(validTabs.indexOf(h) !== -1 ? h : 'fundraiser');
+      switchTab(h === 'actions' ? 'actions' : 'fundraiser');
     });
 
     // Render archive links if any exist
