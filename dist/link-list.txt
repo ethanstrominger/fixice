@@ -2,247 +2,294 @@ Link: https://aclum.org/
 Title: ACLU Massachusetts
 Description: Legal advocacy and support for civil liberties and immigrant rights.
 Activities: donate
+Mode: On Your Own
 Cause: Immigrant Aid
 
 Link: https://www.mobilize.us/swingbluealliance/event/896221/
 Title: De-ICE Hanscom Protest (Friday)
 Description: Join the De-ICE protest at Hanscom on Friday to stand against ICE detention and support immigrant rights.
 Activities: protest
+Mode: In Person
 Cause: ICE Abuses, Immigrant Aid
 
 Link: https://www.mobilize.us/swingbluealliance/event/896221/
 Title: De-ICE Hanscom Protest – Feb 27
 Description: The Feb 27th De-ICE Hanscom standout will be a special one. Our special guests will be a contingent of veterans from Northampton.
 Activities: protest
-Cause: ICE Abuses, Featured
+Mode: In Person
+Tag: Featured
+Cause: ICE Abuses
 
 Link: https://amazon.com/hz/wishlist/ls/24S8YZCELQWFC
 Title: Amazon Immigrant Aid Wishlist (supplys for Supply Hub)
 Description: Purchase items for Supply Hub that supports immigrants 
 through distribution of applicable educational material.
 Activities: donate
+Mode: On Your Own
 Cause: Immigrant Aid
 
 Link: https://beyondbondboston.org/donate
 Title: BIJAN Bond Fund
 Description: Boston Immigrant Justice Accompaniment Network bond fund for detained immigrants.
 Activities: donate
+Mode: On Your Own
 Cause: Immigrant Aid
 
 Link: https://beyondbondboston.org/donate-2
 Title: BIJAN Commissary Fund
 Description: Commissary fund for detained immigrants, managed by BIJAN.
 Activities: donate
+Mode: On Your Own
 Cause: Immigrant Aid
 
 Link: https://burnresilience.network/ICEcadrille/
 Title: Black Tie Protest Event
 Description: Protest at Cafe Escadrille, Burlington, MA. Owner also owns ICE Prison/Field Office at 1000 District Ave. Event to raise awareness and demand accountability.
 Activities: protest
+Mode: In Person
 Cause: ICE Abuses
 
 Link: https://concordindivisible.org/action-springboard/
 Title: Concord Indivisible Action Springboard
 Description: Concord Indivisible Action Springboard
 Activities: protest, advocate
+Mode: ???
 Cause: ICE Abuses
 
 Link: https://cookpolitical.com/ratings/house-race-ratings
 Title: Cook Political House Ratings
 Description: Competitive House races (Cook Political Report)
 Activities: learn
+Mode: On Your Own
 Cause: Elections
 
 Link: https://cookpolitical.com/ratings/house-race-ratings
 Title: cookpolitical
 Description: Nonpartisan analysis of competitive U.S. House races, useful for donors and advocates.
 Activities: learn
+Mode: On Your Own
 Cause: Elections
 
 Link: https://cookpolitical.com/ratings/senate-race-ratings
 Title: Cook Political Senate Ratings
 Description: Competitive Senate races (Cook Political Report)
 Activities: learn
+Mode: On Your Own
 Cause: Elections
 
 Link: https://cookpolitical.com/ratings/senate-race-ratings
 Title: Cook Political
 Description: Nonpartisan analysis of competitive U.S. Senate races, useful for donors and advocates.
 Activities: learn
+Mode: On Your Own
 Cause: Elections
 
 Link: https://facebook.com/413StayingConnectedForAction/
 Title: 413 Staying Connected for Action
 Description: 413 Staying Connected for Action
 Activities: protest, learn
+Mode: Virtual
 Cause: ICE Abuses
 
 Link: https://indivisible-ma.org/act_now/
 Title: Indivisible MA Act Now
 Description: Indivisible Mass. Act Now page
 Activities: protest, advocate
+Mode: On Your Own
 Cause: ICE Abuses
 
 Link: https://indivisible-ma.org/calendar/
 Title: Indivisible MA Calendar
 Description: Calendar of events
 Activities: protest
+Mode: In Person
 Cause: ICE Abuses
 
 Link: https://indivisible-ma.org/donate/
 Title: Indivisible MA
 Description: Grassroots organization supporting progressive causes and immigrant rights.
 Activities: donate
+Mode: On Your Own
 Cause: ICE Abuses, Immigrant Aid, Elections
 
 Link: https://indivisible-ma.org/find-a-group/
 Title: Indivisible Group Finder
 Description: Find Your Indivisible Group
 Activities: protest, volunteer
+Mode: In Person
 Cause: ICE Abuses
 
 Link: https://indivisiblelab.org/donate/
 Title: Indivisible LAB
 Description: Grassroots advocacy group supporting immigrant rights and progressive causes.
 Activities: donate
+Mode: On Your Own
 Cause: ICE Abuses, Immigrant Aid, Elections
 
 Link: https://lawyersforcivilrights.org/donate/
 Title: Lawyers for Civil Rights
 Description: Legal support and advocacy for civil rights and immigrants.
 Activities: donate
+Mode: On Your Own
 Cause: Immigrant Aid
 
 Link: https://LUCEmass.org
 Title: LUCE Immigrant Justice Network
 Description: Resource hub and hotline for Massachusetts immigrants.
 Activities: learn, volunteer
+Mode: On Your Own
 Cause: Immigrant Aid
 
 Link: mailto:PajamaActivism@proton.me
 Title: Pajama Activism
 Description: Email for coalition supply hub volunteer opportunities.
 Activities: volunteer
+Mode: In Person
 Cause: Immigrant Aid
 
 Link: mailto:PajamaActivism@proton.me
 Title: Pajama Activism
 Description: Email PajamaActivism for volunteer opportunities
 Activities: volunteer
+Mode: In Person
 Cause: Immigrant Aid
 
 Link: https://miracoalition.org/donate/
 Title: Massachusetts Immigrant & Refugee Advocacy Coalition
 Description: Massachusetts Immigrant & Refugee Advocacy Coalition, supporting immigrant rights.
 Activities: donate
+Mode: On Your Own
 Cause: Immigrant Aid
 
 Link: https://mobilize.us
 Title: Mobilize National Events
 Description: Find protests and events nationwide on mobilize.us
 Activities: protest, volunteer
+Mode: In Person
 Cause: Elections, ICE Abuses
 
 Link: https://mobilize.us/?is_virtual=true
 Title: Mobilize Virtual Campaigns
 Description: Join campaigns conducted virtually (Mobilize)
 Activities: protest, advocate
+Mode: Virtual
 Cause: Elections
 
 Link: https://mobilize.us/?q=postcard
 Title: Mobilize Postcard Campaigns
 Description: Find in-person postcard writing campaigns (Mobilize)
 Activities: volunteer
+Mode: In Person
 Cause: Elections
 
 Link: https://mobilize.us/?tag_ids=34
 Title: Mobilize Get Out the Vote
 Description: Get Out the Vote campaigns (Mobilize)
 Activities: volunteer
+Mode: In Person
 Cause: Elections
 
 Link: https://mobilize.us/events/phone-bank-volunteer-opportunities/
 Title: Mobilize Phone Bank Opportunities
 Description: Volunteer for phone banking (Mobilize)
 Activities: advocate
+Mode: Virtual
 Cause: Elections
 
 Link: https://scorecard.progressivemass.com/
 Title: Progressive Massachusetts Legislator Scorecard
 Description: How Massachusetts legislators have voted (Progressive Mass Scorecard)
 Activities: learn
+Mode: On Your Own
 Cause: Elections
 
 Link: https://state-elections.org/
 Title: State and Local Elections Alliance
 Description: Drives resources to impactful non-federal races, maximizing influence for donors and volunteers.
 Activities: donate
-Cause: Elections, Featured
+Mode: On Your Own
+Tag: Featured
+Cause: Elections
 
 Link: https://swingbluealliance.org/calendar/
 Title: Swing Blue Alliance Calendar
 Description: Swing Blue Alliance calendar
 Activities: protest, volunteer
+Mode: In Person
 Cause: Elections
 
 Link: https://turnoutpac.org/postcards/
 Title: Postcards to Swing States
 Description: Send postcards to swing states (TurnoutPAC)
 Activities: advocate, volunteer
+Mode: On Your Own
 Cause: Elections
 
 Link: https://turnpurple2blue.org/
 Title: Turn Purple 2 Blue
 Description: Turn Purple to Blue
 Activities: advocate
+Mode: On Your Own
 Cause: Elections
 
 Link: https://turnpurple2blue.org/to-do-now-federal/
 Title: Turn Purple 2 Blue Federal Actions
 Description: Urgent actions and funding opportunities for federal races (Turn Purple 2 Blue)
 Activities: advocate
+Mode: On Your Own
 Cause: Elections
 
 Link: /protests1000districtave
 Title: Burlington ICE Detention Center Standouts
 Description: Burlington ICE Detention Center Standouts
 Activities: protest
+Mode: In Person
 Cause: ICE Abuses, Immigrant Aid
 
 Link: https://act.indivisible.org/sign/ice-out-for-good?akid=s132928..WohDZg&fbclid=IwY2xjawPppktleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeuV5R1Q6Q0ppkW7_KnYjb_MwTkhtY8JzPwG1ot2OIiKwmVn8djPGsHG2hdus_aem_IzsTawiXwHL2gTZt7bR_xg
 Title: ICE Out for Good Petition
 Description: eMail your congressional representatives to rein in ICE (Concord Indivisible)
 Activities: advocate
+Mode: On Your Own
 Cause: ICE Abuses
 
 Link: https://actionnetwork.org/letters/rep-clark-please-defend-your-rights-in-court-and-sue-ice
 Title: Quick Action: Urge Rep. Clark to Sue ICE
 Description: Write to Rep. Clark asking her to defend her rights in court and sue ICE for blocking her visit to the detention center.
 Activities: advocate
-Cause: ICE Abuses, Featured
+Mode: On Your Own
+Tag: Featured
+Cause: ICE Abuses
 
 Link: /lunchtime
 Title: Lunch Time Activism
 Description: Join us for lunch after Mon, Tue, and Wed protests to write postcards, collate materials for immigrants, and plan future actions.
 Activities: advocate
-Cause: Immigrant Aid, Featured
+Mode: In Person
+Tag: Featured
+Cause: Immigrant Aid
 
 Link: /donatehere
 Title: Donate Food & Winter Clothes
 Description: Bring shelf-stable food, gently used winter clothing, and hygiene products to Mon–Fri protests for direct distribution or local food banks. 
 Activities: donate
-Cause: Immigrant Aid, Featured
+Mode: In Person
+Tag: Featured
+Cause: Immigrant Aid
 
 Link: /boycott
 Title: Boycott Citizens Bank
 Description: Information and resources for taking action against Citizens Bank's involvement with ICE.
 Activities: boycott
+Mode: On Your Own
 Cause: ICE Abuses
 
 Link: https://indivisible.org/events/citizens-bank-stop-financing-ice-prisons-5/
 Title: Citizens Bank: Stop Financing ICE Prisons, March 7
 Description: Protest event urging Citizens Bank to stop financing ICE prisons. Join activists in demanding an end to financial support for immigrant detention.
 Activities: protest, boycott
-Cause: ICE Abuses, Featured
+Mode: In Person
+Tag: Featured
+Cause: ICE Abuses
 
 Link: 

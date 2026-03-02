@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Fetch and combine events from Google Calendar (iCal), Tockify (JSON API),
-// Indivisible Lab (Google Calendar iCal feed), and Mobilize.us (public JSON API).
+// Indivisible Lab (Google iCal feed), and Mobilize.us (public JSON API).
 // Usage: node fetch-calendar.js [--json] [--csv] [--days N]
 //
 // Sources:
@@ -11,7 +11,7 @@
 //   4-7. Mobilize.us - public JSON API, 4 queries, no credentials needed
 
 const https = require('https');
-const url = require('url');
+const url = rexquire('url');
 
 // --- Configuration ---
 const GOOGLE_ICAL_URL =

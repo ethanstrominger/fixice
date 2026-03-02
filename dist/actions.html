@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actions</title>
+  <link rel="stylesheet" href="fixice.css?v=3">
+  <style>
+    .actions-filters {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      margin-bottom: 1.2em;
+      max-width: 360px;
+    }
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6em;
+    }
+    .filter-row label {
+      font-weight: 600;
+      color: #23408e;
+      min-width: 100px;
+      flex-shrink: 0;
+    }
+    .filter-row select {
+      border: 2px solid #23408e;
+      border-radius: 5px;
+      padding: 0.3em 0.7em;
+      font-size: 1em;
+      background: #f7faff;
+      color: #23408e;
+      font-weight: 600;
+      cursor: pointer;
+      flex: 1;
+    }
+    .more-filters-toggle {
+      background: none;
+      border: none;
+      color: #23408e;
+      font-weight: 600;
+      font-size: 0.97em;
+      cursor: pointer;
+      padding: 0.2em 0;
+      text-align: left;
+      text-decoration: underline;
+    }
+    .more-filters-toggle::before {
+      content: '▶ ';
+      font-size: 0.8em;
+    }
+    .more-filters-toggle.open::before {
+      content: '▼ ';
+    }
+    #more-filters {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+    .actions-table th {
+      background: #23408e;
+      color: #fff;
+      padding: 0.5em 0.8em;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .actions-table td {
+      padding: 0.45em 0.8em;
+      border-bottom: 1px solid #e0e8f8;
+      vertical-align: top;
+    }
+    .actions-table tr:nth-child(even) td {
+      background: #f7faff;
+    }
+    .actions-table tr:hover td {
+      background: #ffe4ee;
+    }
+    .actions-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.98em;
+      margin-bottom: 0.5em;
+    }
+    #actions-count {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 0.5em;
+    }
+    .actions-section {
+      margin-bottom: 0.3em;
+    }
+    .actions-section > details > summary,
+    .actions-section summary {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.05em;
+      color: #23408e;
+      padding: 0.4em 0.5em;
+      border-radius: 5px;
+      background: #e8eeff;
+      list-style: none;
+      margin-bottom: 0.3em;
+      user-select: none;
+    }
+    .actions-section summary::-webkit-details-marker { display: none; }
+    .actions-section summary::before { content: '▶ '; font-size: 0.8em; }
+    .actions-section details[open] > summary::before { content: '▼ '; font-size: 0.8em; }
+    .actions-flat-heading {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: #23408e;
+      margin-bottom: 0.6em;
+    }
+    .inner-section {
+      margin: 0.2em 0 0.2em 1em;
+    }
+    .inner-section summary {
+      background: #f7faff !important;
+      font-size: 0.98em !important;
+      color: #23408e;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu-container"></div>
+  <div class="content">
+    <main style="max-width:900px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+      <h2>Actions</h2>
+      <div class="actions-filters">
+        <div class="filter-row">
+          <label for="filter-actiontype">Action Type:</label>
+          <select id="filter-actiontype">
+            <option value="">All</option>
+          </select>
+        </div>
+        <div class="filter-row">
+          <label for="filter-cause">Cause:</label>
+          <select id="filter-cause">
+            <option value="">All</option>
+          </select>
+        </div>
+        <button class="more-filters-toggle" id="more-filters-toggle" type="button">More Filters</button>
+        <div id="more-filters" style="display:none;">
+          <div class="filter-row">
+            <label for="filter-mode">Mode:</label>
+            <select id="filter-mode">
+              <option value="">All</option>
+            </select>
+          </div>
+          <div class="filter-row">
+            <label for="filter-tag">Tag:</label>
+            <select id="filter-tag">
+              <option value="">All</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="actions-count"></div>
+      <div id="actions-container"></div>
+    </main>
+  </div>
+  <script src="menu.js"></script>
+  <script>
+    if (typeof initMenu === 'function') {
+      initMenu();
+    } else {
+      window.addEventListener('DOMContentLoaded', function() {
+        if (typeof initMenu === 'function') initMenu();
+      });
+    }
+  </script>
+  <script src="actions.js"></script>
+  <script>
+    // More Filters toggle
+    var mfToggle = document.getElementById('more-filters-toggle');
+    var mfPanel = document.getElementById('more-filters');
+    mfToggle.addEventListener('click', function() {
+      var open = mfPanel.style.display !== 'none';
+      mfPanel.style.display = open ? 'none' : 'flex';
+      mfToggle.classList.toggle('open', !open);
+    });
+    // Auto-expand if mode or tag URL param is set
+    var _p = new URLSearchParams(window.location.search);
+    if (_p.get('mode') || _p.get('tag')) {
+      mfPanel.style.display = 'flex';
+      mfToggle.classList.add('open');
+    }
+  </script>
+</body>
+</html>

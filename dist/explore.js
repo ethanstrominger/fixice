@@ -15,6 +15,8 @@ async function loadLinks() {
 			rec.description = line.replace('Description: ', '').trim();
 		} else if (line.startsWith('Activities: ')) {
 			rec.activities = line.replace('Activities: ', '').trim();
+		} else if (line.startsWith('Tag: ')) {
+			rec.tag = line.replace('Tag: ', '').trim();
 		} else if (line.startsWith('Cause: ')) {
 			rec.cause = line.replace('Cause: ', '').trim();
 			// End of record
@@ -32,6 +34,13 @@ function filterByCause(records, selectedCause) {
 	return records.filter(rec => {
 		if (!rec.cause) return false;
 		return rec.cause.split(',').map(c => c.trim().toLowerCase()).includes(selectedCause.toLowerCase());
+	});
+}
+
+function filterByTag(records, selectedTag) {
+	return records.filter(rec => {
+		if (!rec.tag) return false;
+		return rec.tag.split(',').map(t => t.trim().toLowerCase()).includes(selectedTag.toLowerCase());
 	});
 }
 
@@ -80,6 +89,7 @@ async function loadStrategySymbols() {
 const params = new URLSearchParams(window.location.search);
 const cause = params.get('cause');
 const strategy = params.get('strategy');
+const tag = params.get('tag');
 
 // Show filter label below Resources heading, even if DOMContentLoaded already fired
 function setFilterLabel() {
@@ -89,6 +99,8 @@ function setFilterLabel() {
 			labelDiv.textContent = `Strategy: ${strategy}`;
 		} else if (cause) {
 			labelDiv.textContent = `Cause: ${cause}`;
+		} else if (tag) {
+			labelDiv.textContent = `Tag: ${tag}`;
 		} else {
 			labelDiv.textContent = '';
 		}
@@ -121,6 +133,10 @@ Promise.all([loadLinks(), loadStrategySymbols()]).then(([records, strategyMap]) 
 		filtered = filterByCause(filtered, cause);
 		groupMap = groupByAction(filtered);
 		headingType = 'Action';
+	} else if (tag) {
+		filtered = filterByTag(filtered, tag);
+		groupMap = groupByCause(filtered);
+		headingType = 'Cause';
 	} else {
 		groupMap = groupByAction(filtered);
 		headingType = 'Action';
