@@ -224,7 +224,11 @@ function renderContent(records, actionTypeFilter, causeFilter, modeFilter, tagFi
   const hasCause = !!causeFilter;
   const hasActionType = !!actionTypeFilter;
 
-  if (hasCause && hasActionType) {
+  if (tagFilter && !hasCause && !hasActionType) {
+    // ── Tag filter only (e.g. Featured): flat table, no grouping ────────────
+    container.appendChild(buildTable(filtered, actionTypeMap));
+
+  } else if (hasCause && hasActionType) {
     // ── Both selected: flat table with heading ──────────────────────────────
     const heading = document.createElement('div');
     heading.className = 'actions-flat-heading';

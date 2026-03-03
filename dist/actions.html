@@ -6,6 +6,35 @@
   <title>Actions</title>
   <link rel="stylesheet" href="fixice.css?v=3">
   <style>
+    .page-tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 1.2em;
+      border-bottom: 2px solid #23408e;
+    }
+    .page-tabs a {
+      padding: 0.45em 1.2em;
+      font-weight: 700;
+      font-size: 1em;
+      color: #23408e;
+      text-decoration: none;
+      border: 2px solid transparent;
+      border-bottom: none;
+      border-radius: 6px 6px 0 0;
+      background: #f0f4ff;
+      margin-right: 3px;
+      transition: background 0.15s;
+    }
+    .page-tabs a:hover {
+      background: #dce5ff;
+    }
+    .page-tabs a.active-tab {
+      background: #fff;
+      border-color: #23408e;
+      border-bottom: 2px solid #fff;
+      color: #23408e;
+      margin-bottom: -2px;
+    }
     .actions-filters {
       display: flex;
       flex-direction: column;
@@ -26,13 +55,14 @@
     .filter-row select {
       border: 2px solid #888;
       border-radius: 5px;
-      padding: 0.3em 0.7em;
+      padding: 0.3em 0.5em;
       font-size: 1em;
       background: #f7faff;
       color: #333;
       font-weight: 600;
       cursor: pointer;
-      flex: 1;
+      width: 160px;
+      max-width: 160px;
     }
     .more-filters-toggle {
       background: none;
@@ -133,6 +163,15 @@
   <div id="menu-container"></div>
   <div class="content">
     <main style="width:100%;box-sizing:border-box;padding:1.5em;background:#fff;">
+      <nav class="page-tabs">
+        <a href="actions.html" class="active-tab">Actions</a>
+        <a href="protests1000districtave.html">1000 District Ave</a>
+        <a href="actions.html?tag=Featured">Featured</a>
+      </nav>
+      <details style="margin-bottom:0.8em;max-width:800px;">
+        <summary style="list-style:none;cursor:pointer;display:inline-block;color:#888;font-size:0.9em;user-select:none;">&#9654; About this page</summary>
+        <p style="margin-top:0.6em;">Finding the action that is perfect for you can be challenging. Our website curates the best organizations and actions around Burlington, MA and beyond so you can quickly find meaningful ways to act. This page highlights effective actions to stop ICE cruelties, defend immigrant rights, and win elections that create lasting change. We feature established local groups that meet regularly, make participation accessible, provide clear information, and have a track record of effective action. For actions beyond Burlington, see <a href="resources.html">Organizations</a> and <a href="https://mobilize.us" target="_blank" rel="noopener">mobilize.us</a>.</p>
+      </details>
       <h2>Actions</h2>
       <div class="actions-filters">
         <div class="filter-row">

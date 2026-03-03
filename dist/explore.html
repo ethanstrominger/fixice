@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Link Tag Explorer</title>
   <link rel="stylesheet" href="fixice.css?v=3">
+  <style>
+    .page-tabs { display:flex; gap:0; margin-bottom:1.2em; border-bottom:2px solid #23408e; }
+    .page-tabs a { padding:0.45em 1.2em; font-weight:700; font-size:1em; color:#23408e; text-decoration:none; border:2px solid transparent; border-bottom:none; border-radius:6px 6px 0 0; background:#f0f4ff; margin-right:3px; transition:background 0.15s; }
+    .page-tabs a:hover { background:#dce5ff; }
+    .page-tabs a.active-tab { background:#fff; border-color:#23408e; border-bottom:2px solid #fff; color:#23408e; margin-bottom:-2px; }
+  </style>
 </head>
 <body>
   <div id="menu-container"></div>
   <div class="content">
     <main style="max-width:700px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+      <nav class="page-tabs">
+        <a href="actions.html">Actions</a>
+        <a href="protests1000districtave.html">1000 District Ave</a>
+        <a href="actions.html?tag=Featured" class="active-tab">Featured</a>
+      </nav>
       <h2 id="resources-heading">Resources</h2>
       <div id="filter-label" style="font-size:1.08em;color:#23408e;margin-bottom:0.5em;"></div>
       <div class="tag-list" id="tag-list"></div>
