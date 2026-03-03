@@ -24,6 +24,9 @@ Swing Blue Alliance | Community organizing and volunteer opportunities to suppor
 Turn Out PAC | Organization focused solely on getting out the vote | https://turnoutpac.org/
 Cook Political House Ratings | Independent, non-partisan newsletter analyzing U.S. elections, campaigns, and political trends. | https://cookpolitical.com
 Progressive Massachusetts Legislator Scorecard | Tracks legislation and provides report cards for Massachusetts legislators to help citizens enact positive local change. | https://scorecard.progressivemass.com
+Election Official Legal Defense Network | Pairs election officials with pro bono attorneys who can advise them on how to respond to threats and lawsuits, which have increased in recent years. Founded by a former Obama White House lawyer and a former Bush election lawyer. | https://eoldn.org/
+Campaign Legal Center | Ensures that election rules remain fair. Fighting the Trump administration's demands for voter data and executive orders that would force states to change voter ID requirements and ballot deadlines. Founded 2002 by a Republican former FEC chair. | https://campaignlegal.org/
+Carter Center Democracy Program | Brings global election monitoring to the US — deploying nonpartisan observers in Georgia, Michigan, Montana, Nevada, and New Mexico in 2026. Also hosts civic education events and offers resources for voters and election officials. | https://www.cartercenter.org/programs/democracy/
 
 Heading: Indivisible MA Coalition 
 p: Connects people to action-oriented groups to defend rights, freedoms, and democracy in Massachusetts. All groups have newsletters.

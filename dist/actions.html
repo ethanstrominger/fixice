@@ -11,7 +11,6 @@
       flex-direction: column;
       gap: 0.5em;
       margin-bottom: 1.2em;
-      max-width: 360px;
     }
     .filter-row {
       display: flex;
@@ -20,17 +19,17 @@
     }
     .filter-row label {
       font-weight: 600;
-      color: #23408e;
+      color: #555;
       min-width: 100px;
       flex-shrink: 0;
     }
     .filter-row select {
-      border: 2px solid #23408e;
+      border: 2px solid #888;
       border-radius: 5px;
       padding: 0.3em 0.7em;
       font-size: 1em;
       background: #f7faff;
-      color: #23408e;
+      color: #333;
       font-weight: 600;
       cursor: pointer;
       flex: 1;
@@ -38,7 +37,7 @@
     .more-filters-toggle {
       background: none;
       border: none;
-      color: #23408e;
+      color: #555;
       font-weight: 600;
       font-size: 0.97em;
       cursor: pointer;
@@ -95,7 +94,7 @@
       cursor: pointer;
       font-weight: 700;
       font-size: 1.05em;
-      color: #23408e;
+      color: #5572a8;
       padding: 0.4em 0.5em;
       border-radius: 5px;
       background: #e8eeff;
@@ -109,7 +108,7 @@
     .actions-flat-heading {
       font-size: 1.1em;
       font-weight: 700;
-      color: #23408e;
+      color: #5572a8;
       margin-bottom: 0.6em;
     }
     .inner-section {
@@ -118,14 +117,22 @@
     .inner-section summary {
       background: #f7faff !important;
       font-size: 0.98em !important;
-      color: #23408e;
+      color: #5572a8;
+    }
+    .content {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
     }
   </style>
 </head>
 <body>
   <div id="menu-container"></div>
   <div class="content">
-    <main style="max-width:900px;margin:2em auto 0 auto;padding:1.5em;background:#fff;border-radius:8px;box-shadow:0 2px 8px #0001;">
+    <main style="width:100%;box-sizing:border-box;padding:1.5em;background:#fff;">
       <h2>Actions</h2>
       <div class="actions-filters">
         <div class="filter-row">
@@ -154,9 +161,16 @@
               <option value="">All</option>
             </select>
           </div>
+          <div class="filter-row">
+            <label for="filter-frequency">Frequency:</label>
+            <select id="filter-frequency">
+              <option value="">All</option>
+            </select>
+          </div>
         </div>
       </div>
       <div id="actions-count"></div>
+      <div style="font-size:0.85em;color:#888;margin-bottom:0.5em;">** listed in multiple sections</div>
       <div id="actions-container"></div>
     </main>
   </div>
@@ -182,7 +196,7 @@
     });
     // Auto-expand if mode or tag URL param is set
     var _p = new URLSearchParams(window.location.search);
-    if (_p.get('mode') || _p.get('tag')) {
+    if (_p.get('mode') || _p.get('tag') || _p.get('frequency')) {
       mfPanel.style.display = 'flex';
       mfToggle.classList.add('open');
     }

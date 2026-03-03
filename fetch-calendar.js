@@ -11,7 +11,7 @@
 //   4-7. Mobilize.us - public JSON API, 4 queries, no credentials needed
 
 const https = require('https');
-const url = rexquire('url');
+const url = require('url');
 
 // --- Configuration ---
 const GOOGLE_ICAL_URL =
@@ -274,7 +274,7 @@ async function main() {
   const jsonOutput = args.includes('--json');
   const csvOutput = args.includes('--csv');
   const daysIdx = args.indexOf('--days');
-  const daysAhead = daysIdx !== -1 ? parseInt(args[daysIdx + 1]) || 30 : 30;
+  const daysAhead = daysIdx !== -1 ? parseInt(args[daysIdx + 1]) || 14 : 14;
 
   console.error(`Fetching events for the next ${daysAhead} days...\n`);
 
@@ -324,6 +324,17 @@ async function main() {
   });
   console.error(`\n  Location filter: ${beforeFilter} → ${allEvents.length} events\n`);
 
+  // Remove duplicate events (same title and start time)
+  const seen = new Set();
+  const beforeDedup = allEvents.length;
+  allEvents = allEvents.filter((ev) => {
+    const key = `${(ev.title || '').toLowerCase().trim()}|${(ev.location || '').toLowerCase().trim()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  console.error(`  Dedup filter: ${beforeDedup} → ${allEvents.length} events\n`);
+
   // Sort by start date
   allEvents.sort((a, b) => {
     if (!a.start) return 1;
@@ -344,7 +355,7 @@ async function main() {
   } else if (jsonOutput) {
     console.log(JSON.stringify(allEvents, null, 2));
   } else {
-    console.log(`\n=== ${allEvents.length} Events (next ${daysAhead} days) ===\n`);
+    console.log(`\n=== ${allEvents.length} Events (next ${daysAhead} days / 2 weeks) ===\n`);
     for (const ev of allEvents) {
       const dateStr = ev.start
         ? ev.start.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })

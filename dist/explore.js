@@ -13,8 +13,8 @@ async function loadLinks() {
 			rec.title = line.replace('Title: ', '').trim();
 		} else if (line.startsWith('Description: ')) {
 			rec.description = line.replace('Description: ', '').trim();
-		} else if (line.startsWith('Activities: ')) {
-			rec.activities = line.replace('Activities: ', '').trim();
+		} else if (line.startsWith('Action Type: ')) {
+			rec.activities = line.replace('Action Type: ', '').trim();
 		} else if (line.startsWith('Tag: ')) {
 			rec.tag = line.replace('Tag: ', '').trim();
 		} else if (line.startsWith('Cause: ')) {
