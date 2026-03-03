@@ -157,6 +157,7 @@
       box-shadow: none;
       border-radius: 0;
     }
+    body { visibility: hidden; }
   </style>
 </head>
 <body>
@@ -166,7 +167,7 @@
       <nav class="page-tabs">
         <a href="actions.html" class="active-tab">Actions</a>
         <a href="protests1000districtave.html">1000 District Ave</a>
-        <a href="actions.html?tag=Featured">Featured</a>
+        <a href="featured.html?tag=Featured">Featured</a>
       </nav>
       <details style="margin-bottom:0.8em;max-width:800px;">
         <summary style="list-style:none;cursor:pointer;display:inline-block;color:#888;font-size:0.9em;user-select:none;">&#9654; About this page</summary>
@@ -215,11 +216,13 @@
   </div>
   <script src="menu.js"></script>
   <script>
+    function _showBody() { document.body.style.visibility = 'visible'; }
     if (typeof initMenu === 'function') {
-      initMenu();
+      initMenu().then(_showBody).catch(_showBody);
     } else {
       window.addEventListener('DOMContentLoaded', function() {
-        if (typeof initMenu === 'function') initMenu();
+        if (typeof initMenu === 'function') initMenu().then(_showBody).catch(_showBody);
+        else _showBody();
       });
     }
   </script>

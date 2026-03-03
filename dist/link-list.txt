@@ -255,7 +255,7 @@ Frequency: Repeating
 Cause: Immigrant Aid
 
 Link: /donatehere
-Title: Donate Food & Winter Clothes
+Title: Donate Food
 Description: Bring shelf-stable food, gently used winter clothing, and hygiene products to Mon–Fri protests for direct distribution or local food banks. 
 Action Type: donate
 Mode: In Person

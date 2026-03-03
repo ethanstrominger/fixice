@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Actions</title>
+  <link rel="stylesheet" href="fixice.css?v=3">
+  <style>
+    .page-tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 1.2em;
+      border-bottom: 2px solid #23408e;
+    }
+    .page-tabs a {
+      padding: 0.45em 1.2em;
+      font-weight: 700;
+      font-size: 1em;
+      color: #23408e;
+      text-decoration: none;
+      border: 2px solid transparent;
+      border-bottom: none;
+      border-radius: 6px 6px 0 0;
+      background: #f0f4ff;
+      margin-right: 3px;
+      transition: background 0.15s;
+    }
+    .page-tabs a:hover { background: #dce5ff; }
+    .page-tabs a.active-tab {
+      background: #fff;
+      border-color: #23408e;
+      border-bottom: 2px solid #fff;
+      color: #23408e;
+      margin-bottom: -2px;
+    }
+    .actions-table th {
+      background: #23408e;
+      color: #fff;
+      padding: 0.5em 0.8em;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .actions-table td {
+      padding: 0.45em 0.8em;
+      border-bottom: 1px solid #e0e8f8;
+      vertical-align: top;
+    }
+    .actions-table tr:nth-child(even) td { background: #f7faff; }
+    .actions-table tr:hover td { background: #ffe4ee; }
+    .actions-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.98em;
+      margin-bottom: 0.5em;
+    }
+    #actions-count {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 0.5em;
+    }
+    .content {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+    }
+    body { visibility: hidden; }
+  </style>
+</head>
+<body>
+  <div id="menu-container"></div>
+  <div class="content">
+    <main style="width:100%;box-sizing:border-box;padding:1.5em;background:#fff;">
+      <nav class="page-tabs">
+        <a href="actions.html">Actions</a>
+        <a href="protests1000districtave.html">1000 District Ave</a>
+        <a href="featured.html?tag=Featured" class="active-tab">Featured</a>
+      </nav>
+      <h2>Featured Actions</h2>
+      <!-- Hidden filter selects required by actions.js -->
+      <div style="display:none;">
+        <select id="filter-actiontype"><option value=""></option></select>
+        <select id="filter-cause"><option value=""></option></select>
+        <select id="filter-mode"><option value=""></option></select>
+        <select id="filter-tag"><option value="Featured" selected>Featured</option></select>
+        <select id="filter-frequency"><option value=""></option></select>
+      </div>
+      <div id="actions-count"></div>
+      <div id="actions-container"></div>
+    </main>
+  </div>
+  <script src="menu.js"></script>
+  <script>
+    function _showBody() { document.body.style.visibility = 'visible'; }
+    if (typeof initMenu === 'function') {
+      initMenu().then(_showBody).catch(_showBody);
+    } else {
+      window.addEventListener('DOMContentLoaded', function() {
+        if (typeof initMenu === 'function') initMenu().then(_showBody).catch(_showBody);
+        else _showBody();
+      });
+    }
+  </script>
+  <script src="actions.js"></script>
+</body>
+</html>
