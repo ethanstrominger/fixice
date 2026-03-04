@@ -456,3 +456,48 @@ Link: https://www.mobilize.us/swingbluealliance/event/751236/
 Action Type: Advocate
 Frequency: Repeating
 Cause: Elections
+
+Title: Donate to Common Cause Voter Protection
+Description: Common Cause trains Election Protection volunteers to serve from early voting through Election Day as non-partisan helpers at voting places in key states. Costs about $50 per volunteer.
+Link: https://secure.actblue.com/donate/common-cause-election-protection
+Action Type: donate
+Cause: Elections
+
+Title: Road Trip to PA – Deep Listening Canvass (Swing Left)
+Time: March 21-22, 2026
+Location: Allentown, PA
+Description: Join other Massachusetts folks for Swing Left Ground Truth's "Deep Listening" project – listen to voters' concerns to help frame persuasion messages for PA-07. Email bob.scheier@gmail.com for rides/logistics.
+Link: https://www.mobilize.us/swingbluealliance/event/896146/
+Action Type: Advocate
+Frequency: One Time
+Cause: Elections
+
+Title: Write Letters to Help Voters Be Able to Vote (VoteRiders)
+Description: Download personalized letters via the VoteRiders app and mail them to registered voters in NC or other states so they have info they need to vote. Just need a computer, printer, stamps, and envelopes.
+Link: https://scribehow.com/viewer/DIY_Letter-writing_w_VoteRiders__iSVoJaxmTU2W1W5MFmjxnw
+Action Type: Advocate
+Cause: Elections
+
+Title: Volunteer with CASA – Help Immigrant Neighbors in Metrowest
+Description: CASA in Framingham serves immigrants in the Metrowest area. Help by delivering groceries, driving kids to school, accompanying people to appointments, or assisting at the CASA office. Spanish/Portuguese helpful but not required.
+Link: https://docs.google.com/document/d/1dlGg7uXAFhRrfGaHAl_0avxXSDNzxNevvHYCDTJa1Lw/edit?tab=t.0
+Action Type: volunteer
+Cause: Immigrant Aid
+
+Title: Donate to LUCE – Support Immigrant Justice
+Description: LUCE Immigrant Justice Network provides training for community observers, direct aid to families, and legal assistance to individuals targeted by ICE.
+Link: https://www.lucemass.org/donate
+Action Type: donate
+Cause: ICE Abuses
+
+Title: Support Driver Privacy Protections (H.3755)
+Description: MA police share license plate reader data with out-of-state agencies including ICE. H.3755 would require deletion within 14 days, prohibit tracking protesters, and stop data sharing. Email your state legislators to support it.
+Link: https://www.mass50501.org/actions/support-driver-privacy-protections
+Action Type: Advocate
+Cause: ICE Abuses
+
+Title: Flock Off! – Fight License Plate Reader Surveillance
+Description: Campaign calling on local and state governments to restrict sharing of AI-assisted surveillance data and cancel contracts with Flock Safety, whose license plate reader data is used by ICE and out-of-state police.
+Link: https://www.mass50501.org/flockoff
+Action Type: Advocate
+Cause: ICE Abuses
