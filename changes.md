@@ -1,4 +1,7 @@
 # Recent Changes
+- **March 4,2026:**
+- Added three MIRA related actions
+- Updated coffee page for donations
 - **March 1, 2026:**
 - Added 18 actions
 - Added filters for mode, frequency, and tag

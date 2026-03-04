@@ -129,20 +129,6 @@ Action Type: learn, volunteer
 Mode: On Your Own
 Cause: Immigrant Aid
 
-Link: mailto:PajamaActivism@proton.me
-Title: Pajama Activism
-Description: Email for coalition supply hub volunteer opportunities.
-Action Type: volunteer
-Mode: In Person
-Cause: Immigrant Aid
-
-Link: mailto:PajamaActivism@proton.me
-Title: Pajama Activism
-Description: Email PajamaActivism for volunteer opportunities
-Action Type: volunteer
-Mode: In Person
-Cause: Immigrant Aid
-
 Link: https://miracoalition.org/donate/
 Title: Massachusetts Immigrant & Refugee Advocacy Coalition
 Description: Massachusetts Immigrant & Refugee Advocacy Coalition, supporting immigrant rights.
@@ -168,14 +154,21 @@ Link: https://miracoalition.org/get-involved/massachusetts-welcomes/
 Title: Massachusetts Welcomes (MIRA)
 Description: MIRA Coalition's Massachusetts Welcomes campaign supporting immigrants and refugees in the state.
 Action Type: advocate
-Mode: On Your Own
+Mode: On Your Own, In 
+Cause: Immigrant Aid
+
+Link: https://miracoalition.org/get-involved/
+Title: MIRA Coalition Get Involved Page
+Description: Massachusetts Immigration Resource Alliance Get Involed Page
+Action Type: volunteer, donate, advocate
+Mode: On Your Own, In Person
 Cause: Immigrant Aid
 
 Link: https://miracoalition.org/get-involved/volunteer/
 Title: MIRA Coalition Volunteer Opportunities
 Description: Find volunteer opportunities with MIRA Coalition, including voter registration drives and other immigrant advocacy work.
 Action Type: volunteer
-Mode: On Your Own
+Mode: On Your Own, In Person
 Cause: Immigrant Aid
 
 Link: https://miracoalition.org/get-involved/business/
