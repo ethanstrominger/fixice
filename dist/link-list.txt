@@ -150,6 +150,41 @@ Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
 
+Link: https://miracoalition.org/petition/
+Title: MIRA Coalition Petition
+Description: Sign MIRA's petition supporting immigrant communities in Massachusetts.
+Action Type: advocate
+Mode: On Your Own
+Cause: Immigrant Aid
+
+Link: https://miracoalition.org/protecting-our-immigrant-communities-campaign/
+Title: Protecting Our Immigrant Communities (MIRA)
+Description: MIRA Coalition's campaign to protect immigrant communities across Massachusetts.
+Action Type: advocate
+Mode: On Your Own
+Cause: Immigrant Aid
+
+Link: https://miracoalition.org/get-involved/massachusetts-welcomes/
+Title: Massachusetts Welcomes (MIRA)
+Description: MIRA Coalition's Massachusetts Welcomes campaign supporting immigrants and refugees in the state.
+Action Type: advocate
+Mode: On Your Own
+Cause: Immigrant Aid
+
+Link: https://miracoalition.org/get-involved/volunteer/
+Title: MIRA Coalition Volunteer Opportunities
+Description: Find volunteer opportunities with MIRA Coalition, including voter registration drives and other immigrant advocacy work.
+Action Type: volunteer
+Mode: On Your Own
+Cause: Immigrant Aid
+
+Link: https://miracoalition.org/get-involved/business/
+Title: Mass. Business Immigration Coalition (MIRA)
+Description: Join the Massachusetts Business Immigration Coalition to advocate for immigrant-friendly business policies.
+Action Type: advocate
+Mode: On Your Own
+Cause: Immigrant Aid
+
 Link: https://mobilize.us
 Title: Mobilize National Events
 Description: Find protests and events nationwide on mobilize.us
