@@ -43,19 +43,14 @@
     <div class="tab-content active" id="tab-fundraiser">
       <h1>Featured Fundraiser</h1>
       <p style="font-size:1.1em; color:#444; margin-bottom:1.5em;">Every Wednesday there will be a new fundraiser.</p>
-      <form id="donation-form">
-        <label for="amount">Donation Amount</label>
-        <input type="number" id="amount" name="amount" min="1" step="any" placeholder="Enter amount (USD)" required>
-        <div style="margin-top:1.5em; display:flex; gap:1em;">
-          <button type="button" id="donate-once" style="flex:1; background:#0066cc;">Donate Once</button>
-          <button type="button" id="donate-monthly" style="flex:1; background:#009966;">Donate Monthly</button>
-        </div>
-        <div class="success" id="success-message" style="display:none;">Thank you! Your donation has been recorded.</div>
-      </form>
+      <div style="margin-top:1.5em;">
+        <label for="amount" style="display:block;font-weight:bold;margin-bottom:0.4em;">Donation Amount (USD)</label>
+        <input type="number" id="amount" name="amount" min="1" step="any" placeholder="Enter amount" style="width:100%;padding:0.5em;font-size:1.1em;">
+        <button type="button" id="donate-once" style="margin-top:1em;background:#0066cc;color:#fff;border:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;cursor:pointer;">Donate</button>
+      </div>
       <div class="links">
-        <a href="https://givebutter.com/NSLUCE.html" target="_blank">Information about North Shore LUCE</a>
-        <a href="https://givebutter.com/NSLUCE/donate.html" target="_blank">Donate to North Shore LUCE</a>
-        <a href="https://lucemass.org.html" target="_blank">LUCE MA</a>
+        <a href="https://miracoalition.org" target="_blank">MIRA Information</a>
+        <a href="https://miracoalition.org/get-involved/" target="_blank">Get Involved</a>
       </div>
       <button id="list-donations-btn" type="button" style="background:#888; margin-top:1em;">List All Donations</button>
       <div id="donations-list" style="margin-top:1.5em; display:none;"></div>
@@ -176,35 +171,25 @@
       ? ''
       : 'https://api.fixice.org';
 
-    function openGivebutter(amount, frequency) {
-      const url = `https://givebutter.com/NSLUCE/donate?amount=${encodeURIComponent(amount)}&frequency=${encodeURIComponent(frequency)}`;
-      window.open(url, '_blank');
-    }
 
-    async function handleDonate(frequency) {
+
+    // Donate button: log amount then redirect to Blackbaud
+    document.getElementById('donate-once').addEventListener('click', async function() {
       const amount = document.getElementById('amount').value;
       if (!amount || isNaN(amount) || Number(amount) <= 0) {
         alert('Please enter a valid donation amount.');
         return;
       }
-      // Open Givebutter immediately in a new tab
-      openGivebutter(amount, frequency);
-      // Save to backend (PostgreSQL)
       try {
         await fetch(API_BASE + '/api/log-donation', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ amount, frequency })
+          body: JSON.stringify({ amount, frequency: 'once' })
         });
       } catch (err) {
-        // Optionally log error or ignore
+        // Continue even if logging fails
       }
-    }
-    document.getElementById('donate-once').addEventListener('click', function() {
-      handleDonate('once');
-    });
-    document.getElementById('donate-monthly').addEventListener('click', function() {
-      handleDonate('monthly');
+      window.open('https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=99a5f390-8b79-41ed-89d0-0a5d4111abcb&envid=p-Ez8UyF-6T0CLj7brUwUDPg', '_blank');
     });
 
     // List all donations button logic
