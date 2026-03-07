@@ -48,6 +48,10 @@
         <input type="number" id="amount" name="amount" min="1" step="any" placeholder="Enter amount" style="width:100%;padding:0.5em;font-size:1.1em;">
         <button type="button" id="donate-once" style="margin-top:1em;background:#0066cc;color:#fff;border:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;cursor:pointer;">Donate</button>
       </div>
+      <div id="donate-step2" style="display:none;margin-top:1.2em;padding:1em;border-radius:6px;border:1px solid #ddd;background:#f9f9f9;">
+        <div id="donate-status" style="font-size:1em;margin-bottom:0.8em;"></div>
+        <a id="donate-mira-btn" href="https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=99a5f390-8b79-41ed-89d0-0a5d4111abcb&envid=p-Ez8UyF-6T0CLj7brUwUDPg" target="_blank" style="display:inline-block;background:#0066cc;color:#fff;text-decoration:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;font-weight:bold;">Go to MIRA Donation Page &rarr;</a>
+      </div>
       <div class="links">
         <a href="https://miracoalition.org" target="_blank">MIRA Information</a>
         <a href="https://miracoalition.org/get-involved/" target="_blank">Get Involved</a>
@@ -166,30 +170,61 @@
       archiveList.innerHTML = html;
     }
 
-    // Use correct backend URL based on environment
-    const API_BASE = window.location.hostname === 'localhost'
-      ? ''
-      : 'https://api.fixice.org';
+    // Use explicit API URL since the frontend (fixice.org) and API (api.fixice.org) are separate services
+    const API_BASE = window.location.hostname === 'localhost' ? '' : 'https://api.fixice.org';
 
-
-
-    // Donate button: log amount then redirect to Blackbaud
+    // Donate button: record amount, then show Go To MIRA button (real link – never blocked)
     document.getElementById('donate-once').addEventListener('click', async function() {
+      const btn = document.getElementById('donate-once');
       const amount = document.getElementById('amount').value;
       if (!amount || isNaN(amount) || Number(amount) <= 0) {
         alert('Please enter a valid donation amount.');
         return;
       }
+
+      // Prevent double-click
+      btn.disabled = true;
+      btn.textContent = 'Recording...';
+
+      // Show step-2 panel immediately with a spinner so user sees progress
+      const step2 = document.getElementById('donate-step2');
+      const statusEl = document.getElementById('donate-status');
+      step2.style.display = 'block';
+      statusEl.style.color = '#555';
+      statusEl.textContent = '⏳ Recording your donation amount ($' + Number(amount).toFixed(2) + ')...';
+
+      let logSuccess = false;
       try {
-        await fetch(API_BASE + '/api/log-donation', {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 20000);
+        const resp = await fetch(API_BASE + '/api/log-donation', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ amount, frequency: 'once' })
+          body: JSON.stringify({ amount, frequency: 'once' }),
+          signal: controller.signal
         });
+        clearTimeout(timeout);
+        if (resp.ok) logSuccess = true;
+        else console.warn('Donation log returned status:', resp.status);
       } catch (err) {
-        // Continue even if logging fails
+        console.warn('Donation log failed:', err.message || err);
       }
-      window.open('https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=99a5f390-8b79-41ed-89d0-0a5d4111abcb&envid=p-Ez8UyF-6T0CLj7brUwUDPg', '_blank');
+
+      if (logSuccess) {
+        step2.style.display = 'none';
+        window.location.href = 'https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=99a5f390-8b79-41ed-89d0-0a5d4111abcb&envid=p-Ez8UyF-6T0CLj7brUwUDPg';
+      } else {
+        statusEl.style.color = '#b22222';
+        statusEl.innerHTML =
+          '⚠️ Could not automatically record your donation amount.<br>' +
+          'To help track the fundraiser, email info@fixice.org after you donate'+
+          encodeURIComponent(Number(amount).toFixed(2)) +
+          '%20to%20MIRA\">info@fixice.org</a> with your amount ($' +
+          Number(amount).toFixed(2) + ').<br>Then click below to continue.';
+      }
+
+      btn.textContent = 'Donate';
+      btn.disabled = false;
     });
 
     // List all donations button logic

@@ -97,6 +97,9 @@ async function listDonations(req, res) {
   }
 }
 
+// Health check / keep-alive endpoint — ping this every 10 min to prevent Render cold starts
+app.get("/ping", (req, res) => res.json({ ok: true, ts: new Date().toISOString() }));
+
 // Support both /api/* and /* paths (Render may strip /api prefix)
 app.post("/api/log-donation", logDonation);
 app.post("/log-donation", logDonation);

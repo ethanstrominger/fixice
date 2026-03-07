@@ -9,14 +9,20 @@ Parking policies and enforcement can change. Please use your own judgment and ch
 ### Quick Summary
 
 - 🚫 Do not park at AMC.
-- ✅ Temple Shalom Emeth and United Church of Christ have granted permission to park.
 - 🚗 Public parking is available at TRW Playground (Stony Brook Rd).
 - ⚠️ Commercial lots carry a risk of towing.  Discretion advised.
 - 📢 If towed, notify the group organizer and review tow dispute guidance on the Bearing Witness website.
+- ✅ Temple Shalom Emeth and United Church of Christ have granted permission to park on Wednesday, unless there is a conflicting event.
+- 🚗 Wed and Thu there may be a shuttle from a designated location.  Check with the respective facebook pages or website.
 
 ---
 
 ### 📍 Public & Approved Parking
+<details>
+<summary><strong>Weekly Designated Shuttle Location(s)</strong></summary>
+Bearing Witness on Wednesday and Justice4All Thursdays has been known to shuttle
+from a designated location.  See website or facebook pages for more info.
+</details>
 
 <details>
 <summary><strong>TRW Playground (Public Lot)</strong></summary>
@@ -47,13 +53,18 @@ Check the Bearing Witness Facebook for shuttle coordination.
 
 ### ⚠️ Commercial Lots
 <span style="color:#b22222;font-weight:bold;">YOU PARK AT YOUR OWN RISK</span>
-<span style="color:#b22222;font-weight:bold;">If you decide to park in a commerical lot use discretion.</span>
-
+<span style="color:#b22222;font-weight:bold;">If you decide to park in a commerical lot use discretion.  
+Security officers may not be in marked cars.</span>
+<details>
+<summary><strong>What Not To Do</strong></summary>
+![What Not to Do](do-not-do-this.jpg)
+</details>
 <details>
 <summary><strong>Sign Drop Off </strong></summary>
 Organizers have a lot of signs, so you do not need to bring your own sign.  If bringing your own sign, you can drop it off before parking:  
 	- **Wed, Thu, Fri:** 1000 District Ave  
-	- **Mon, Tue, Sat:** Corner of District Ave & Burlington Mall Road  
+	- **Mon, Tue:** 1000 District Ave.  If no one there, check corner of District Ave & Burlington Mall Road
+	- **Sat:** Corner of District Ave & Burlington Mall Road  
 	- Do not leave signs unattended if no one is present.  
 **YOU PARK AT YOUR OWN RISK**
 <summary><strong>Kohl’s</strong></summary>
@@ -82,8 +93,8 @@ No towing has been reported to date.
 <summary><strong>District Ave (Including Street Parking)</strong></summary>
 
 Towing has occurred in this area, including from street parking.  
-Retrieval costs have been approximately $180.  
-Security vehicles may be present.
+Retrieval costs have been approximately $180.  Do not assume if you see no security patrol you are 
+safe. 
 </details>
 
 ---

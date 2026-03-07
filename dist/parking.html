@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parking Information</title>
   <link rel="stylesheet" href="fixice.css?v=3">
+  <style>body { visibility: hidden; }</style>
 </head>
 
 <body>
@@ -26,6 +27,10 @@
     <hr>
     <h3>📍 Public &amp; Approved Parking</h3>
     <details>
+      <summary><strong>Weekly Designated Shuttle Location(s)</strong></summary>
+      <p>Bearing Witness on Wednesday and Justice4All Thursdays has been known to shuttle from a designated location. See website or Facebook pages for more info.</p>
+    </details>
+    <details>
       <summary><strong>TRW Playground (Public Lot)</strong></summary>
       <p><strong>Address:</strong> 28 Stony Brook Rd, Burlington, MA<br>
       Approximately 0.8 miles from District Ave (30+ spaces available).</p>
@@ -34,20 +39,23 @@
     <details>
       <summary><strong>Temple Shalom Emeth</strong></summary>
       <p><strong>Address:</strong> 16 Lexington St, Burlington, MA<br>
-      Permission has been granted to park here.<br>
-      Check Facebook for possible shuttle coordination.</p>
+      You can park there on Wednesday.<br>
+      Check the Bearing Witness Facebook for possible shuttle coordination.</p>
     </details>
     <details>
       <summary><strong>United Church of Christ Congregational</strong></summary>
       <p><strong>Address:</strong> 6 Lexington St, Burlington, MA<br>
-      Permission has also been granted here.<br>
-      This location is very close to Temple Shalom Emeth.<br>
-      Check Facebook for shuttle coordination.</p>
+      You can park there on Wednesday. The location is very close to Temple Shalom Emeth.<br>
+      Check the Bearing Witness Facebook for shuttle coordination.</p>
     </details>
     <hr>
     <h3>⚠️ Commercial Lots</h3>
     <div style="color:#b22222;font-weight:bold;margin-bottom:0.5em;">YOU PARK AT YOUR OWN RISK</div>
-    <p>If you decide to park in a commerical lot use discretion.</p>
+    <div style="color:#b22222;font-weight:bold;margin-bottom:0.5em;">If you decide to park in a commercial lot use discretion. Security officers may not be in marked cars.</div>
+    <details>
+      <summary><strong>What Not To Do</strong></summary>
+      <img src="do-not-do-this.jpg" alt="What Not to Do" style="max-width:100%;">
+    </details>
     <details>
       <summary><strong>Sign Drop Off</strong></summary>
       <p>Organizers have a lot of signs, so you do not need to bring your own sign. If bringing your own sign, you can drop it off before parking:</p>
@@ -57,11 +65,11 @@
         <li>Do not leave signs unattended if no one is present.</li>
       </ul>
       <div style="color:#b22222;font-weight:bold;margin-top:0.5em;">YOU PARK AT YOUR OWN RISK</div>
-      <details>
-        <summary><strong>Kohl's</strong></summary>
-        <p>Many participants have parked here without issue.<br>
-        No towing has been reported from this location.</p>
-      </details>
+    </details>
+    <details>
+      <summary><strong>Kohl's</strong></summary>
+      <p>Many participants have parked here without issue.<br>
+      No towing has been reported from this location.</p>
     </details>
     <details>
       <summary><strong>Strip Mall (Just Salad Plaza)</strong></summary>
@@ -77,19 +85,19 @@
     <details>
       <summary><strong>District Ave (Including Street Parking)</strong></summary>
       <p>Towing has occurred in this area, including from street parking.<br>
-      Retrieval costs have been approximately $180.<br>
-      Security vehicles may be present.</p>
+      Retrieval costs have been approximately $180. Do not assume if you see no security patrol you are safe.</p>
     </details>
     <hr>
   </div>
-  </div>
   <script src="menu.js"></script>
   <script>
+    function _showBody() { document.body.style.visibility = 'visible'; }
     if (typeof initMenu === 'function') {
-      initMenu();
+      initMenu().then(_showBody).catch(_showBody);
     } else {
       window.addEventListener('DOMContentLoaded', function() {
-        if (typeof initMenu === 'function') initMenu();
+        if (typeof initMenu === 'function') initMenu().then(_showBody).catch(_showBody);
+        else _showBody();
       });
     }
   </script>

@@ -12,6 +12,49 @@
 
 const https = require('https');
 const url = require('url');
+const fs = require('fs');
+const path = require('path');
+
+// --- Log file ---
+const LOG_FILE = path.join(__dirname, 'calendar-log.json');
+
+function loadLog() {
+  try {
+    const raw = fs.readFileSync(LOG_FILE, 'utf8');
+    return JSON.parse(raw);
+  } catch {
+    return [];
+  }
+}
+
+function saveLog(events) {
+  const entries = events.map((ev) => ({
+    title: (ev.title || '').trim(),
+    location: (ev.location || '').trim(),
+    date: ev.start ? ev.start.toISOString() : null,
+    dayOfWeek: ev.start ? ev.start.getDay() : null,
+    link: ev.link || '',
+  }));
+  fs.writeFileSync(LOG_FILE, JSON.stringify(entries, null, 2), 'utf8');
+}
+
+function buildLogIndex(logEntries) {
+  // Key: "title|location|dayOfWeek" → true
+  const index = new Set();
+  for (const entry of logEntries) {
+    if (entry.dayOfWeek !== null && entry.dayOfWeek !== undefined) {
+      const key = `${entry.title.toLowerCase()}|${entry.location.toLowerCase()}|${entry.dayOfWeek}`;
+      index.add(key);
+    }
+  }
+  return index;
+}
+
+function isNew(ev, logIndex) {
+  if (!ev.start) return true;
+  const key = `${(ev.title || '').trim().toLowerCase()}|${(ev.location || '').trim().toLowerCase()}|${ev.start.getDay()}`;
+  return !logIndex.has(key);
+}
 
 // --- Configuration ---
 const GOOGLE_ICAL_URL =
@@ -278,6 +321,11 @@ async function main() {
 
   console.error(`Fetching events for the next ${daysAhead} days...\n`);
 
+  // Load previous log for repeat detection
+  const previousLog = loadLog();
+  const logIndex = buildLogIndex(previousLog);
+  console.error(`  Loaded ${previousLog.length} entries from previous log (${LOG_FILE})\n`);
+
   let allEvents = [];
 
   try {
@@ -344,16 +392,20 @@ async function main() {
 
   if (csvOutput) {
     const csvEscape = (s) => '"' + String(s || '').replace(/"/g, '""') + '"';
-    console.log('date,location,name,link,source');
+    console.log('date,location,name,link,source,repeat');
     for (const ev of allEvents) {
       const dateStr = ev.start
         ? ev.start.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })
           + ' ' + ev.start.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })
         : '';
-      console.log([csvEscape(dateStr), csvEscape(ev.location), csvEscape(ev.title), csvEscape(ev.link), csvEscape(ev.source)].join(','));
+      const repeat = isNew(ev, logIndex) ? '**' : '';
+      console.log([csvEscape(dateStr), csvEscape(ev.location), csvEscape(ev.title), csvEscape(ev.link), csvEscape(ev.source), csvEscape(repeat)].join(','));
     }
   } else if (jsonOutput) {
-    console.log(JSON.stringify(allEvents, null, 2));
+    console.log(JSON.stringify(allEvents.map((ev) => ({
+      ...ev,
+      isNew: isNew(ev, logIndex),
+    })), null, 2));
   } else {
     console.log(`\n=== ${allEvents.length} Events (next ${daysAhead} days / 2 weeks) ===\n`);
     for (const ev of allEvents) {
@@ -366,17 +418,21 @@ async function main() {
       const endTimeStr = ev.end
         ? ev.end.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })
         : '';
+      const repeat = isNew(ev, logIndex) ? '** ' : '';
 
-      console.log(`📅 ${dateStr}${timeStr ? '  ' + timeStr : ''}${endTimeStr ? ' – ' + endTimeStr : ''}`);
-      console.log(`   ${ev.title}`);
+      console.log(`${repeat}📅 ${dateStr}${timeStr ? '  ' + timeStr : ''}${endTimeStr ? ' – ' + endTimeStr : ''}`);
+      console.log(`   ${repeat}${ev.title}`);
       if (ev.location) console.log(`   📍 ${ev.location}`);
       if (ev.link) console.log(`   🔗 ${ev.link}`);
       console.log(`   [${ev.source}]`);
       console.log('');
     }
   }
-}
 
+  // Save current events to log for next run's comparison
+  saveLog(allEvents);
+  console.error(`  Saved ${allEvents.length} events to log (${LOG_FILE})`);
+}
 main().catch((err) => {
   console.error('Fatal error:', err.message);
   process.exit(1);
