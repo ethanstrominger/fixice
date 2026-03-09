@@ -123,8 +123,3 @@ Please report the incident to a marshal in a bright vest.
 
 <a href="parking.html" style="font-size:1.3em; color:#23408e; font-weight:bold; text-decoration:underline;">Click here for parking info</a>
 </details>
-
-<details>
-<summary>Our Goals: What We’re Demanding</summary>
-
-</details>
