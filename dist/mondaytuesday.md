@@ -8,13 +8,17 @@
 <details open>
 <summary style="font-size:1.2em; font-weight:bold; color:#23408e;">General Info</summary>
 
-<p><strong>Join us Monday and Tuesday 11-1 to protest ICE cruelties.</strong></p>
-<ul>
-	<li><strong>Where:</strong> Burlington, MA. 11–12: Hold signs on a busy street. 12–1: Gather outside the ICE office for signs, connection, and solidarity.</li>
-	<li><strong>What to bring:</strong> Warm clothes, snack, water, protest sign (extras available)</li>
-	<li><strong>Meeting point:</strong> Corner of Burlington Mall Road and District Ave, closest to Pressed Cafe.</li>
-	<li><strong>After:</strong> Optional lunch at Pressed Cafe.</li>
-</ul>
+Join us Monday and Tuesday 11-1 to protest the ICE cruelties at the detention center in Burlington, MA at 1000 District Ave.
+
+- **When/Where:**
+  - Mon, Mar 9 
+    - 11–12:30 Hold signs at intersection of District Ave and Burlington Mall road street, then march to 1000 District Ave. 
+	- 12:30-1: Gather outside 1000 District Ave with signs and to show solidarity.
+ - Tue, Mar 10
+	- 11-12: Gather outside 1000 District Ave with signs and to show solidarity.
+    - 12-1: Hold signs at intersection of District Ave and Burlington Mall road street, then march to 1000 District Ave. 
+- **What to bring:** Warm clothes, snack, water.  Optional: Noise makers and signs (extras available).  If you bring signs you can drop them off and then park.
+- **After:** Lunch at Pressed Cafe.
 <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:1em 0;">
 	<img src="care.jpeg" alt="Protest 3" style="max-width:120px; border-radius:8px;">
 	<img src="ICE-vest.jpeg" alt="Protest 3" style="max-width:120px; border-radius:8px;">
@@ -25,26 +29,24 @@
 <details>
 <summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Guidelines</summary>
 
-<ul>
-	<li>We protest peacefully.</li>
-	<li>We do not antagonize or engage with counter pro-ICE protestors. Do not use the median near the cross walk. They get energy from engaging with us and can use these interactions to attract followers.</li>
-	<li>We do not block the entrance, approach ICE agents, or block traffic on District Avenue.</li>
-	<li>We do not stand in restricted areas as designated by Burlington police.</li>
-	<li>We protest systems, not people. Our goal is moral clarity without hostility. Please keep chants firm, clear, and grounded in human dignity. If an ICE vehicle passes, consider phrases like "No cages, no cruelty", "You can quit", "Do the right thing, quit", "Stop the cruelty/destroying families/breaking the law", or "Show compassion".</li>
-</ul>
+- We protest peacefully.
+- We do not antagonize or engage with counter pro-ICE protestors. Do not use the median near the cross walk. They get energy from engaging with us and can use these interactions to attract followers.
+- We do not block the entrance, approach ICE agents, or block traffic on District Avenue.
+- We do not stand in restricted areas as designated by Burlington police.
+- We protest systems, not people. Our goal is moral clarity without hostility. If an ICE vehicle passes, consider phrases like "No cages, no cruelty", "You can quit", "Do the right thing, quit", "Stop the cruelty/destroying families/breaking the law", or "Show compassion".
 </details>
 
 <details>
 <summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Tips for Handling Counterprotesters</summary>
 
-<ul>
-	<li>Move to a different place</li>
-	<li>Do not respond to taunts</li>
-	<li>If you are being filmed, put a sign up in front of your face</li>
-	<li>Look to the side</li>
-	<li>Look for a marshal in a bright vest</li>
-</ul>
-<p>Please report the incident to a marshal in a bright vest.</p>
+Please report the incident to a marshal in a bright vest.
+ - Move to a different place
+ - Do not respond to taunts
+ - If you are being filmed, put a sign up in front of your face
+ - Look to the side
+ - Look for a marshal in a bright vest
+
+Please report the incident to a marshal in a bright vest.
 </details>
 
 <details>
@@ -54,15 +56,15 @@
 <p>Those uncomfortable with being photographed or recorded may wish to consider other ways to help immigrants.</p>
 </details>
 
-<details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Safety</summary>
+<!-- <details>
+<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Safety</summary> -->
 
-<ul>
+<!-- <ul>
 	<li>Marshals in fluorescent vests are scattered throughout the crowd. If you encounter a problem, seek out a marshal.</li>
 	<li>Medics in blue fluorescent vests are also present. They have water, snacks, hand warmers, and first aid kits.</li>
 	<li>Before arriving, please consider your own self-preservation (citizenship status) and self-care (sunscreen, hydration, etc.).</li>
-</ul>
-</details>
+</ul> -->
+<!-- </details> -->
 
 <details>
 <summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Public Transportation</summary>
