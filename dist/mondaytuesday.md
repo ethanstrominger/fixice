@@ -3,7 +3,6 @@
 
 **Note:** A lot of the wording on this page was based on the [Bearing Witness website](https://bearingwitnessne.org) and then modified.
 
-<img src="eagles.jpeg" alt="Eagle Protestor" style="max-width:160px; width:100%; border-radius:8px; margin:1em auto; display:block;">
 
 <details open>
 <summary>General Info</summary>
@@ -23,7 +22,51 @@ Join us Monday and Tuesday 11-1 to protest the ICE cruelties at the detention ce
 	<img src="care.jpeg" alt="Protest 3" style="max-width:120px; border-radius:8px;">
 	<img src="ICE-vest.jpeg" alt="Protest 3" style="max-width:120px; border-radius:8px;">
 	<img src="judged-by-appearnace.jpeg" alt="Protest 4" style="max-width:120px; border-radius:8px;">
+	<img src="eagles.jpeg" alt="Eagle Protestor" style="max-width:120px; border-radius:8px;">
 </div>
+</details>
+
+<details>
+<summary>Our Goals: What We’re Demanding</summary>
+
+**Demands for the Building:**
+- Due process for every individual
+- Communication with family
+- Visitors for prisoners
+- Humane conditions
+- Accompaniment for appointments
+
+**Demands for the Town:**
+- Inspectors: Make unannounced visits for safety inspections
+- Bob Murray (building owner leasing to ICE): Donate all rent profits to immigrant support groups
+- National Development (company managing surrounding land and parking lots): Tell ICE to stop parking in lots; support peaceful protests
+
+**Demands for the State:**
+- Zero cooperation with ICE
+- Proactively inconvenience ICE
+- Support for immigrants and advocacy organizations
+- Pro-immigrant legislation
+
+**Demands for the Federal Government:**
+- Elected officials to make repeated, unannounced inspections
+- Elected officials to show up in your communities to stand with constituents and immigrants
+- Abolish ICE
+
+**Our Goals: What we’re asking of ourselves**
+- Remain a nonviolent, inclusive peaceful protest for solidarity, education, and connection
+- Show love and support for immigrants
+- Remain focused on bearing witness without getting distracted
+- Exchange knowledge and opportunities
+- Build the movement and achieve extreme solidarity
+- "Regardless of your views on any other issues, if you support immigrants and their constitutional rights and are committed to nonviolence we want you to join us."
+- Support immigrants, advocacy organizations, and other protest actions
+- Make ICE facility an inescapable feature of Burlington for residents and visitors
+- Influence local, state, and federal officials
+- Build relationships with local businesses
+
+**Our Tactics:**
+- We will never win hearts and minds with violence, only through peace.
+- Our consistency – our weekly presence, our unwavering commitment to nonviolence, our singular focus on immigrants’ constitutional and human rights – is our power and the key to growing support and expanding our influence.
 </details>
 
 <details>
