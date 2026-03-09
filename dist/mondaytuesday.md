@@ -6,7 +6,7 @@
 <img src="eagles.jpeg" alt="Eagle Protestor" style="max-width:160px; width:100%; border-radius:8px; margin:1em auto; display:block;">
 
 <details open>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">General Info</summary>
+<summary>General Info</summary>
 
 Join us Monday and Tuesday 11-1 to protest the ICE cruelties at the detention center in Burlington, MA at 1000 District Ave.
 
@@ -17,7 +17,7 @@ Join us Monday and Tuesday 11-1 to protest the ICE cruelties at the detention ce
  - Tue, Mar 10
 	- 11-12: Gather outside 1000 District Ave with signs and to show solidarity.
     - 12-1: Hold signs at intersection of District Ave and Burlington Mall road street, then march to 1000 District Ave. 
-- **What to bring:** Warm clothes, snack, water.  Optional: Noise makers and signs (extras available).  If you bring signs you can drop them off and then park.
+- **What to bring:** Warm clothes, snack, water, noise makers.  If you bring signs you can drop them off and then park.
 - **After:** Lunch at Pressed Cafe.
 <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:1em 0;">
 	<img src="care.jpeg" alt="Protest 3" style="max-width:120px; border-radius:8px;">
@@ -27,7 +27,7 @@ Join us Monday and Tuesday 11-1 to protest the ICE cruelties at the detention ce
 </details>
 
 <details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Guidelines</summary>
+<summary>Guidelines</summary>
 
 - We protest peacefully.
 - We do not antagonize or engage with counter pro-ICE protestors. Do not use the median near the cross walk. They get energy from engaging with us and can use these interactions to attract followers.
@@ -37,7 +37,7 @@ Join us Monday and Tuesday 11-1 to protest the ICE cruelties at the detention ce
 </details>
 
 <details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Tips for Handling Counterprotesters</summary>
+<summary>Tips for Handling Counterprotesters</summary>
 
 Please report the incident to a marshal in a bright vest.
  - Move to a different place
@@ -50,14 +50,14 @@ Please report the incident to a marshal in a bright vest.
 </details>
 
 <details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Photography and Video Recording</summary>
+<summary>Photography and Video Recording</summary>
 
 <p>Attendees should be aware that Bearing Witness standouts are held in a public space. Photographers and videographers capture images and videos at each standout.</p>
 <p>Those uncomfortable with being photographed or recorded may wish to consider other ways to help immigrants.</p>
 </details>
 
 <!-- <details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Safety</summary> -->
+<summary>Safety</summary> -->
 
 <!-- <ul>
 	<li>Marshals in fluorescent vests are scattered throughout the crowd. If you encounter a problem, seek out a marshal.</li>
@@ -67,7 +67,7 @@ Please report the incident to a marshal in a bright vest.
 <!-- </details> -->
 
 <details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Public Transportation</summary>
+<summary>Public Transportation</summary>
 
 <ul>
 	<li>The MBTA bus <a href="https://www.mbta.com/schedules/350/line">route 350</a> starts at Alewife Station and has stops near to District Ave.</li>
@@ -76,12 +76,12 @@ Please report the incident to a marshal in a bright vest.
 </details>
 
 <details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Parking</summary>
+<summary>Parking</summary>
 
 <a href="parking.html" style="font-size:1.3em; color:#23408e; font-weight:bold; text-decoration:underline;">Click here for parking info</a>
 </details>
 
 <details>
-<summary style="font-size:1.2em; font-weight:bold; color:#23408e;">Our Goals: What We’re Demanding</summary>
+<summary>Our Goals: What We’re Demanding</summary>
 
 </details>
