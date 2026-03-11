@@ -104,10 +104,11 @@ app.post("/api/log-donation", logDonation);
 app.get("/api/list-donations", listDonations);
 
 // Serve static files (adjust path as needed)
-// Redirect /donate/amount to Beyond Bond Boston donation page
-app.get('/api/donate/amount', (req, res) => {
+
+function donateAmountRedirect(_req, res) {
   res.redirect('https://checkout.square.site/merchant/ML58Q933VJ8VR/checkout/G3FQAZYAV4Q6HURVAC7WA4ZZ');
-});
+}
+app.get('/api/donate/amount', donateAmountRedirect);
 
 app.use(express.static("dist"));
 
