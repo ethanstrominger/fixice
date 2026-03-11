@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FixICE.org</title>
+	<link rel="stylesheet" href="fixice.css?v=3">
+
+<body>
+	<div id="menu-container"></div>
+	<div class="content">
+		<img src="protest.jpeg" alt="Protesters with signs" class="fixice-hero" style="width:100%;height:auto;display:block;object-fit:cover;max-height:300px;">
+		<main class="fixice-main">
+<br>
+<section id="about-fixice">
+	<h2>About FixICE.org</h2>
+	<p>
+		<strong>FixICE.org</strong> is a Burlington, MA-based grassroots organization. Our mission is to empower people to take effective action to stop ICE cruelties, support immigrants, and win elections that create lasting change.
+	</p>
+</section>
+
+<section id="weekly-events">
+	<h2>FixICE Events</h2>
+	<p>
+		<strong>FixICE.org</strong> is a member of the coalition of groups that protest at the <a href="https://bearingwitnessne.org/inside-ice" target="_blank">ICE detention center</a> on 1000 District Ave, Burlington, MA. Protests are on Monday–Saturday. Click <a href="protests1000districtave.html">here</a> for schedule, location, and sponsoring organization.
+	</p>
+	<p>
+		<strong>Wednesday ☕ Coffee Connection</strong> - Caffeinate, connect, and contribute. Enjoy coffee and community at the protest site, with a featured fundraiser and information on actions to take. <a href="coffee.html">Details &amp; donate</a>.
+	</p>
+</section>
+
+<section id="get-involved">
+	<h2>We Make It Easier to Get Involved</h2>
+	<p>
+		Getting involved can feel overwhelming - we make it easier. Our website curates the best organizations and resources so you can quickly find meaningful ways to act. Browse by <a href="resources.html">resource</a> or <a href="actions.html">filter actions</a> by cause, action type, frequency and mode.
+	</p>
+	<p>We highlight established local groups that:</p>
+	<ul>
+		<li>Meet regularly</li>
+		<li>Make participation accessible</li>
+		<li>Provide clear information</li>
+		<li>Have a track record of effective action</li>
+	</ul>
+</section>
+
+			<div style="border:2px solid #23408e; background:#f7faff; border-radius:7px; padding:1em 1.2em; margin:1.2em 0; font-size:1.08em;">
+				<b>Note:</b> This site will be updated regularly with new resources and information. You don't have to keep
+				checking every page - just visit <a href="changes.html"><b>Latest Updates</b></a> for a log of all recent changes
+				and additions.
+			</div>
+	</main>
+	</div>
+	<script src="fixice2.js"></script>
+	<script src="menu.js"></script>
+	<script>
+		// Initialize menu (injects menu if needed and sets up all logic)
+		if (typeof initMenu === 'function') {
+			initMenu();
+		} else {
+			// If menu.js is not loaded yet, wait for it
+			window.addEventListener('DOMContentLoaded', function () {
+				if (typeof initMenu === 'function') initMenu();
+			});
+		}
+	</script>
+
+</body>
+
+</html>
