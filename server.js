@@ -108,7 +108,7 @@ app.get("/api/list-donations", listDonations);
 function donateAmountRedirect(_req, res) {
   res.redirect('https://checkout.square.site/merchant/ML58Q933VJ8VR/checkout/G3FQAZYAV4Q6HURVAC7WA4ZZ');
 }
-app.get('/api/donate/amount', donateAmountRedirect);
+app.get('/api/donate/', donateAmountRedirect);
 
 app.use(express.static("dist"));
 

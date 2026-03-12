@@ -186,7 +186,7 @@
 
       if (logSuccess) {
         step2.style.display = 'none';
-        window.location.href = '/api/donate/amount?amt=' + encodeURIComponent(amount);
+        window.location.href = '/api/donate/?amt=' + encodeURIComponent(amount);
       } else {
         statusEl.style.color = '#b22222';
         statusEl.innerHTML =
