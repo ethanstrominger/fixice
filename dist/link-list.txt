@@ -1,3 +1,9 @@
+Link: tinyurl.com/mutcubd
+Title: ICEWeekendWatch
+Description: SATURDAYS 10am-2pm, 1000 District Ave., Burlington, MA
+Action Type: event
+Mode: In Person
+Cause: Community Watch
 Link: https://aclum.org/
 Title: ACLU Massachusetts
 Description: Legal advocacy and support for civil liberties and immigrant rights.
@@ -500,4 +506,10 @@ Title: Flock Off! – Fight License Plate Reader Surveillance
 Description: Campaign calling on local and state governments to restrict sharing of AI-assisted surveillance data and cancel contracts with Flock Safety, whose license plate reader data is used by ICE and out-of-state police.
 Link: https://www.mass50501.org/flockoff
 Action Type: Advocate
+Cause: ICE Abuses
+
+Title: Boycott & Advocate Against Citizens Bank
+Description: Take action to boycott and advocate against Citizens Bank for their involvement with ICE. Visit the link for ways to participate.
+Link: https://www.de-icecitizensbank.org/take-action
+Action Type: boycott, advocate
 Cause: ICE Abuses
