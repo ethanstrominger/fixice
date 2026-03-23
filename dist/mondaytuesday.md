@@ -10,12 +10,11 @@
 Join us Monday and Tuesday 11-1 to protest the ICE cruelties at the detention center in Burlington, MA at 1000 District Ave.
 
 - **When/Where:**
-  - Mon, Mar 9 
-    - 11–12:30 Hold signs at intersection of District Ave and Burlington Mall road street, then march to 1000 District Ave. 
-	- 12:30-1: Gather outside 1000 District Ave with signs and to show solidarity.
- - Tue, Mar 10
-	- 11-12: Gather outside 1000 District Ave with signs and to show solidarity.
-    - 12-1: Hold signs at intersection of District Ave and Burlington Mall road street, then march to 1000 District Ave. 
+  - Every Monday and Tuesday
+	- 10-12: Gather outside 1000 District Ave with signs and to show solidarity, then march to intersection of District Ave
+	and Burlington Mall Road
+    -  12-1: Hold signs at intersection of District Ave and Burlington Mall Road.
+
 - **What to bring:** Warm clothes, snack, water, noise makers.  If you bring signs you can drop them off and then park.
 - **After:** Lunch at Pressed Cafe.
 <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:1em 0;">
