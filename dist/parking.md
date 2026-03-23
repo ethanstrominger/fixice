@@ -19,9 +19,8 @@ Parking policies and enforcement can change. Please use your own judgment and ch
 
 ### 📍 Public & Approved Parking
 <details>
-<summary><strong>Weekly Designated Shuttle Location(s)</strong></summary>
-Bearing Witness on Wednesday and Justice4All Thursdays has been known to shuttle
-from a designated location.  See website or facebook pages for more info.
+<summary><strong>Wednesday Shuttle locations</strong></summary>
+- Bearing Witness/Wednesday: organized carpool.  Find carpooling info in the [parking section](https://bearingwitnessne.org/the-standout#:~:text=BEARING%20WITNESS%20CARPOOL%20SERVICE) [here] of The Standout page for info on carpooling.
 </details>
 
 <details>
@@ -31,22 +30,6 @@ from a designated location.  See website or facebook pages for more info.
 Approximately 0.8 miles from District Ave (30+ spaces available).
 
 *Note:* If you enter “TRW Playground” into navigation, some map apps may suggest an illegal turn. It is best to navigate directly to **28 Stony Brook Rd**.
-</details>
-
-<details>
-<summary><strong>Temple Shalom Emeth</strong></summary>
-
-**Address:** 16 Lexington St, Burlington, MA  
-You can park there on Wednesday.  
-Check the Bearing Witness Facebook for possible shuttle coordination.
-</details>
-
-<details>
-<summary><strong>United Church of Christ Congregational</strong></summary>
-
-**Address:** 6 Lexington St, Burlington, MA  
-You can there on Wednesday.  The location is very close to Temple Shalom Emeth.  
-Check the Bearing Witness Facebook for shuttle coordination.
 </details>
 
 ---
@@ -62,31 +45,26 @@ Security officers may not be in marked cars.</span>
 <details>
 <summary><strong>Sign Drop Off </strong></summary>
 Organizers have a lot of signs, so you do not need to bring your own sign.  If bringing your own sign, you can drop it off before parking:  
-	- **Wed, Thu, Fri:** 1000 District Ave  
-	- **Mon, Tue:** 1000 District Ave.  If no one there, check corner of District Ave & Burlington Mall Road
-	- **Sat:** Corner of District Ave & Burlington Mall Road  
+	- **Mon-Fri:** 1000 District Ave  
+	- **Sat:** Corner of District Ave & Burlington Mall Road
 	- Do not leave signs unattended if no one is present.  
 **YOU PARK AT YOUR OWN RISK**
 <summary><strong>Kohl’s</strong></summary>
 
 Many participants have parked here without issue.  
-No towing has been reported from this location.
+No towing has been reported from this location.  Kohl's has not put up signs saying you will be towed.
 </details>
 
 <details>
 <summary><strong>Strip Mall (Just Salad Plaza)</strong></summary>
-
-New “No Parking” signs have been posted, and there have been reports of monitoring.
-
-The lot is visible from Burlington Mall Road.  
-On Mon, Tue, and Sat (when groups gather there), activity in the lot can generally be seen from the gathering area, which may allow you to return promptly if enforcement activity appears.
+“No Parking” signs have been posted.  No towing has been reported as of March 23.
 </details>
 
 <details>
 <summary><strong>Burlington Mall</strong></summary>
 
 Some participants have reported being questioned even when not near their vehicles.  
-No towing has been reported to date.
+No towing has been reported as of March 23.
 </details>
 
 <details>
