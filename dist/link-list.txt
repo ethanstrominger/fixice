@@ -5,6 +5,66 @@ Action Type: volunteer
 Mode: In Person
 Cause: Immigrant Aid
 
+Link: https://www.mobilize.us/swingbluealliance/event/926723/
+Title: Virginia Referendum Postcards
+Description: Postcarding for Virginia referendum, Cambridge Letter Team, Arlington MA
+Action Type: volunteer
+Mode: In Person
+Cause: Elections
+
+Link: https://turnpurple2blue.org/event/how-to-stop-trump-from-election-interference/
+Title: How to Stop Trump from Election Interference
+Description: Training or discussion on preventing election interference
+Action Type: advocate
+Mode: Virtual
+Cause: Elections
+
+Link: https://turnpurple2blue.org/event/phone-bank-to-protect-voting-rights/2026-03-31/
+Title: Phone Bank to Protect Voting Rights
+Description: Phone banking to protect voting rights
+Action Type: volunteer
+Mode: Virtual
+Cause: Elections
+
+Title: IMC Statewide Call
+Description: Statewide call for Indivisible Lab, likely monthly
+Time: Tue, Mar 31, 2026, 7:00 PM – 8:00 PM
+Action Type: advocate
+Mode: Virtual
+Frequency: Monthly
+Cause: Elections
+
+
+Title: What's Next After No Kings 3?
+Description: Post-event discussion or planning for No Kings 3
+Date: Tue, Mar 31, 2026
+Time: 8:00 PM – 9:00 PM
+Action Type: advocate
+Mode: Virtual
+Cause: Elections
+
+Link: https://www.mobilize.us/aclufl/event/464265/
+Title: Detention Advocacy Team
+Description: Virtual meeting for detention advocacy
+Action Type: advocate
+Mode: Virtual
+Cause: Immigrant Aid
+
+Link: https://www.mobilize.us/redistrictingaction/event/271054/
+Title: Redistricting Action Monthly Volunteer Virtual Meeting
+Description: Volunteer meeting for redistricting action
+Action Type: volunteer
+Mode: Virtual
+Frequency: Monthly
+Cause: Elections
+
+Link: https://www.mobilize.us/mediademocracyproject/event/430177/
+Title: The Media and Democracy Project - What activists can do: Fix Media Now
+Description: Activist training or discussion on media and democracy
+Action Type: advocate
+Mode: Virtual
+Cause: Elections
+
 Link: https://aclum.org/
 Title: ACLU Massachusetts
 Description: Legal advocacy and support for civil liberties and immigrant rights.
@@ -426,7 +486,7 @@ Frequency: Repeating
 Cause: Anti-ICE
 
 Title: Choose Democracy Action on the Common
-Time: Every Saturday, 10:00 AM – 11:00 AM
+Time: Every Friday, 5-6pm
 Location: Bedford MA
 Link: https://www.mobilize.us/choosedemocracybedford/event/792716/
 Action Type: protest
