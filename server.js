@@ -53,13 +53,19 @@ checkDatabaseExists();
 
 app.use(bodyParser.json());
 
-// Create table if not exists (run once at startup)
+// Create tables if not exist (run once at startup)
 pool.query(`CREATE TABLE IF NOT EXISTS donations (
   id SERIAL PRIMARY KEY,
   amount NUMERIC NOT NULL,
   frequency TEXT NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )`).catch(err => console.error('Error creating donations table:', err.message));
+
+pool.query(`CREATE TABLE IF NOT EXISTS analytics (
+  id SERIAL PRIMARY KEY,
+  url TEXT NOT NULL,
+  recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)`).catch(err => console.error('Error creating analytics table:', err.message));
 
 // Log incoming requests for debugging
 app.use((req, res, next) => {
@@ -102,6 +108,25 @@ app.get("/ping", (req, res) => res.json({ ok: true, ts: new Date().toISOString()
 
 app.post("/api/log-donation", logDonation);
 app.get("/api/list-donations", listDonations);
+// Record API: logs the url query parameter
+async function handleRecordApi(req, res) {
+  const url = req.query.url;
+  if (!url) {
+    return res.status(400).json({ error: 'Missing url parameter' });
+  }
+  try {
+    await pool.query(
+      'INSERT INTO analytics (url) VALUES ($1)',
+      [url]
+    );
+    console.log(`[RECORD] url=`, url);
+    res.json({ success: true });
+  } catch (err) {
+    console.error('Error recording analytics:', err.message);
+    res.status(500).json({ error: 'DB error' });
+  }
+}
+app.get('/api/record', handleRecordApi);
 
 // Serve static files (adjust path as needed)
 

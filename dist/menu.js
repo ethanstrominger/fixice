@@ -22,6 +22,28 @@ async function initMenu() {
   }
 }
 
+// Analytics: record page loads and link clicks
+(function() {
+  function getApiBase() {
+    // Extract everything up to the third slash (protocol + host)
+    const parts = window.location.href.split('/');
+    return parts[0] + '//' + parts[2];
+  }
+  function recordVisit(url) {
+    const apiBase = getApiBase();
+    fetch(apiBase + '/api/record?url=' + encodeURIComponent(url), { method: 'GET', keepalive: true });
+  }
+  // Record on page load
+  recordVisit(window.location.href);
+  // Record on link clicks
+  document.addEventListener('click', function(e) {
+    let link = e.target.closest('a[href]');
+    if (link && link.href.startsWith('http')) {
+      recordVisit(link.href);
+    }
+  }, true);
+})();
+
 function setupMenuLogic() {
   // Hamburger menu logic
   const menuToggle = document.getElementById('menuToggle');

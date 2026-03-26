@@ -1,17 +1,16 @@
 Link: tinyurl.com/mutcubd
-Title: ICEWeekendWatch
+Title: ICE Weekend Watch
 Description: SATURDAYS 10am-2pm, 1000 District Ave., Burlington, MA
-Action Type: event
+Action Type: volunteer
 Mode: In Person
-Cause: Community Watch
+Cause: Immigrant Aid
+
 Link: https://aclum.org/
 Title: ACLU Massachusetts
 Description: Legal advocacy and support for civil liberties and immigrant rights.
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
-
-
 
 Link: https://amazon.com/hz/wishlist/ls/24S8YZCELQWFC
 Title: Amazon Immigrant Aid Wishlist (supplys for Supply Hub)
@@ -27,6 +26,15 @@ Description: Boston Immigrant Justice Accompaniment Network bond fund for detain
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
+Tag: Featured
+
+Link: https://www.beyondbondboston.org/join
+Title: BIJAN Bond Fund
+Description: Boston Immigrant Justice Accompaniment Network bond fund for detained immigrants.
+Action Type: volunteer
+Mode: In Person
+Cause: Immigrant Aid
+Tag: Featured
 
 Link: https://beyondbondboston.org/donate-2
 Title: BIJAN Commissary Fund
@@ -42,14 +50,14 @@ Action Type: protest
 Mode: In Person
 Time: Every other Friday, 4:30 PM – 6:30 PM
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Link: https://concordindivisible.org/action-springboard/
 Title: Concord Indivisible Action Springboard
 Description: Concord Indivisible Action Springboard
 Action Type: protest, advocate
-Mode: ???
-Cause: ICE Abuses
+Mode: In Person, 
+Cause: Anti-ICE
 
 Link: https://cookpolitical.com/ratings/house-race-ratings
 Title: Cook Political House Ratings
@@ -84,42 +92,42 @@ Title: 413 Staying Connected for Action
 Description: 413 Staying Connected for Action
 Action Type: protest, learn
 Mode: Virtual
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Link: https://indivisible-ma.org/act_now/
 Title: Indivisible MA Act Now
 Description: Indivisible Mass. Act Now page
 Action Type: protest, advocate
 Mode: On Your Own
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Link: https://indivisible-ma.org/calendar/
 Title: Indivisible MA Calendar
 Description: Calendar of events
 Action Type: protest
 Mode: In Person
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Link: https://indivisible-ma.org/donate/
 Title: Indivisible MA
 Description: Grassroots organization supporting progressive causes and immigrant rights.
 Action Type: donate
 Mode: On Your Own
-Cause: ICE Abuses, Immigrant Aid, Elections
+Cause: Anti-ICE, Immigrant Aid, Elections
 
 Link: https://indivisible-ma.org/find-a-group/
 Title: Indivisible Group Finder
 Description: Find Your Indivisible Group
 Action Type: protest, volunteer
 Mode: In Person
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Link: https://indivisiblelab.org/donate/
 Title: Indivisible LAB
 Description: Grassroots advocacy group supporting immigrant rights and progressive causes.
 Action Type: donate
 Mode: On Your Own
-Cause: ICE Abuses, Immigrant Aid, Elections
+Cause: Anti-ICE, Immigrant Aid, Elections
 
 Link: https://lawyersforcivilrights.org/donate/
 Title: Lawyers for Civil Rights
@@ -141,6 +149,7 @@ Description: Massachusetts Immigrant & Refugee Advocacy Coalition, supporting im
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
+Tag: Featured
 
 Link: https://miracoalition.org/petition/
 Title: MIRA Coalition Petition
@@ -178,11 +187,12 @@ Mode: On Your Own, In Person
 Cause: Immigrant Aid
 
 Link: https://miracoalition.org/get-involved/business/
-Title: Mass. Business Immigration Coalition (MIRA)
+Title: Massachusetts Immigration & Refugee Alliance Coalition (MIRA)
 Description: Join the Massachusetts Business Immigration Coalition to advocate for immigrant-friendly business policies.
 Action Type: advocate
 Mode: On Your Own
 Cause: Immigrant Aid
+Tag: Featured
 
 Link: https://mobilize.us
 Title: Mobilize National Events
@@ -269,18 +279,19 @@ Action Type: protest
 Mode: In Person
 Time: Mon–Fri (see page for current times)
 Frequency: Repeating
-Cause: ICE Abuses, Immigrant Aid
+Cause: Anti-ICE, Immigrant Aid
 
 Link: https://act.indivisible.org/sign/ice-out-for-good?akid=s132928..WohDZg&fbclid=IwY2xjawPppktleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeuV5R1Q6Q0ppkW7_KnYjb_MwTkhtY8JzPwG1ot2OIiKwmVn8djPGsHG2hdus_aem_IzsTawiXwHL2gTZt7bR_xg
 Title: ICE Out for Good Petition
 Description: eMail your congressional representatives to rein in ICE (Concord Indivisible)
 Action Type: advocate
 Mode: On Your Own
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Link: /lunchtime
 Title: Lunch Time Activism
 Description: Join us for lunch after Mon, Tue, and Wed protests to write postcards, collate materials for immigrants, and plan future actions.
+On Wednesday, check at the Coffee Connection.
 Action Type: advocate
 Mode: In Person
 Tag: Featured
@@ -303,17 +314,7 @@ Title: Boycott Citizens Bank
 Description: Information and resources for taking action against Citizens Bank's involvement with ICE.
 Action Type: boycott
 Mode: On Your Own
-Cause: ICE Abuses
-
-Link: https://indivisible.org/events/citizens-bank-stop-financing-ice-prisons-5/
-Title: Citizens Bank: Stop Financing ICE Prisons, March 7
-Description: Protest event urging Citizens Bank to stop financing ICE prisons. Join activists in demanding an end to financial support for immigrant detention.
-Action Type: protest, boycott
-Mode: In Person
-Tag: Featured
-Time: Sat, Mar 7, 2026, 11:00 AM – 12:00 PM
-Frequency: One-Time
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Link: https://eoldn.org/
 Title: Election Official Legal Defense Network
@@ -357,33 +358,33 @@ Action Type: protest
 Mode: In Person
 Time: Sat, Mar 28, 2026 (time varies by location)
 Frequency: One-Time
-Cause: ICE Abuses, Elections
+Cause: Anti-ICE, Elections
 
 Link: https://www.nytimes.com/2026/01/31/opinion/trump-midterms-election-security.html
 Title: NYT Editorial: Trump Could Interfere With the Midterms. You Can Help Defend Them.
 Description: The New York Times editorial board outlines the threat Trump poses to the 2026 midterm elections and recommends specific actions and organizations to help safeguard democracy.
 Action Type: learn
 Mode: On Your Own
-Cause: ICE Abuses, Elections
+Cause: Anti-ICE, Elections
 
 Title: Virtual Phonebank Training On Demand (Phone Bank)
 Time: Every Tuesday, 12:00 AM – 11:45 PM (On Demand)
 Link: https://www.mobilize.us/pbcdemocraticparty/event/390052/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Burma Shave Standout - Arlington
 Time: Every Tuesday, 4:30 PM – 5:30 PM
 Location: Arlington, RSVP for location and other details
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Phone Bank to Protect Voting Rights (Phone Bank)
 Time: Every Tuesday, 6:00 PM – 8:00 PM
 Link: https://turnpurple2blue.org/event/phone-bank-to-protect-voting-rights/2026-03-03/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: Elections
 
@@ -391,75 +392,75 @@ Title: Arlington MA Visibility Brigade
 Time: Every Wednesday, 3:00 PM – 4:00 PM
 Location: Arlington MA (address private, sign up for details)
 Link: https://www.mobilize.us/arlingtonmavisibilitybrigade/event/860547/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: POSTCARDING w/DOLLY and SUE into all swing states voting - w/Field Team 6 & The Union
 Time: Every Wednesday, 2:00 PM – 5:00 PM
 Link: https://www.mobilize.us/ft6/event/375701/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: Elections
 
 Title: Progressive Mass Power Lunch Phone Bank (Phone Bank)
 Time: Every Thursday, 12:00 PM – 1:00 PM
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Fiske Hill Visibility Brigade in Lexington
 Time: Every Thursday, 3:00 PM – 4:30 PM
 Location: Massachusetts Ave, Lexington, MA (overpass over Rt 95/128)
 Link: https://www.mobilize.us/indivisibleprogressivemasscambridge/event/892643/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Weekly Stand-out in Monument Square
 Time: Every Thursday, 3:30 PM – 4:30 PM
 Location: Monument Square, Concord MA
 Link: https://www.mobilize.us/concordindivisible/event/834959/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Choose Democracy Action on the Common
 Time: Every Saturday, 10:00 AM – 11:00 AM
 Location: Bedford MA
 Link: https://www.mobilize.us/choosedemocracybedford/event/792716/
-Action Type: 
+Action Type: protest
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Indivisible LAB Daytime Advocate Hours
 Time: Every Tuesday, 10:30 AM – 11:30 AM
 Location: Lexington Center (RSVP for details), Lexington MA
 Link: https://www.mobilize.us/indivisiblelab/event/702649/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Help Virginia Level the Congressional Playing Field!
 Time: Every Wednesday, 6:00 PM – 8:00 PM
 Location: Arlington MA
 Link: https://www.mobilize.us/swingbluealliance/event/909249/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Indivisible LAB Evening Advocate Hours
-Time: Every Thursday, 7:00 PM – 8:30 PM
+Time: Every Tuesday and Thursday, 7:00 PM – 8:30 PM
 Location: Arlington MA
 Link: https://www.mobilize.us/indivisiblelab/event/865658/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
-Cause: ICE Abuses
+Cause: Anti-ICE
 
 Title: Sunday Tea & Virtual Democratic Phone Bank for US House Special Elections (Phone Bank)
 Time: Every Sunday, 4:30 PM – 6:00 PM
 Link: https://www.mobilize.us/swingbluealliance/event/751236/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: Elections
 
@@ -474,14 +475,14 @@ Time: March 21-22, 2026
 Location: Allentown, PA
 Description: Join other Massachusetts folks for Swing Left Ground Truth's "Deep Listening" project – listen to voters' concerns to help frame persuasion messages for PA-07. Email bob.scheier@gmail.com for rides/logistics.
 Link: https://www.mobilize.us/swingbluealliance/event/896146/
-Action Type: Advocate
+Action Type: advocate
 Frequency: One Time
 Cause: Elections
 
 Title: Write Letters to Help Voters Be Able to Vote (VoteRiders)
 Description: Download personalized letters via the VoteRiders app and mail them to registered voters in NC or other states so they have info they need to vote. Just need a computer, printer, stamps, and envelopes.
 Link: https://scribehow.com/viewer/DIY_Letter-writing_w_VoteRiders__iSVoJaxmTU2W1W5MFmjxnw
-Action Type: Advocate
+Action Type: advocate
 Cause: Elections
 
 Title: Volunteer with CASA – Help Immigrant Neighbors in Metrowest
@@ -489,27 +490,29 @@ Description: CASA in Framingham serves immigrants in the Metrowest area. Help by
 Link: https://docs.google.com/document/d/1dlGg7uXAFhRrfGaHAl_0avxXSDNzxNevvHYCDTJa1Lw/edit?tab=t.0
 Action Type: volunteer
 Cause: Immigrant Aid
+Tag: Featured
 
 Title: Donate to LUCE – Support Immigrant Justice
 Description: LUCE Immigrant Justice Network provides training for community observers, direct aid to families, and legal assistance to individuals targeted by ICE.
 Link: https://www.lucemass.org/donate
 Action Type: donate
-Cause: ICE Abuses
+Cause: Anti-ICE
+Tag: Featured
 
 Title: Support Driver Privacy Protections (H.3755)
 Description: MA police share license plate reader data with out-of-state agencies including ICE. H.3755 would require deletion within 14 days, prohibit tracking protesters, and stop data sharing. Email your state legislators to support it.
 Link: https://www.mass50501.org/actions/support-driver-privacy-protections
-Action Type: Advocate
-Cause: ICE Abuses
+Action Type: advocate
+Cause: Anti-ICE
 
 Title: Flock Off! – Fight License Plate Reader Surveillance
 Description: Campaign calling on local and state governments to restrict sharing of AI-assisted surveillance data and cancel contracts with Flock Safety, whose license plate reader data is used by ICE and out-of-state police.
 Link: https://www.mass50501.org/flockoff
-Action Type: Advocate
-Cause: ICE Abuses
+Action Type: advocate
+Cause: Anti-ICE
 
 Title: Boycott & Advocate Against Citizens Bank
 Description: Take action to boycott and advocate against Citizens Bank for their involvement with ICE. Visit the link for ways to participate.
 Link: https://www.de-icecitizensbank.org/take-action
 Action Type: boycott, advocate
-Cause: ICE Abuses
+Cause: Anti-ICE

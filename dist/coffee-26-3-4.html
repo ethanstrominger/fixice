@@ -197,7 +197,7 @@
       try {
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 20000);
-        const resp = await fetch(API_BASE + '/api/log-donation', {
+        const resp = await fetch  (API_BASE + '/api/log-donation', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ amount, frequency: 'once' }),
@@ -212,7 +212,7 @@
 
       if (logSuccess) {
         step2.style.display = 'none';
-        window.location.href = 'https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=99a5f390-8b79-41ed-89d0-0a5d4111abcb&envid=p-Ez8UyF-6T0CLj7brUwUDPg';
+        window.open('https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=99a5f390-8b79-41ed-89d0-0a5d4111abcb&envid=p-Ez8UyF-6T0CLj7brUwUDPg', '_blank');
       } else {
         statusEl.style.color = '#b22222';
         statusEl.innerHTML =
