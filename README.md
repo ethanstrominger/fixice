@@ -38,8 +38,8 @@ Replace `postgres` with your desired password if needed.
 ### Setup
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/melticemass.git
-   cd melticemass
+   git clone https://github.com/yourusername/fixice.git
+   cd fixice
    ```
 2. Install dependencies:
    ```sh
@@ -54,7 +54,7 @@ Replace `postgres` with your desired password if needed.
    
    Then create the database:
    ```sh
-   createdb melticemass
+   createdb fixice
    ```
    
    If you want to use a different username or password, update the `DATABASE_URL` in your `.env` file accordingly.

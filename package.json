@@ -1,7 +1,7 @@
 {
-  "name": "melticemass-static-server",
+  "name": "fixice-static-server",
   "version": "1.0.0",
-  "description": "Static site with live reload for melticemass",
+  "description": "Static site with live reload for fixice",
   "scripts": {
     "start": "node server.js",
     "dev": "live-server dist --port=8080 --no-browser"
