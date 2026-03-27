@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Page Flyer</title>
+    <link rel="stylesheet" href="fixice.css?v=4">
+</head>
+
+<body>
+    <div id="menu-container"></div>
+    <div class="content">
+        <main class="fixice-main">
+            <br>
+            <section id="halfpage-flyer">
+                <h2>Half Page Flyer</h2>
+                <p>
+                    Download and share our half page flyer to help spread the word!
+                </p>
+                <p>
+                    <a href="halfpageflyer.pdf" target="_blank" rel="noopener" style="font-size:1.2em;font-weight:bold;">Download the Half Page Flyer (PDF)</a>
+                </p>
+                <p>
+                    <a href="halfpageflyer_fullpage_image.pdf" target="_blank" rel="noopener" style="font-size:1.2em;font-weight:bold; color:#23408e;">Download 8.5 x 11 PDF (2 per page)</a>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+        // Initialize menu (injects menu if needed and sets up all logic)
+        if (typeof initMenu === 'function') {
+            initMenu();
+        } else {
+            // If menu.js is not loaded yet, wait for it
+            window.addEventListener('DOMContentLoaded', function () {
+                if (typeof initMenu === 'function') initMenu();
+            });
+        }
+    </script>
+
+</body>
+
+</html>
