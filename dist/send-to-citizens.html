@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emailer - Send to Citizens</title>
+  <style>
+    body { font-family: sans-serif; max-width: 700px; margin: auto; padding: 20px; }
+    table { border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ccc; padding: 5px; }
+    textarea { width: 100%; margin-bottom: 10px; }
+    .error { color: red; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+<h2>Instructions to eMail Citizens Bank Executives</h2>
+Select your account status below to load a template email. Replace [first name],
+[last name], [town], and [STATE] with the appropriate values. You can edit 
+the template as desired. Once you have your template ready, click
+"Generate Email Links" to create links.  This will generate one link
+for each executive.  Click on a link to send it to that will open your email client with the 
+subject and message pre-filled.   
+<h2>Account Status</h2>
+  <div style="margin-bottom: 16px;">
+    <label><input type="radio" name="accountStatus" value="have" checked> I have an account</label><br>
+    <label><input type="radio" name="accountStatus" value="closed"> I closed my account</label><br>
+    <label><input type="radio" name="accountStatus" value="none"> I do not have an account</label>
+  </div>
+
+  <h2>Edit Template</h2>
+  <textarea id="template-area" rows="18"></textarea>
+  <div class="error" id="variable-warning">Replace [first name], [last name], [town], and [STATE]</div>
+  <div class="error" id="error-msg"></div>
+  <button id="generate-btn" style="margin-bottom: 20px;">Generate Email Links</button>
+
+  <div id="links-section" style="display:none;">
+    <h2>Email Links</h2>
+    <ul id="links-list"></ul>
+  </div>
+
+    <h2>Citizens Bank Executives</h2>
+    <table id="contacts-table">
+      <thead>
+        <tr>
+          <th>Salutation</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  <script>
+    function substituteVars(template, row) {
+      return template.replace(/\[(\w+)\]/g, (_, key) => row[key] || "");
+    }
+    function parseCSV(csv) {
+      const [header, ...rows] = csv.trim().split("\n");
+      const headers = header.split(",");
+      return rows.map(line => {
+        const values = line.split(",");
+        const obj = {};
+        headers.forEach((h, i) => { obj[h.trim()] = values[i]?.trim() || ""; });
+        return obj;
+      });
+    }
+    let csvRows = [];
+    let template = "";
+    let accountStatus = "have";
+    async function loadFiles() {
+      const csvResp = await fetch("/send-to.csv");
+      const csvText = await csvResp.text();
+      csvRows = parseCSV(csvText);
+      renderTable();
+      // Load initial template from file
+      const resp = await fetch(`/${accountStatus}.txt`);
+      const txt = await resp.text();
+      template = txt;
+      document.getElementById('template-area').value = txt;
+    }
+    function renderTable() {
+      const tbody = document.querySelector('#contacts-table tbody');
+      tbody.innerHTML = '';
+      csvRows.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${row.salutation || ''}</td><td>${row.email || ''}</td>`;
+        tbody.appendChild(tr);
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      loadFiles();
+      document.getElementsByName('accountStatus').forEach(radio => {
+        radio.addEventListener('change', e => {
+          accountStatus = e.target.value;
+          fetch(`/${accountStatus}.txt`).then(resp => resp.text()).then(txt => {
+            template = txt;
+            document.getElementById('template-area').value = txt;
+          });
+        });
+      });
+      document.getElementById('template-area').addEventListener('input', e => {
+        template = e.target.value;
+        document.getElementById('error-msg').textContent = '';
+      });
+      document.getElementById('generate-btn').addEventListener('click', () => {
+        const editTemplate = document.getElementById('template-area').value;
+        const matches = editTemplate.match(/\[(.*?)\]/g) || [];
+        const invalidVars = matches.filter(v => v.toLowerCase() !== '[salutation]');
+        if (invalidVars.length > 0) {
+          document.getElementById('error-msg').textContent = 'Error: Only [salutation] is allowed. Remove other variables.';
+          document.getElementById('links-section').style.display = 'none';
+          return;
+        }
+        document.getElementById('error-msg').textContent = '';
+        let templateNoSubject = editTemplate.replace(/(^|\n)Subject:.*\n?/i, "");
+        templateNoSubject = templateNoSubject.replace(/^\s*\n/, "");
+        const subject = "End financing of CoreCivic and The GEO Group";
+        const links = csvRows.map(row => {
+          const first = row["First Name"] || "";
+          const last = row["Last Name"] || "";
+          let email = row.email;
+          let display = email;
+          let mailtoAddress = email;
+          if (first && last) {
+            display = `${email} <${first} ${last}>`;
+            mailtoAddress = `${encodeURIComponent(first)}%20${encodeURIComponent(last)}%20<${email}>`;
+          }
+          const body = substituteVars(templateNoSubject, row);
+          const mailto = `mailto:${mailtoAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          return { email, salutation: row.salutation, mailto, display };
+        });
+        const linksList = document.getElementById('links-list');
+        linksList.innerHTML = '';
+        links.forEach(link => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${link.mailto}" target="_blank" rel="noopener noreferrer">Send to ${link.salutation} (${link.display})</a>`;
+          linksList.appendChild(li);
+        });
+        document.getElementById('links-section').style.display = '';
+      });
+    });
+  </script>
+</body>
+</html>
