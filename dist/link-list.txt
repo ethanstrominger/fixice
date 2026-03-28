@@ -1,17 +1,17 @@
 Link: tinyurl.com/mutcubd
-Title: ICEWeekendWatch
+Title: ICE Weekend Watch
 Description: SATURDAYS 10am-2pm, 1000 District Ave., Burlington, MA
-Action Type: event
+Action Type: protest
 Mode: In Person
-Cause: Community Watch
+Cause: ICE Abuses
+
 Link: https://aclum.org/
 Title: ACLU Massachusetts
 Description: Legal advocacy and support for civil liberties and immigrant rights.
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
-
-
+Frequency: One Time
 
 Link: https://amazon.com/hz/wishlist/ls/24S8YZCELQWFC
 Title: Amazon Immigrant Aid Wishlist (supplys for Supply Hub)
@@ -20,6 +20,7 @@ through distribution of applicable educational material.
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
+Frequency: One Time
 
 Link: https://beyondbondboston.org/donate
 Title: BIJAN Bond Fund
@@ -27,6 +28,7 @@ Description: Boston Immigrant Justice Accompaniment Network bond fund for detain
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
+Frequency: One Time
 
 Link: https://beyondbondboston.org/donate-2
 Title: BIJAN Commissary Fund
@@ -34,6 +36,7 @@ Description: Commissary fund for detained immigrants, managed by BIJAN.
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
+Frequency: One Time
 
 Link: https://burnresilience.network/ICEcadrille/
 Title: Black Tie Protest Event
@@ -105,7 +108,8 @@ Title: Indivisible MA
 Description: Grassroots organization supporting progressive causes and immigrant rights.
 Action Type: donate
 Mode: On Your Own
-Cause: ICE Abuses, Immigrant Aid, Elections
+Cause: ICE Abuses, Immigrant Aid, Election
+Frequency: One Time
 
 Link: https://indivisible-ma.org/find-a-group/
 Title: Indivisible Group Finder
@@ -120,6 +124,7 @@ Description: Grassroots advocacy group supporting immigrant rights and progressi
 Action Type: donate
 Mode: On Your Own
 Cause: ICE Abuses, Immigrant Aid, Elections
+Frequency: One Time
 
 Link: https://lawyersforcivilrights.org/donate/
 Title: Lawyers for Civil Rights
@@ -127,6 +132,7 @@ Description: Legal support and advocacy for civil rights and immigrants.
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
+Frequency: One Time
 
 Link: https://LUCEmass.org
 Title: LUCE Immigrant Justice Network
@@ -141,6 +147,7 @@ Description: Massachusetts Immigrant & Refugee Advocacy Coalition, supporting im
 Action Type: donate
 Mode: On Your Own
 Cause: Immigrant Aid
+Frequency: One Time
 
 Link: https://miracoalition.org/petition/
 Title: MIRA Coalition Petition
@@ -169,6 +176,7 @@ Description: Massachusetts Immigration Resource Alliance Get Involed Page
 Action Type: volunteer, donate, advocate
 Mode: On Your Own, In Person
 Cause: Immigrant Aid
+Frequency: One Time
 
 Link: https://miracoalition.org/get-involved/volunteer/
 Title: MIRA Coalition Volunteer Opportunities
@@ -233,6 +241,7 @@ Action Type: donate
 Mode: On Your Own
 Tag: Featured
 Cause: Elections
+Frequency: One Time
 
 Link: https://swingbluealliance.org/calendar/
 Title: Swing Blue Alliance Calendar
@@ -298,23 +307,6 @@ Time: Mon–Fri, at protests
 Frequency: Repeating
 Cause: Immigrant Aid
 
-Link: /boycott
-Title: Boycott Citizens Bank
-Description: Information and resources for taking action against Citizens Bank's involvement with ICE.
-Action Type: boycott
-Mode: On Your Own
-Cause: ICE Abuses
-
-Link: https://indivisible.org/events/citizens-bank-stop-financing-ice-prisons-5/
-Title: Citizens Bank: Stop Financing ICE Prisons, March 7
-Description: Protest event urging Citizens Bank to stop financing ICE prisons. Join activists in demanding an end to financial support for immigrant detention.
-Action Type: protest, boycott
-Mode: In Person
-Tag: Featured
-Time: Sat, Mar 7, 2026, 11:00 AM – 12:00 PM
-Frequency: One-Time
-Cause: ICE Abuses
-
 Link: https://eoldn.org/
 Title: Election Official Legal Defense Network
 Description: Pairs election officials with pro bono attorneys who can advise them on how to respond to threats and lawsuits, which have increased in recent years. Founded by a former Obama White House lawyer and a former Bush election lawyer.
@@ -328,6 +320,7 @@ Description: Support the Election Official Legal Defense Network, which pairs el
 Action Type: donate
 Mode: On Your Own
 Cause: Elections
+Frequency: One Time
 
 Link: https://campaignlegal.org/
 Title: Campaign Legal Center
@@ -342,6 +335,7 @@ Description: Support the Campaign Legal Center's litigation to keep election rul
 Action Type: donate
 Mode: On Your Own
 Cause: Elections
+Frequency: One Time
 
 Link: https://www.cartercenter.org/programs/democracy/
 Title: Carter Center Democracy Program
@@ -349,6 +343,7 @@ Description: Founded by Jimmy Carter in 1982. Brings global election monitoring 
 Action Type: learn, donate
 Mode: On Your Own
 Cause: Elections
+Frequency: One Time
 
 Link: https://mobilize.us/nokings
 Title: No Kings, March 28 — Find a Protest Near You
@@ -356,7 +351,7 @@ Description: Find and join No Kings rallies and protests near you. National orga
 Action Type: protest
 Mode: In Person
 Time: Sat, Mar 28, 2026 (time varies by location)
-Frequency: One-Time
+Frequency: One Time
 Cause: ICE Abuses, Elections
 
 Link: https://www.nytimes.com/2026/01/31/opinion/trump-midterms-election-security.html
@@ -369,21 +364,21 @@ Cause: ICE Abuses, Elections
 Title: Virtual Phonebank Training On Demand (Phone Bank)
 Time: Every Tuesday, 12:00 AM – 11:45 PM (On Demand)
 Link: https://www.mobilize.us/pbcdemocraticparty/event/390052/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
 Title: Burma Shave Standout - Arlington
 Time: Every Tuesday, 4:30 PM – 5:30 PM
 Location: Arlington, RSVP for location and other details
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
 Title: Phone Bank to Protect Voting Rights (Phone Bank)
 Time: Every Tuesday, 6:00 PM – 8:00 PM
 Link: https://turnpurple2blue.org/event/phone-bank-to-protect-voting-rights/2026-03-03/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: Elections
 
@@ -391,20 +386,20 @@ Title: Arlington MA Visibility Brigade
 Time: Every Wednesday, 3:00 PM – 4:00 PM
 Location: Arlington MA (address private, sign up for details)
 Link: https://www.mobilize.us/arlingtonmavisibilitybrigade/event/860547/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
 Title: POSTCARDING w/DOLLY and SUE into all swing states voting - w/Field Team 6 & The Union
 Time: Every Wednesday, 2:00 PM – 5:00 PM
 Link: https://www.mobilize.us/ft6/event/375701/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: Elections
 
 Title: Progressive Mass Power Lunch Phone Bank (Phone Bank)
 Time: Every Thursday, 12:00 PM – 1:00 PM
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
@@ -412,7 +407,7 @@ Title: Fiske Hill Visibility Brigade in Lexington
 Time: Every Thursday, 3:00 PM – 4:30 PM
 Location: Massachusetts Ave, Lexington, MA (overpass over Rt 95/128)
 Link: https://www.mobilize.us/indivisibleprogressivemasscambridge/event/892643/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
@@ -420,7 +415,7 @@ Title: Weekly Stand-out in Monument Square
 Time: Every Thursday, 3:30 PM – 4:30 PM
 Location: Monument Square, Concord MA
 Link: https://www.mobilize.us/concordindivisible/event/834959/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
@@ -428,7 +423,7 @@ Title: Choose Democracy Action on the Common
 Time: Every Saturday, 10:00 AM – 11:00 AM
 Location: Bedford MA
 Link: https://www.mobilize.us/choosedemocracybedford/event/792716/
-Action Type: 
+Action Type: protest
 Frequency: Repeating
 Cause: ICE Abuses
 
@@ -436,7 +431,7 @@ Title: Indivisible LAB Daytime Advocate Hours
 Time: Every Tuesday, 10:30 AM – 11:30 AM
 Location: Lexington Center (RSVP for details), Lexington MA
 Link: https://www.mobilize.us/indivisiblelab/event/702649/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
@@ -444,7 +439,7 @@ Title: Help Virginia Level the Congressional Playing Field!
 Time: Every Wednesday, 6:00 PM – 8:00 PM
 Location: Arlington MA
 Link: https://www.mobilize.us/swingbluealliance/event/909249/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
@@ -452,14 +447,14 @@ Title: Indivisible LAB Evening Advocate Hours
 Time: Every Thursday, 7:00 PM – 8:30 PM
 Location: Arlington MA
 Link: https://www.mobilize.us/indivisiblelab/event/865658/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: ICE Abuses
 
 Title: Sunday Tea & Virtual Democratic Phone Bank for US House Special Elections (Phone Bank)
 Time: Every Sunday, 4:30 PM – 6:00 PM
 Link: https://www.mobilize.us/swingbluealliance/event/751236/
-Action Type: Advocate
+Action Type: advocate
 Frequency: Repeating
 Cause: Elections
 
@@ -469,19 +464,21 @@ Link: https://secure.actblue.com/donate/common-cause-election-protection
 Action Type: donate
 Cause: Elections
 
+Frequency: One Time
+
 Title: Road Trip to PA – Deep Listening Canvass (Swing Left)
 Time: March 21-22, 2026
 Location: Allentown, PA
 Description: Join other Massachusetts folks for Swing Left Ground Truth's "Deep Listening" project – listen to voters' concerns to help frame persuasion messages for PA-07. Email bob.scheier@gmail.com for rides/logistics.
 Link: https://www.mobilize.us/swingbluealliance/event/896146/
-Action Type: Advocate
+Action Type: advocate
 Frequency: One Time
 Cause: Elections
 
 Title: Write Letters to Help Voters Be Able to Vote (VoteRiders)
 Description: Download personalized letters via the VoteRiders app and mail them to registered voters in NC or other states so they have info they need to vote. Just need a computer, printer, stamps, and envelopes.
 Link: https://scribehow.com/viewer/DIY_Letter-writing_w_VoteRiders__iSVoJaxmTU2W1W5MFmjxnw
-Action Type: Advocate
+Action Type: advocate
 Cause: Elections
 
 Title: Volunteer with CASA – Help Immigrant Neighbors in Metrowest
@@ -496,20 +493,41 @@ Link: https://www.lucemass.org/donate
 Action Type: donate
 Cause: ICE Abuses
 
+Frequency: One Time
+
 Title: Support Driver Privacy Protections (H.3755)
 Description: MA police share license plate reader data with out-of-state agencies including ICE. H.3755 would require deletion within 14 days, prohibit tracking protesters, and stop data sharing. Email your state legislators to support it.
 Link: https://www.mass50501.org/actions/support-driver-privacy-protections
-Action Type: Advocate
+Action Type: advocate
 Cause: ICE Abuses
 
 Title: Flock Off! – Fight License Plate Reader Surveillance
 Description: Campaign calling on local and state governments to restrict sharing of AI-assisted surveillance data and cancel contracts with Flock Safety, whose license plate reader data is used by ICE and out-of-state police.
 Link: https://www.mass50501.org/flockoff
-Action Type: Advocate
+Action Type: advocate
 Cause: ICE Abuses
 
-Title: Boycott & Advocate Against Citizens Bank
-Description: Take action to boycott and advocate against Citizens Bank for their involvement with ICE. Visit the link for ways to participate.
-Link: https://www.de-icecitizensbank.org/take-action
-Action Type: boycott, advocate
+Link: send-to-citizens.html
+Title: Email Citizens Bank CEOs
+Description: In less than 3 minutes, send email to seven Citizens Bank CEOs urging them to end their relationship with prison companies used by ICE.
+Action Type: boycott
+Mode: On Your Own
+Tag: Quick, Featured
 Cause: ICE Abuses
+
+Link: https://action.aclu.org/send-message/stop-anti-voter-bills-now
+Title: Stop Anti-Voter Bills Now (ACLU)
+Description: Send a quick message to oppose anti-voter bills and protect elections in Massachusetts.
+Action Type: advocate
+Mode: On Your Own
+Tag: Quick
+Cause: Elections
+
+Link: email-ma-protect-act.html
+Title: Email Your MA Senator: Protect Act
+Description: Instructions and template for emailing your MA state senator to support the Protect Act. Includes tips for customizing your message and using the Progressive Mass Scorecard.
+Action Type: advocate
+Mode: On Your Own
+Tag: Quick
+Cause: Elections
+

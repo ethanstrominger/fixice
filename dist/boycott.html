@@ -3,25 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boycott ICE</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Boycott Citizens Bank</title>
+  <link rel="stylesheet" href="fixice.css?v=4">
 </head>
 <body style="background:#fff;">
   <div id="menu-container"></div>
-  <script src="menu.js"></script>
-  <script src="menu-toggle.js"></script>
-  <div class="container">
+  <main class="fixice-main" style="max-width:800px;margin:auto;padding:2em 1em;">
     <h1>Boycott Citizens Bank</h1>
-    <a href="https://boycottcitizens.org/" target="_blank" rel="noopener">boycottcitizens.org</a> and 
-    other organizations are calling for a boycott of Citizens Bank, closing 
-    your account, and sending a message to bank executives that profiting from ICE's human rights abuses is unacceptable.
-    boycottcitizens.org provides resources for how to close your account and contact the bank, 
-    and other companies to boycott.
-    </p>
-    <p>FixICE.org is working on finding or creating instructions
-      on how to write a letter to bank executives to express your concerns about their involvement with ICE, and how to close your account if you bank with Citizens Bank.
-      If you have any resources or suggestions for how to do either of these, please <a href="mailto:info@fixice.org?subject=Boycott%20Citizens&body=I%20have%20a%20resource%20or%20suggestion%20regarding%20the%20Citizens%20Bank%20boycott%20campaign%3A%0A%0A" style="color:#23408e;text-decoration:underline;">contact</a> us. 
-    </p>
-   </div>
+    <p><b>Why boycott Citizens Bank?</b></p>
+    <ul>
+      <li><b>Susceptible to public opinion:</b> Citizens Bank is a consumer-facing brand that cares about its reputation and is more likely to respond to public pressure than private prison companies or government agencies.</li>
+      <li><b>Important to ICE:</b> Citizens Bank provides financial services to companies that operate ICE detention centers. Cutting off this support can disrupt ICE's ability to detain immigrants.</li>
+    </ul>
+    <h2>Take Action: Email Citizens Bank CEOs</h2>
+    <p>In less than 3 minutes, you can send an email to seven Citizens Bank CEOs urging them to end their relationship with prison companies used by ICE. <a href="send-to-citizens.html"><b>Send your email now &rarr;</b></a></p>
+    <h2>Key Boycott Campaign Websites</h2>
+    <ul>
+      <li><a href="https://boycottcitizens.org" target="_blank"><b>boycottcitizens.org</b></a>: This site provides background, news, and resources for the Citizens Bank boycott campaign. It offers information on why the boycott matters and how to get involved.</li>
+      <li><a href="https://www.de-icecitizensbank.org" target="_blank"><b>de-icecitizensbank.org</b></a>: This site focuses on direct actions, advocacy tools, and ways to pressure Citizens Bank to cut ties with ICE-related prison companies. It includes action toolkits and campaign updates.</li>
+    </ul>
+  </main>
+  <script src="menu.js"></script>
+  <script>
+    if (typeof initMenu === 'function') {
+      initMenu();
+    } else {
+      window.addEventListener('DOMContentLoaded', function () {
+        if (typeof initMenu === 'function') initMenu();
+      });
+    }
+  </script>
 </body>
 </html>

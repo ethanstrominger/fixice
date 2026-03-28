@@ -9,7 +9,7 @@ This project is a web application for North Shore LUCE fundraising and protest i
 ## Features
 - Mobile-friendly, accessible HTML/CSS
 - Collapsible info sections for easy navigation
-- Donation form with amount and frequency (one-time, monthly, quarterly)
+- Donation form with amount and frequency (One Time, monthly, quarterly)
 - Backend API for logging donations to PostgreSQL
 
 ## Local Development

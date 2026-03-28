@@ -1,4 +1,4 @@
-s# resources.txt
+# resources.txt
 # Format: name | description | link
 
 # Extracted unique root URLs from link-list.txt
@@ -29,7 +29,7 @@ Campaign Legal Center | Ensures that election rules remain fair. Fighting the Tr
 Carter Center Democracy Program | Brings global election monitoring to the US — deploying nonpartisan observers in Georgia, Michigan, Montana, Nevada, and New Mexico in 2026. Also hosts civic education events and offers resources for voters and election officials. | https://www.cartercenter.org/programs/democracy/
 
 Heading: Indivisible MA Coalition 
-p: Connects people to action-oriented groups to defend rights, freedoms, and democracy in Massachusetts. All groups have newsletters.
+Connects people to action-oriented groups to defend rights, freedoms, and democracy in Massachusetts. All groups have newsletters.
 FIND YOUR GROUP || https://indivisible-ma.org/find-a-group/
 Turn Purple 2 Blue (Acton) | Extensive curation of events | https://turnpurple2blue.org
 Concord Indivisible | Hosts local events and an action springboard that highlights a few critical activities | https://concordindivisible.org
