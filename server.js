@@ -11,6 +11,7 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 const app = express();
+console.log("Starting server with NODE_ENV =", process.env.NODE_ENV);
 
 // Allow cross-origin requests from the frontend
 app.use(cors({
