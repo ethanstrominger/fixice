@@ -61,11 +61,21 @@ pool.query(`CREATE TABLE IF NOT EXISTS donations (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )`).catch(err => console.error('Error creating donations table:', err.message));
 
+
+// Create analytics table if not exists
 pool.query(`CREATE TABLE IF NOT EXISTS analytics (
   id SERIAL PRIMARY KEY,
   url TEXT NOT NULL,
+  ip_address TEXT,
   recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )`).catch(err => console.error('Error creating analytics table:', err.message));
+
+// Add ip_address column to analytics if it does not exist (for deployment/migration)
+pool.query(`ALTER TABLE analytics ADD COLUMN IF NOT EXISTS ip_address TEXT`).catch(err => {
+  if (!/duplicate column/i.test(err.message)) {
+    console.error('Error adding ip_address column to analytics:', err.message);
+  }
+});
 
 // Log incoming requests for debugging
 app.use((req, res, next) => {
@@ -114,12 +124,16 @@ async function handleRecordApi(req, res) {
   if (!url) {
     return res.status(400).json({ error: 'Missing url parameter' });
   }
+  // Get IP address (works behind proxies like Render)
+  let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress || '';
+  if (Array.isArray(ip)) ip = ip[0];
+  if (ip && ip.startsWith('::ffff:')) ip = ip.replace('::ffff:', '');
   try {
     await pool.query(
-      'INSERT INTO analytics (url) VALUES ($1)',
-      [url]
+      'INSERT INTO analytics (url, ip_address) VALUES ($1, $2)',
+      [url, ip]
     );
-    console.log(`[RECORD] url=`, url);
+    console.log(`[RECORD] url=`, url, 'ip=', ip);
     res.json({ success: true });
   } catch (err) {
     console.error('Error recording analytics:', err.message);
