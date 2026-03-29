@@ -133,7 +133,7 @@ async function handleRecordApi(req, res) {
       'INSERT INTO analytics (url, ip_address) VALUES ($1, $2)',
       [url, ip]
     );
-    console.log(`[RECORD] url=`, url, 'ip=', ip);
+    console.log(`[RECORD] url = `, url, 'ip=', ip);
     res.json({ success: true });
   } catch (err) {
     console.error('Error recording analytics:', err.message);
