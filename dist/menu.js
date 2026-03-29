@@ -24,14 +24,10 @@ async function initMenu() {
 
 // Analytics: record page loads and link clicks
 (function() {
-  function getApiBase() {
-    // Extract everything up to the third slash (protocol + host)
-    const parts = window.location.href.split('/');
-    return parts[0] + '//' + parts[2];
-  }
+  // Use explicit API URL since the frontend (fixice.org) and API (api.fixice.org) are separate services
+  const API_BASE = window.location.hostname === 'localhost' ? '' : 'https://api.fixice.org';
   function recordVisit(url) {
-    const apiBase = getApiBase();
-    fetch(apiBase + '/api/record?url=' + encodeURIComponent(url), { method: 'GET', keepalive: true });
+    fetch(API_BASE + '/api/record?url=' + encodeURIComponent(url), { method: 'GET', keepalive: true });
   }
   // Record on page load
   recordVisit(window.location.href);
