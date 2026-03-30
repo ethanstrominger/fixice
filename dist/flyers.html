@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Half Page Flyer</title>
+    <title>Flyers & Guides</title>
     <link rel="stylesheet" href="fixice.css?v=4">
 </head>
-
 <body>
     <div id="menu-container"></div>
     <div class="content">
         <main class="fixice-main">
-            <br>
-            <section id="halfpage-flyer">
-                <h2>Half Page Flyer</h2>
-                <p>
-                    Download and share our half page flyer to let others know about the protests 
-                    happening at or near the Burlington MA detention center.  This flyer is designed to be printed on standard 8.5 x 11 paper and 
-                    cut in half, creating a convenient half-page handout. It's perfect for sharing at community events, protests, or simply leaving in 
-                    public spaces to raise awareness about the detention center.
-                </p>
-                <p>
-                    <a href="halfpageflyer_fullpage_image.pdf" target="_blank" rel="noopener"
-                        style="font-size:1.2em;font-weight:bold; color:#23408e;">Download 8.5 x 11 PDF (2 per page)</a>
-                </p> 
-            </section>
+            <details open>
+                <summary style="font-size:1.3em;font-weight:bold; color:#23408e;">Immigrant Support Information</summary>
+                <div style="padding:0.5em 1.2em;">
+                    <p>
+                        <a href="one%20page%20overview%20of%20what%20to%20do%20if%20detained.pdf" target="_blank" rel="noopener" style="font-size:1.2em;font-weight:bold; color:#23408e;">
+                            One page overview: What to do if loved one detained (PDF)
+                        </a>
+                    </p>
+                    <p>
+                        <a href="LUCE%20Community%20Resource%20Guide%20-%20Detained%20Loved%20One%20-%20Condensed.pdf" target="_blank" rel="noopener" style="font-size:1.2em;font-weight:bold; color:#23408e;">
+                            LUCE Detailed Guide: What to do when ICE has detained your loved one
+                        </a>
+                    </p>
+                </div>
+            </details>
+            <details style="margin-top:2em;">
+                <summary style="font-size:1.3em;font-weight:bold; color:#23408e;">Activist Flyers</summary>
+                <div style="padding:0.5em 1.2em;">
+                    <p>
+                        <a href="halfpageflyer_two_per_page_burlington.pdf" target="_blank" rel="noopener" style="font-size:1.2em;font-weight:bold; color:#23408e;">
+                            Two half-page flyers on one page for protests in Burlington MA
+                        </a>
+                    </p>
+                    <p style="margin-top:1em; color:#444;">
+                        Download and share our half page flyer to let others know about the protests happening at or near the Burlington MA detention center. This flyer is designed to be printed on standard 8.5 x 11 paper and cut in half, creating a convenient half-page handout. It's perfect for sharing at community events, protests, or simply leaving in public spaces to raise awareness about the detention center.
+                    </p>
+                </div>
+            </details>
         </main>
     </div>
-
     <script src="menu.js"></script>
     <script>
         // Initialize menu (injects menu if needed and sets up all logic)
         if (typeof initMenu === 'function') {
             initMenu();
         } else {
-            // If menu.js is not loaded yet, wait for it
             window.addEventListener('DOMContentLoaded', function () {
                 if (typeof initMenu === 'function') initMenu();
             });
         }
     </script>
-
-</body>
-
-</html>
+                        <a href="one%20page%20overview%20of%20what%20to%20do%20if%20detained.pdf" target="_blank" rel="noopener" style="font-size:1.2em;font-weight:bold; color:#23408e;">

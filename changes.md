@@ -1,4 +1,4 @@
-# Recent Changes
+  # Recent Changes
 - **March 4,2026:**
 - Added three MIRA related actions
 - Updated coffee page for donations
