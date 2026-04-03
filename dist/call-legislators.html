@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fixice.css?v=4">
+  <title>Call Your Legislators</title>
+  <style>
+    body { font-family: sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2em; }
+    h1 { color: #0066cc; }
+    h2 { color: #0055aa; margin-top: 1.8em; }
+    h3 { color: #0066cc; margin-top: 1.2em; margin-bottom: 0.3em; }
+    .script-box {
+      background: #f0f6ff;
+      border-left: 4px solid #0066cc;
+      border-radius: 4px;
+      padding: 1em 1.2em;
+      margin-top: 0.8em;
+      font-style: italic;
+      color: #222;
+      line-height: 1.6;
+    }
+    .find-link {
+      display: inline-block;
+      margin: 1.5em 0 0.5em 0;
+      background: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.6em 1.3em;
+      border-radius: 4px;
+      font-size: 1.05em;
+      font-weight: bold;
+    }
+    .find-link:hover { background: #0055aa; }
+    .note { color: #555; font-size: 0.97em; margin-top: 0.5em; }
+  </style>
+</head>
+<body>
+  <div id="menu-container"></div>
+  <div class="container">
+    <h1>Call Your Legislators</h1>
+    <p>Two quick calls can make a real difference. Use the scripts below — short, clear, and effective.</p>
+
+    <a class="find-link" href="https://www.house.gov/representatives/find-your-representative" target="_blank">Find Your U.S. Representative &rarr;</a>
+    <p class="note">Enter your address to get your U.S. Representative's name and contact info.</p>
+    <a class="find-link" href="https://www.senate.gov/senators/senators-contact.htm" target="_blank">Find Your U.S. Senators &rarr;</a>
+    <p class="note">Massachusetts U.S. Senators: Ed Markey and Elizabeth Warren.</p>
+    <a class="find-link" href="https://malegislature.gov/Search/FindMyLegislator" target="_blank">Find Your MA State Senator &amp; Representative &rarr;</a>
+    <p class="note">Enter your address to get your MA state legislators' names and phone numbers.</p>
+
+
+    <h2>1. Demand Oversight Visits to the Burlington ICE Facility</h2>
+    <p>Call your <strong>U.S. Senator and U.S. Representative</strong> separately using the scripts below. When Congress is in recess, members are back in Massachusetts — the ideal time for them to visit.</p>
+
+    <h3>Script for Your U.S. Senator (Markey or Warren)</h3>
+    <p>The Senate has 9 recess periods this year. Ask your senator to commit to an unannounced visit at every break.</p>
+    <div class="script-box">
+      "Hi, my name is [your name] and I'm a constituent from [your city/town]. I'm calling to urge Senator [Markey/Warren] to conduct unannounced oversight visits to the ICE detention facility at 1000 District Ave. in Burlington. The Senate has 9 recess periods this year — these are exactly when senators can be on the ground in Massachusetts. Will Senator [Markey/Warren] commit to making an unannounced visit during each Senate recess? If not all nine, how many can the Senator commit to? And can I get a callback when the first visit is scheduled?"
+    </div>
+    <p class="note">Tip: Push for a number. "Will you commit to all 9? If not, how many?" gets a more concrete answer than a yes/no question.</p>
+
+    <h3>Script for Your U.S. Representative</h3>
+    <p>The House has multiple recess periods as well. Ask your representative to commit to visiting during their breaks.</p>
+    <div class="script-box">
+      "Hi, my name is [your name] and I'm a constituent from [your city/town]. I'm calling to urge Representative [Name] to conduct unannounced oversight visits to the ICE detention facility at 1000 District Ave. in Burlington. The House has recess periods throughout the year when members are back in Massachusetts. Will Representative [Name] commit to making an unannounced visit during each House recess? If not every recess, how many can the Representative commit to? And can I get a callback when the first visit is scheduled?"
+    </div>
+    <p class="note">Tip: Ask for a specific number of visits and a callback when one is scheduled. Don't accept a vague "we'll look into it."</p>
+
+    <h2>2. Pass the PROTECT Act</h2>
+    <p>Call your <strong>State Senator</strong> — the House has already passed this bill, which stops local police from acting as ICE agents. The Senate needs to act now.</p>
+    <div class="script-box">
+      "Hi, my name is [your name] and I'm a constituent from [your city/town]. I'm calling to urge [Senator Name] to pass the PROTECT Act. The House has already passed it. This bill prevents local police from being used as ICE agents, protecting our communities. Please bring it to a vote in the Senate now."
+    </div>
+    <p class="note">Tip: You only need to call your State Senator for this one — the House has already done its part.</p>
+  </div>
+  <script src="menu.js"></script>
+  <script>
+    if (typeof initMenu === 'function') {
+      initMenu();
+    } else {
+      window.addEventListener('DOMContentLoaded', function() {
+        if (typeof initMenu === 'function') initMenu();
+      });
+    }
+  </script>
+</body>
+</html>

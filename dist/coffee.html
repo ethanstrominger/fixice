@@ -31,39 +31,97 @@
 <body>
   <div id="menu-container"></div>
   <div class="container" style="padding-top:1em;">
-    <h1 style="margin-bottom:0; text-align:center;">Coffee Connection - Mar 11, 2026</h1>
+    <h1 style="margin-bottom:0; text-align:center;">Coffee Connection - MIRA</h1>
     <p style="font-style:italic; color:#555; margin-top:0.3em; margin-bottom:1.5em; text-align:center;">Caffeinate, Connect, and Contribute</p>
-    <div class="tab-bar">
-      <button class="tab-btn" data-tab="about">About</button>
-      <button class="tab-btn active" data-tab="fundraiser">Featured Fundraiser</button>
-      <button class="tab-btn" data-tab="actions">Featured Actions</button>
+    <h2>Featured Fundraiser: MIRA</h2>
+    <form id="mira-donate-form" style="margin-bottom:1.5em;">
+      <fieldset style="border:1px solid #ccc;border-radius:6px;padding:0.8em 1.2em;margin-bottom:1em;">
+        <legend style="font-weight:bold;font-size:1.05em;">Donation Amount (USD)</legend>
+        <label style="display:inline-flex;align-items:center;margin-right:1.2em;margin-top:0.4em;font-weight:normal;">
+          <input type="radio" name="amount-radio" value="25" style="margin-right:0.4em;" checked> $25
+        </label>
+        <label style="display:inline-flex;align-items:center;margin-right:1.2em;margin-top:0.4em;font-weight:normal;">
+          <input type="radio" name="amount-radio" value="50" style="margin-right:0.4em;"> $50
+        </label>
+        <label style="display:inline-flex;align-items:center;margin-right:1.2em;margin-top:0.4em;font-weight:normal;">
+          <input type="radio" name="amount-radio" value="100" style="margin-right:0.4em;"> $100
+        </label>
+        <label style="display:inline-flex;align-items:center;margin-top:0.4em;font-weight:normal;">
+          <input type="radio" name="amount-radio" value="other" style="margin-right:0.4em;"> Other:
+          <input type="number" id="other-amount" min="1" step="any" placeholder="Enter amount" style="width:7em;padding:0.3em 0.5em;font-size:1em;margin-left:0.5em;display:none;">
+        </label>
+      </fieldset>
+      <fieldset style="border:1px solid #ccc;border-radius:6px;padding:0.8em 1.2em;margin-bottom:1em;">
+        <legend style="font-weight:bold;font-size:1.05em;">Donation Frequency</legend>
+        <label style="display:inline-flex;align-items:center;margin-right:1.5em;font-weight:normal;">
+          <input type="radio" name="frequency" value="onetime" style="margin-right:0.4em;" checked> One Time
+        </label>
+        <label style="display:inline-flex;align-items:center;font-weight:normal;">
+          <input type="radio" name="frequency" value="recurring" style="margin-right:0.4em;"> Repeating
+        </label>
+      </fieldset>
+      <button type="button" id="donate-btn" style="margin-top:0.5em;background:#0066cc;color:#fff;border:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;cursor:pointer;">Donate to MIRA</button>
+    </form>
+    <div id="donate-step2" style="display:none;margin-top:1.2em;padding:1em;border-radius:6px;border:2px solid #0066cc;background:#e8f4ff;">
+      <div id="donate-status" style="font-size:1.1em;margin-bottom:0.8em;font-weight:bold;color:#0066cc;"></div>
+      <p style="margin:0 0 0.8em 0;color:#333;">On the next page, please enter this amount in the donation form.</p>
+      <a id="donate-mira-btn" href="https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=99a5f390-8b79-41ed-89d0-0a5d4111abcb&envid=p-Ez8UyF-6T0CLj7brUwUDPg" target="_blank" style="display:inline-block;background:#0066cc;color:#fff;text-decoration:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;font-weight:bold;">Go to MIRA Donation Page &rarr;</a>
     </div>
+    <div class="links">
+      <a href="https://miracoalition.org/" target="_blank">MIRA Information</a>
+      <a href="https://miracoalition.org/get-involved/volunteer/" target="_blank">Volunteer for MIRA</a>
+      <a href="call-legislators.html">Call Your State Senator and Representative</a>
+    </div>
+    <script>
+      const API_BASE = window.location.hostname === 'localhost' ? '' : 'https://api.fixice.org';
 
-    <!-- Tab 1: Featured Fundraiser -->
-    <div class="tab-content active" id="tab-fundraiser">
-      <h1>Featured Fundraiser</h1>
-      <p style="font-size:1.1em; color:#444; margin-bottom:1.5em;">Every Wednesday there will be a new fundraiser.</p>
-      <div style="margin-top:1.5em;">
-        <ul style="margin-bottom:1em; padding-left:1.2em;">
-          <li><strong>$20</strong> &mdash; One month basic needs in ICE detention</li>
-          <li><strong>$240</strong> &mdash; One year basic needs in ICE detention</li>
-          <li><strong>$1,000</strong> &mdash; Contribute towards bonding someone out of ICE detention (usually $5,000 to $10,000)</li>
-          <li><strong>$12,000</strong> &mdash; Fund basic needs for all supported in ICE detention</li>
-        </ul>
-        <label for="amount" style="display:block;font-weight:bold;margin-bottom:0.4em;">Donation Amount (USD)</label>
-        <input type="number" id="amount" name="amount" min="1" step="any" placeholder="Enter amount" style="width:100%;padding:0.5em;font-size:1.1em;">
-        <button type="button" id="donate-once" style="margin-top:1em;background:#0066cc;color:#fff;border:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;cursor:pointer;">Donate</button>
-      </div>
-      <div id="donate-step2" style="display:none;margin-top:1.2em;padding:1em;border-radius:6px;border:1px solid #ddd;background:#f9f9f9;">
-        <div id="donate-status" style="font-size:1em;margin-bottom:0.8em;"></div>
-        <a id="donate-retry-btn" href="https://checkout.square.site/merchant/ML58Q933VJ8VR/checkout/G3FQAZYAV4Q6HURVAC7WA4ZZ" target="_blank" style="display:inline-block;background:#0066cc;color:#fff;text-decoration:none;padding:0.7em 1.5em;border-radius:4px;font-size:1.1em;font-weight:bold;">Go to Beyond Bond Boston Donation Page &rarr;</a>
-      </div>
-      <div class="links">
-        <a href="https://beyondbondboston.org" target="_blank">BIJAN Beyond Fund Information</a>
-      </div>
-      <button id="list-donations-btn" type="button" style="background:#888; margin-top:1em;">List All Donations</button>
-      <div id="donations-list" style="margin-top:1.5em; display:none;"></div>
-    </div>
+      // Show/hide other amount input when "Other" radio is selected
+      document.querySelectorAll('input[name="amount-radio"]').forEach(function(radio) {
+        radio.addEventListener('change', function() {
+          var other = document.getElementById('other-amount');
+          other.style.display = this.value === 'other' ? '' : 'none';
+        });
+      });
+
+      document.getElementById('donate-btn').addEventListener('click', async function() {
+        var amountRadio = document.querySelector('input[name="amount-radio"]:checked');
+        var other = document.getElementById('other-amount');
+        var amount;
+        if (amountRadio.value === 'other') {
+          if (!other.value || isNaN(other.value) || Number(other.value) <= 0) {
+            alert('Please enter a valid amount.');
+            return;
+          }
+          amount = other.value;
+        } else {
+          amount = amountRadio.value;
+        }
+        var freq = document.querySelector('input[name="frequency"]:checked').value;
+        var freqLabel = freq === 'recurring' ? 'Repeating' : 'One Time';
+
+        // Log the donation to the API
+        try {
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), 20000);
+          await fetch(API_BASE + '/api/log-donation', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ amount: amount, frequency: freq }),
+            signal: controller.signal
+          });
+          clearTimeout(timeout);
+        } catch (err) {
+          console.warn('Donation log failed:', err.message || err);
+        }
+
+        // Show the confirmation panel with the selected amount
+        var step2 = document.getElementById('donate-step2');
+        var statusEl = document.getElementById('donate-status');
+        statusEl.textContent = 'You selected: $' + Number(amount).toFixed(2) + ' (' + freqLabel + ')';
+        step2.style.display = 'block';
+        step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    </script>
 
     <!-- Tab 2: Featured Actions -->
     <div class="tab-content" id="tab-actions">
