@@ -2,15 +2,17 @@
 async function initMenu() {
   const menuContainer = document.getElementById('menu-container');
   if (menuContainer) {
-    const response = await fetch('menu.html');
+    const response = await fetch('menu.html?v=3');
     const html = await response.text();
     const temp = document.createElement('div');
     temp.innerHTML = html;
     let menuMarkup = '';
     const nav = temp.querySelector('nav.main-menu');
     const header = temp.querySelector('div[style*="flex-direction:column"]');
+    const rally = temp.querySelector('div[data-menu-extra]');
     if (header) menuMarkup += header.outerHTML;
     if (nav) menuMarkup += nav.outerHTML;
+    if (rally) menuMarkup += rally.outerHTML;
     if (!menuMarkup) menuMarkup = temp.innerHTML;
     menuContainer.innerHTML = menuMarkup;
     // Wait for DOM update, then run menu logic
