@@ -9,6 +9,18 @@
 
 <body>
 	<div id="menu-container"></div>
+	<div style="position:fixed; top:80px; right:12px; z-index:2000; display:flex; flex-direction:column; gap:8px; align-items:center;">
+		<a href="#share" title="Share on Facebook" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;background:#1877f2;border-radius:50%;text-decoration:none;">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+		</a>
+		<a href="#share" title="Share on X" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;background:#000;border-radius:50%;color:#fff;font-size:1.1em;text-decoration:none;font-weight:bold;">𝕏</a>
+		<a href="#share" title="Post on TikTok" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;background:#010101;border-radius:50%;text-decoration:none;">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.2 8.2 0 0 0 4.8 1.54V6.78a4.85 4.85 0 0 1-1.03-.09z"/></svg>
+		</a>
+		<a href="#share" title="Post on Instagram" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;background:#c13584;border-radius:50%;text-decoration:none;">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+		</a>
+	</div>
 	<div class="content">
 		<main class="main">
 
@@ -35,7 +47,8 @@
 
 
 				<h3>Parking</h3>
-				<p>There is no public parking nearby and they actively tow on District Ave and the side lots.  Sign up for the carpool <a href="https://tally.so/r/81PAez">here</a>.</p>
+				<p>Sign up for the carpool <a href="https://tally.so/r/81PAez">here</a>. There is no public parking nearby and they actively tow on District Ave and the side lots.
+				For more parking options, click <a href="/parking.html"></a>here</a>.</p>
 				<div style="border:2px solid #23408e; background:#f7faff; border-radius:7px; padding:1em 1.2em; margin:1.2em 0; font-size:1.08em;">
 					For any questions, email <a href="mailto:info@fixice.org">info@fixice.org</a>
 				</div>
@@ -45,6 +58,31 @@
 					<li>The LRTA bus <a href="https://lrta.com/routes/route-14/">route 14</a> starts at the Kennedy Center in Lowell and
 						uses the same stops close to 1000 District Ave. Some people have reported parking at Wegman's and taking the LRTA route
 						14 bus to the protest.</li>
+			</section>
+
+			<section id="share">
+				<h3>Spread the Word</h3>
+				<p>Help us get the word out! Share this event on social media and download the flyer below to post or forward.</p>
+
+				<div style="background:#f0f6ff; border-left:4px solid #23408e; border-radius:5px; padding:0.9em 1.2em; margin:0.8em 0 1em 0; font-size:0.97em; color:#222;">
+					<strong>Suggested post:</strong><br>
+					<span id="shareText">🦅 Patriots Day Justice Rally – Monday, April 20, 11 AM – 1 PM at the ICE detention center, 1000 District Ave, Burlington, MA. Bring your flag and revolutionary spirit! Register: https://fixice.org/patriotsrally.  #PatriotsDayRally #FixICE #Mass50501 #ImmigrantRights #NoKings</span>
+					<br><button onclick="navigator.clipboard.writeText(document.getElementById('shareText').innerText); this.textContent='Copied!';" style="margin-top:0.6em; background:#23408e; color:#fff; border:none; border-radius:4px; padding:0.3em 0.9em; cursor:pointer; font-size:0.95em;">Copy Text</button>
+				</div>
+
+				<div style="display:flex; flex-wrap:wrap; gap:0.7em; margin:0.8em 0 1em 0;">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffixice.org%2Fpatriotsrally.html&quote=%F0%9F%A6%85+Patriots+Day+Justice+Rally+%E2%80%93+Monday%2C+April+20%2C+11+AM+%E2%80%93+1+PM+at+the+ICE+detention+center%2C+1000+District+Ave%2C+Burlington%2C+MA.+Bring+your+flag+and+revolutionary+spirit%21+%23PatriotsDayRally+%23FixICE+%23ImmigrantRights+%23NoKings" target="_blank" style="background:#1877f2; color:#fff; text-decoration:none; padding:0.5em 1.1em; border-radius:5px; font-weight:bold;">Share on Facebook</a>
+					<a href="https://twitter.com/intent/tweet?text=%F0%9F%A6%85+Patriots+Day+Justice+Rally+%E2%80%93+Monday%2C+April+20%2C+11+AM+%E2%80%93+1+PM+at+the+ICE+detention+center%2C+1000+District+Ave%2C+Burlington%2C+MA.+Bring+your+flag+and+revolutionary+spirit%21+Register%3A&url=https%3A%2F%2Ffixice.org%2Fpatriotsrally.html&hashtags=PatriotsDayRally%2CFixICE%2CImmigrantRights%2CNoKings" target="_blank" style="background:#000; color:#fff; text-decoration:none; padding:0.5em 1.1em; border-radius:5px; font-weight:bold;">Share on X</a>
+					<a href="https://www.tiktok.com/" target="_blank" style="background:#010101; color:#fff; text-decoration:none; padding:0.5em 1.1em; border-radius:5px; font-weight:bold;">Post on TikTok</a>
+					<a href="https://www.instagram.com/" target="_blank" style="background:#c13584; color:#fff; text-decoration:none; padding:0.5em 1.1em; border-radius:5px; font-weight:bold;">Post on Instagram</a>
+				</div>
+				<p style="font-size:0.93em; color:#555;">For TikTok and Instagram: copy the text above, download the flyer, and paste when creating your post.</p>
+
+				<p>Download and share the flyer:</p>
+				<a href="patriots-rally-flyer.jpg" download>
+					<img src="patriots-rally-flyer.jpg" alt="Patriots Day Justice Rally Flyer" style="max-width:340px; width:100%; border:2px solid #23408e; border-radius:7px; display:block; margin-bottom:0.5em;">
+				</a>
+				<a href="patriots-rally-flyer.jpg" download style="display:inline-block; background:#23408e; color:#fff; text-decoration:none; padding:0.5em 1.2em; border-radius:5px; font-weight:bold; margin-top:0.3em;">&#11015; Download Flyer</a>
 			</section>
 
 		</main>
