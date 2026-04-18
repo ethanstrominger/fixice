@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Calendar: Burlington Actions</title>
+    <link rel="stylesheet" href="fixice.css?v=4">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .key-box {
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+        }
+
+        .key-box h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #e9ecef;
+        }
+
+        .status-col {
+            text-align: center;
+            font-weight: bold;
+            width: 120px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h3 {
+            border-left: 4px solid #cc0000;
+            padding-left: 10px;
+            background: #f9f9f9;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu-container"></div>
+    <div class="content">
+
+    <h1>Master Calendar List: Burlington Actions</h1>
+
+    <div class="key-box">
+        <h2>Status Key</h2>
+        <ul>
+            <li><strong>1000:</strong> Links to <em>fixice.org/protests1000districtave</em></li>
+            <li><strong>M:</strong> Features a separate listing for the <strong>Monday</strong> FixICE vigil</li>
+            <li><strong>W:</strong> Features a separate listing for the <strong>Wednesday</strong> Bearing Witness
+                session</li>
+        </ul>
+    </div>
+
+    <h3>Primary Organizing</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Event Link</th>
+                <th class="status-col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FixICE.org</td>
+                <td><a href="https://fixice.org/protests1000districtave">Weekly Schedule & Parking</a></td>
+                <td class="status-col">1000, M, W</td>
+            </tr>
+            <tr>
+                <td>Burlington Indivisible</td>
+                <td><a href="https://fixice.org/burlington-indivisible">Local Chapter Events</a></td>
+                <td class="status-col">1000, M, W</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Regional Advocacy</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Event Link</th>
+                <th class="status-col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Indivisible LAB</td>
+                <td><a href="https://www.indivisiblelab.org/stand-outs-protests">Active Resistance Calendar</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+            <tr>
+                <td>Indivisible Mass</td>
+                <td><a href="https://indivisible-ma.org/bearing-witness-at-ice-community-of-resistance/">Collective
+                        Resistance Blog</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+            <tr>
+                <td>Progressive Mass</td>
+                <td><a href="https://www.progressivemass.com/calendar/">Statewide Action Calendar</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+            <tr>
+                <td>MIRA Coalition</td>
+                <td><a href="https://miracoalition.org/events/">Community Action Calendar</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Faith Groups</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Event Link</th>
+                <th class="status-col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First Parish Bedford</td>
+                <td><a href="https://uubedford.org/">Peace & Justice News</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+            <tr>
+                <td>First Parish Lexington</td>
+                <td><a href="https://www.fplex.org/social-justice">Social Justice Events</a></td>
+                <td class="status-col">W</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Community & Media</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Event Link</th>
+                <th class="status-col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The Bedford Citizen</td>
+                <td><a href="https://thebedfordcitizen.org/events/">Local Events Calendar</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+            <tr>
+                <td>Action Network</td>
+                <td><a href="https://actionnetwork.org/event_campaigns/bearing-witness">Mass. Organizing Hub</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+            <tr>
+                <td>WBUR</td>
+                <td><a href="https://www.wbur.org/events">Community Board</a></td>
+                <td class="status-col">M, W</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+        if (typeof initMenu === 'function') {
+            initMenu();
+        } else {
+            window.addEventListener('DOMContentLoaded', function () {
+                if (typeof initMenu === 'function') initMenu();
+            });
+        }
+    </script>
+</body>
+
+</html>

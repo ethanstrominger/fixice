@@ -1,19 +1,18 @@
 # Parking
+For the Patriot's day Justice Rally on April 20 you can park at Simonds Park, 10 Bedford St, Burlington.  Volunteers will be available to drive you to 1000 District Ave from 10-12 and drive you back to your car from 12:15 to 1:15.
 
-🚫 **DO NOT PARK AT AMC MOVIE THEATER. AMC DOES NOT ALLOW PROTEST PARKING.**
-
-Parking policies and enforcement can change. Please use your own judgment and choose the option that best matches your comfort level.
-
----
 
 ### Quick Summary
-
-- 🚫 Do not park at AMC.
+- 🚗 For details about being shuttled from Simonds park see above.
 - 🚗 Public parking is available at TRW Playground (Stony Brook Rd).
-- ⚠️ Commercial lots carry a risk of towing.  Discretion advised.
-- 📢 If towed, notify the group organizer and review tow dispute guidance on the Bearing Witness website.
-- ✅ Temple Shalom Emeth and United Church of Christ have granted permission to park on Wednesday, unless there is a conflicting event.
-- 🚗 Wed and Thu there may be a shuttle from a designated location.  Check with the respective facebook pages or website.
+- ⚠️ Commercial lots carry a risk of towing.  Discretion advised.  You can drop off your signs or whatever else at 1000 District Ave.
+- ✅ Temple Shalom Emeth and United Church of Christ have granted permission to park there on Patriots Day April 20. Wednesday, unless there is a conflicting event.
+- ✅ Temple Shalom Emeth and United Church of Christ have also granted permission to park on Wednesday, unless there is a conflicting event.
+- 🚗 Wed there is a shuttle from a designated parking location.  Check with the respective facebook pages or website.
+
+For the Patriot's day Justice Rally you can park at Simonds Park, 10 Bedford St, Bedford.  Volunteers will be available to drive you to 1000 District Ave from 10-12 and drive you back to your car from 12:15 to 1:15.
+---
+
 
 ---
 
