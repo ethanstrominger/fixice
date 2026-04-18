@@ -1,5 +1,5 @@
 # Parking
-For the Patriot's day Justice Rally on April 20 you can park at Simonds Park, 10 Bedford St, Burlington.  Volunteers will be available to drive you to 1000 District Ave from 10-12 and drive you back to your car from 12:15 to 1:15.
+For the Patriot's day Justice Rally on April 20 you can park at Simonds Park, 10 Bedford St, Burlington.  Rides are available to 1000 Distract Ave from 10-12.  Look for a volunteer in yellow or orange vest.  They will identify a volunteer driver to take you to 1000 District Ave and drive you back to your car from 12:15 to 1:15.
 
 
 ### Quick Summary
