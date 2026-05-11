@@ -10,6 +10,7 @@ const { Pool } = require("pg");
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
+console.log("DEPLOY CHECK: Version 1.0.1 - May 11");
 const app = express();
 console.log("Starting server with NODE_ENV =", process.env.NODE_ENV);
 
