@@ -10,8 +10,7 @@ const cors = require("cors");
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
-console.log("DEPLOY CHECK: Version 1.0.1 - May 11");
-
+console.log("DEPLOY CHECK: Version 1.0.2 - May 12");
 // Check dist/ files for stale banner text
 const fs = require("fs");
 const path = require("path");
@@ -56,7 +55,7 @@ const port = process.env.PORT || 3000;
 //   connectionString: process.env.DATABASE_URL, // Render provides this env var
 //   ssl:
 //     process.env.NODE_ENV === "production"
-//       ? { rejectUnauthorized: false }
+//       ? { rejectUnauthorized: false } // For Render's managed Postgres, disable SSL cert verification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 //       : false,
 // });
 
