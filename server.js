@@ -12,23 +12,26 @@ if (process.env.NODE_ENV !== "production") {
 }
 console.log("DEPLOY CHECK: Version 1.0.1 - May 11");
 
-// Check menu.html does not contain stale banner text
+// Check dist/ files for stale banner text
 const fs = require("fs");
-const menuHtmlPath = require("path").join(__dirname, "dist", "menu.html");
+const path = require("path");
+const distPath = path.join(__dirname, "dist");
 try {
-  const menuContent = fs.readFileSync(menuHtmlPath, "utf8");
-  if (/Memorial/i.test(menuContent)) {
-    console.warn("DEPLOY WARNING: menu.html contains 'Memorial' — stale banner may still be present");
-  } else {
-    console.log("DEPLOY CHECK: menu.html OK — no 'Memorial' found");
-  }
-  if (/Patriots/i.test(menuContent)) {
-    console.warn("DEPLOY WARNING: menu.html contains 'Patriots' — stale banner may still be present");
-  } else {
-    console.log("DEPLOY CHECK: menu.html OK — no 'Patriots' found");
+  const distFiles = fs.readdirSync(distPath).filter(f => f.endsWith(".html"));
+  for (const word of ["Memorial", "Patriots"]) {
+    const matches = distFiles.filter(f => {
+      try {
+        return new RegExp(word, "i").test(fs.readFileSync(path.join(distPath, f), "utf8"));
+      } catch { return false; }
+    });
+    if (matches.length > 0) {
+      console.warn(`DEPLOY WARNING: '${word}' found in: ${matches.join(", ")}`);
+    } else {
+      console.log(`DEPLOY CHECK: OK — no '${word}' found in dist/ HTML files`);
+    }
   }
 } catch (err) {
-  console.warn("DEPLOY WARNING: Could not read menu.html:", err.message);
+  console.warn("DEPLOY WARNING: Could not scan dist/ files:", err.message);
 }
 
 const app = express();
