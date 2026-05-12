@@ -11,6 +11,26 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 console.log("DEPLOY CHECK: Version 1.0.1 - May 11");
+
+// Check menu.html does not contain stale banner text
+const fs = require("fs");
+const menuHtmlPath = require("path").join(__dirname, "dist", "menu.html");
+try {
+  const menuContent = fs.readFileSync(menuHtmlPath, "utf8");
+  if (/Memorial/i.test(menuContent)) {
+    console.warn("DEPLOY WARNING: menu.html contains 'Memorial' — stale banner may still be present");
+  } else {
+    console.log("DEPLOY CHECK: menu.html OK — no 'Memorial' found");
+  }
+  if (/Patriots/i.test(menuContent)) {
+    console.warn("DEPLOY WARNING: menu.html contains 'Patriots' — stale banner may still be present");
+  } else {
+    console.log("DEPLOY CHECK: menu.html OK — no 'Patriots' found");
+  }
+} catch (err) {
+  console.warn("DEPLOY WARNING: Could not read menu.html:", err.message);
+}
+
 const app = express();
 console.log("Starting server with NODE_ENV =", process.env.NODE_ENV);
 
