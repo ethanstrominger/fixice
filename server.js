@@ -17,7 +17,8 @@ const fs = require("fs");
 const path = require("path");
 const distPath = path.join(__dirname, "dist");
 try {
-  const distFiles = fs.readdirSync(distPath).filter(f => f.endsWith(".html"));
+  const skipFiles = ["parking.html", "patriotsday.html", "patriotsrally.html"];
+  const distFiles = fs.readdirSync(distPath).filter(f => f.endsWith(".html") && !skipFiles.includes(f));
   for (const word of ["Memorial", "Patriots"]) {
     const matches = distFiles.filter(f => {
       try {
