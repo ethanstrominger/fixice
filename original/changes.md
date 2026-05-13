@@ -1,0 +1,24 @@
+  # Recent Changes
+- **March 4,2026:**
+- Added three MIRA related actions
+- Updated coffee page for donations
+- **March 1, 2026:**
+- Added 18 actions
+- Added filters for mode, frequency, and tag
+- Combined Actions, 1000 District Ave, and Featured into one
+- Updated 1000 District Ave to include volunteering options
+- **Feb 17, 2026:** Check out these new and updated resources:
+  - [Parking](dist/parking.html) page reorganized and made mobile friendly
+  - [Monday/Tuesday](dist/mondaytuesday.html) page – reorganized and enhanced the page content for improved clarity and usability.
+  - [Lunch Time Activism](dist/lunchtime.html)
+  - [Donate Food](dist/donatehere.html)
+  - [ICE Out of Merrimack, Sat Feb 21](https://www.noicenh.com/current-status)
+  - [North Carolina and Texas Text Bank w/ VoteRiders (virtual)](https://www.mobilize.us/voteriders/event/893364/)
+  - [No Kings Rally – March 28](https://www.nokings.org/)
+- **Feb 16, 2026:**
+  - Added [Featured](dist/featured.html?tag=Featured) menu item
+  - Added nearby events to [1000 District Ave Protests](dist/protests1000districtave.html)
+  - Added guidelines, tips, photography info, safety, public transportation, tips for handling protestors, parking tips, and goals / what we are demanding to the [Monday/Tuesday page](dist/mondaytuesday.html)
+- **Feb 14, 2026:** Updated [parking suggestions](dist/parking.html) and [public transportation options](dist/public-transportation.html).
+- **Feb 14, 2026:** Added [Turn Out Pac](https://turnoutpac.org)
+- **Feb 11, 2026:** Added [Greater Assabet Individual Network](https://massgain.org), [Mass50501](https://mass50501.org).
